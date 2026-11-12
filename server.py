@@ -60,6 +60,34 @@ def parse_otc_month(code,y,mm):
      if out:return out
   except (URLError,HTTPError,TimeoutError,ValueError,KeyError):continue
  return {}
+def diagnose_otc(code):
+ now=datetime.now(TZ_TAIPEI)
+ roc=f'{now.year-1911}/{now.month:02d}'
+ urls=[f'https://www.tpex.org.tw/www/zh-tw/afterTrading/tradingStock?date={roc}/01&code={code}&response=json',f'https://www.tpex.org.tw/web/stock/aftertrading/daily_trading_info/st43_result.php?d={roc}&stkno={code}']
+ checks=[]
+ for url in urls:
+  item={'source':url.split('/')[3],'month':roc}
+  try:
+   with urlopen(Request(url,headers={'User-Agent':'Mozilla/5.0','Accept':'application/json'}),timeout=10) as res:
+    item['http_status']=res.status
+    item['content_type']=res.headers.get('Content-Type','')
+    payload=json.load(res)
+   item['json_type']=type(payload).__name__
+   if isinstance(payload,dict):
+    item['keys']=list(payload.keys())[:16]
+    item['stat']=str(payload.get('stat',payload.get('status','')))[:120]
+    for k in ('data','tables'):
+     v=payload.get(k)
+     if isinstance(v,list):
+      item[k+'_count']=len(v)
+      if v:
+       item[k+'_first_type']=type(v[0]).__name__
+       if isinstance(v[0],dict):item[k+'_first_keys']=list(v[0].keys())[:15]
+       if isinstance(v[0],list):item[k+'_first_columns']=len(v[0])
+   elif isinstance(payload,list):item['records']=len(payload)
+  except Exception as e:item['error']=type(e).__name__+': '+str(e)[:160]
+  checks.append(item)
+ return {'code':code,'market':'TPEx','diagnostics':checks,'note':'僅檢查官方來源連線與資料結構，不代表行情正確'}
 def get(code,market='auto'):
  now=datetime.now(TZ_TAIPEI)
  with CACHE_LOCK:
@@ -115,8 +143,12 @@ class H(SimpleHTTPRequestHandler):
  def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(ROOT),**kwargs)
  def do_GET(self):
   p=urlparse(self.path)
-  if p.path=='/health':self.send_json({'ok':True,'version':'4.6','server_time':datetime.now(TZ_TAIPEI).isoformat()});return
+  if p.path=='/health':self.send_json({'ok':True,'version':'4.7','server_time':datetime.now(TZ_TAIPEI).isoformat()});return
   if p.path=='/api/catalog':self.send_json({'codes':NAMES,'version':'4.4','coverage':'TWSE + TPEx official daily (best effort)'});return
+  if p.path=='/api/diagnostics/otc':
+   code=parse_qs(p.query).get('code',[''])[0]
+   if not (len(code)==4 and code.isascii() and code.isdigit()):self.send_json({'error':'請輸入4位股票代碼'},400);return
+   self.send_json(diagnose_otc(code));return
   if p.path=='/api/stocks':
    code=parse_qs(p.query).get('code',[''])[0]
    if not (len(code)==4 and code.isascii() and code.isdigit()):self.send_json({'error':'請輸入4位數上市股票代碼','code':code},400);return
