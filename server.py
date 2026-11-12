@@ -83,8 +83,8 @@ class H(SimpleHTTPRequestHandler):
  def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(ROOT),**kwargs)
  def do_GET(self):
   p=urlparse(self.path)
-  if p.path=='/health':self.send_json({'ok':True,'version':'4.1','server_time':datetime.now(TZ_TAIPEI).isoformat()});return
-  if p.path=='/api/catalog':self.send_json({'codes':NAMES,'version':'4.1','coverage':'部分上市股票'});return
+  if p.path=='/health':self.send_json({'ok':True,'version':'4.2','server_time':datetime.now(TZ_TAIPEI).isoformat()});return
+  if p.path=='/api/catalog':self.send_json({'codes':NAMES,'version':'4.2','coverage':'部分上市股票'});return
   if p.path=='/api/stocks':
    code=parse_qs(p.query).get('code',[''])[0]
    if code not in NAMES:self.send_json({'error':'不支援此代碼，目前僅部分上市股票'},400);return
