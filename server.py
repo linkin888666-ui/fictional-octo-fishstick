@@ -63,7 +63,7 @@ def get(code):
     rows[dt]={'date':dt,'close':float(r[6].replace(',','')),'volume':float(r[1].replace(',',''))}
    except (ValueError,IndexError,TypeError):continue
  a=[rows[x] for x in sorted(rows)]
- if len(a)<35:raise ValueError(f'歷史資料不足（{len(a)}筆），下載失敗月份：{", ".join(failed_months) or "無"}')
+ if len(a)<35:raise ValueError(f'無法取得足夠的 TWSE 上市日線；可能為上櫃股票、代碼無效或官方資料暫時無法取得。歷史資料不足（{len(a)}筆），下載失敗月份：{", ".join(failed_months) or "無"}')
  c=[r['close'] for r in a];v=[r['volume'] for r in a]
  ma5=sum(c[-5:])/5;ma20=sum(c[-20:])/20;old20=sum(c[-21:-1])/20
  dif=[x-y for x,y in zip(ema(c,12),ema(c,26))];sig=ema(dif,9)
@@ -75,7 +75,7 @@ def get(code):
  if r5>90:tags.append('RSI5過熱')
  if r10>=90:tags.append('RSI10嚴重過熱')
  if vr>1.2:tags.append('量能放大')
- result={'code':code,'name':NAMES[code],'date':a[-1]['date'],'close':c[-1],'change':round((c[-1]/c[-2]-1)*100,2),'ma5':round(ma5,2),'ma20':round(ma20,2),'rsi5':r5,'rsi10':r10,'dif':round(dif[-1],3),'macd_hist':round(dif[-1]-sig[-1],3),'volume_ratio':round(vr,2),'score':max(0,min(100,score)),'tags':tags,'series':c[-30:],'data_source':'TWSE STOCK_DAY','market':'TWSE','fetched_at':now.isoformat(),'cache':'miss','history_days':len(a),'partial_month_errors':failed_months,'trend_score':max(0,min(100,50+(25 if c[-1]>ma20 else -25)+(25 if ma5>ma20 else -25))),'momentum_score':max(0,min(100,50+(25 if dif[-1]>sig[-1] else -25)+(15 if vr>1.2 else 0))),'risk_level':('高' if r5>90 or r10>=90 or abs((c[-1]/ma20-1)*100)>20 else '中' if r5>80 or vr>3 else '一般'),'support20':round(min(c[-20:]),2),'resistance20':round(max(c[-20:]),2)}
+ result={'code':code,'name':NAMES.get(code,code),'date':a[-1]['date'],'close':c[-1],'change':round((c[-1]/c[-2]-1)*100,2),'ma5':round(ma5,2),'ma20':round(ma20,2),'rsi5':r5,'rsi10':r10,'dif':round(dif[-1],3),'macd_hist':round(dif[-1]-sig[-1],3),'volume_ratio':round(vr,2),'score':max(0,min(100,score)),'tags':tags,'series':c[-30:],'data_source':'TWSE STOCK_DAY','market':'TWSE','fetched_at':now.isoformat(),'cache':'miss','history_days':len(a),'partial_month_errors':failed_months,'trend_score':max(0,min(100,50+(25 if c[-1]>ma20 else -25)+(25 if ma5>ma20 else -25))),'momentum_score':max(0,min(100,50+(25 if dif[-1]>sig[-1] else -25)+(15 if vr>1.2 else 0))),'risk_level':('高' if r5>90 or r10>=90 or abs((c[-1]/ma20-1)*100)>20 else '中' if r5>80 or vr>3 else '一般'),'support20':round(min(c[-20:]),2),'resistance20':round(max(c[-20:]),2)}
  result.update(signal_metrics(c,v,ma5,ma20,r5,r10,vr,dif[-1],sig[-1]))
  with CACHE_LOCK:CACHE[code]={'at':time.time(),'value':result}
  return result
@@ -83,11 +83,11 @@ class H(SimpleHTTPRequestHandler):
  def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(ROOT),**kwargs)
  def do_GET(self):
   p=urlparse(self.path)
-  if p.path=='/health':self.send_json({'ok':True,'version':'4.2','server_time':datetime.now(TZ_TAIPEI).isoformat()});return
+  if p.path=='/health':self.send_json({'ok':True,'version':'4.3','server_time':datetime.now(TZ_TAIPEI).isoformat()});return
   if p.path=='/api/catalog':self.send_json({'codes':NAMES,'version':'4.2','coverage':'部分上市股票'});return
   if p.path=='/api/stocks':
    code=parse_qs(p.query).get('code',[''])[0]
-   if code not in NAMES:self.send_json({'error':'不支援此代碼，目前僅部分上市股票'},400);return
+   if not (len(code)==4 and code.isascii() and code.isdigit()):self.send_json({'error':'請輸入4位數上市股票代碼','code':code},400);return
    try:self.send_json(get(code))
    except Exception as e:self.send_json({'error':str(e),'code':code},502)
    return
