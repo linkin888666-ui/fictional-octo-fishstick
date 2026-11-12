@@ -83,8 +83,8 @@ class H(SimpleHTTPRequestHandler):
  def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(ROOT),**kwargs)
  def do_GET(self):
   p=urlparse(self.path)
-  if p.path=='/health':self.send_json({'ok':True,'version':'4.3','server_time':datetime.now(TZ_TAIPEI).isoformat()});return
-  if p.path=='/api/catalog':self.send_json({'codes':NAMES,'version':'4.2','coverage':'部分上市股票'});return
+  if p.path=='/health':self.send_json({'ok':True,'version':'4.4','server_time':datetime.now(TZ_TAIPEI).isoformat()});return
+  if p.path=='/api/catalog':self.send_json({'codes':NAMES,'version':'4.4','coverage':'部分上市股票'});return
   if p.path=='/api/stocks':
    code=parse_qs(p.query).get('code',[''])[0]
    if not (len(code)==4 and code.isascii() and code.isdigit()):self.send_json({'error':'請輸入4位數上市股票代碼','code':code},400);return
@@ -92,6 +92,12 @@ class H(SimpleHTTPRequestHandler):
    except Exception as e:self.send_json({'error':str(e),'code':code},502)
    return
   return super().do_GET()
+ def end_headers(self):
+  if self.path.split('?')[0] in ('/','/index.html'):
+   self.send_header('Cache-Control','no-store, no-cache, must-revalidate, max-age=0')
+   self.send_header('Pragma','no-cache')
+   self.send_header('Expires','0')
+  super().end_headers()
  def send_json(self,data,status=200):
   body=json.dumps(data,ensure_ascii=False).encode()
   self.send_response(status);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Cache-Control','no-store');self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body)
