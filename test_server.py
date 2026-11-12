@@ -14,6 +14,18 @@ class IndicatorTests(unittest.TestCase):
     def test_stock_whitelist(self):
         self.assertIn('1802', server.NAMES)
         self.assertNotIn('9999', server.NAMES)
+    def test_breakout_signal(self):
+        close=[100.0]*20+[110.0]
+        volume=[100.0]*20+[250.0]
+        x=server.signal_metrics(close,volume,105,100,75,70,2.5,1,0)
+        self.assertTrue(x['breakout20'])
+        self.assertFalse(x['distribution_warning'])
+    def test_distribution_signal(self):
+        close=[100.0]*19+[105.0,90.0]
+        volume=[100.0]*20+[250.0]
+        x=server.signal_metrics(close,volume,98,100,40,45,2.5,-1,0)
+        self.assertTrue(x['distribution_warning'])
+        self.assertFalse(x['breakout20'])
     def test_health_endpoint_is_present(self):
         self.assertTrue(hasattr(server, 'H'))
 
