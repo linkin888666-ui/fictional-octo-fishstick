@@ -3,8 +3,14 @@ from urllib.request import Request,urlopen
 from urllib.parse import urlparse,parse_qs
 from datetime import date
 from pathlib import Path
-import json,os
+import json,os,time,threading
+from urllib.error import URLError,HTTPError
+from datetime import datetime,timezone,timedelta
 ROOT=Path(__file__).resolve().parent
+CACHE={}
+CACHE_LOCK=threading.Lock()
+CACHE_SECONDS=900
+TZ_TAIPEI=timezone(timedelta(hours=8))
 NAMES={'1802':'台玻','1815':'富喬','1303':'南亞','2330':'台積電','2317':'鴻海','2409':'友達','3481':'群創'}
 def ema(a,n):
  out=[];v=a[0];k=2/(n+1)
@@ -17,12 +23,25 @@ def rsi(a,n):
  for x in d[n:]:g=(g*(n-1)+max(x,0))/n;l=(l*(n-1)+max(-x,0))/n
  return round(100-100/(1+g/l),2) if l else (100 if g else 50)
 def get(code):
- today=date.today();rows={}
+ now=datetime.now(TZ_TAIPEI)
+ with CACHE_LOCK:
+  cached=CACHE.get(code)
+  if cached and time.time()-cached['at']<CACHE_SECONDS:
+   return dict(cached['value'],cache='hit')
+ today=now.date();rows={};failed_months=[]
  for k in range(5):
   m=today.year*12+today.month-1-k;y,mm=divmod(m,12);mm+=1
   url=f'https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date={y}{mm:02d}01&stockNo={code}&response=json'
   req=Request(url,headers={'User-Agent':'Mozilla/5.0','Accept':'application/json'})
-  with urlopen(req,timeout=15) as res: data=json.load(res)
+  data=None
+  for attempt in range(3):
+   try:
+    with urlopen(req,timeout=12) as res:data=json.load(res)
+    break
+   except (URLError,HTTPError,TimeoutError,ValueError) as exc:
+    if attempt==2:failed_months.append(f'{y}-{mm:02d}: {type(exc).__name__}')
+    else:time.sleep(0.35*(attempt+1))
+  if data is None:continue
   if data.get('stat')!='OK':continue
   for r in data.get('data',[]):
    try:
@@ -30,7 +49,7 @@ def get(code):
     rows[dt]={'date':dt,'close':float(r[6].replace(',','')),'volume':float(r[1].replace(',',''))}
    except (ValueError,IndexError,TypeError):continue
  a=[rows[x] for x in sorted(rows)]
- if len(a)<35:raise ValueError('歷史資料不足，無法計算')
+ if len(a)<35:raise ValueError(f'歷史資料不足（{len(a)}筆），下載失敗月份：{", ".join(failed_months) or "無"}')
  c=[r['close'] for r in a];v=[r['volume'] for r in a]
  ma5=sum(c[-5:])/5;ma20=sum(c[-20:])/20;old20=sum(c[-21:-1])/20
  dif=[x-y for x,y in zip(ema(c,12),ema(c,26))];sig=ema(dif,9)
@@ -42,12 +61,15 @@ def get(code):
  if r5>90:tags.append('RSI5過熱')
  if r10>=90:tags.append('RSI10嚴重過熱')
  if vr>1.2:tags.append('量能放大')
- return {'code':code,'name':NAMES[code],'date':a[-1]['date'],'close':c[-1],'change':round((c[-1]/c[-2]-1)*100,2),'ma5':round(ma5,2),'ma20':round(ma20,2),'rsi5':r5,'rsi10':r10,'dif':round(dif[-1],3),'macd_hist':round(dif[-1]-sig[-1],3),'volume_ratio':round(vr,2),'score':max(0,min(100,score)),'tags':tags,'series':c[-30:]}
+ result={'code':code,'name':NAMES[code],'date':a[-1]['date'],'close':c[-1],'change':round((c[-1]/c[-2]-1)*100,2),'ma5':round(ma5,2),'ma20':round(ma20,2),'rsi5':r5,'rsi10':r10,'dif':round(dif[-1],3),'macd_hist':round(dif[-1]-sig[-1],3),'volume_ratio':round(vr,2),'score':max(0,min(100,score)),'tags':tags,'series':c[-30:],'data_source':'TWSE STOCK_DAY','market':'TWSE','fetched_at':now.isoformat(),'cache':'miss','history_days':len(a),'partial_month_errors':failed_months,'trend_score':max(0,min(100,50+(25 if c[-1]>ma20 else -25)+(25 if ma5>ma20 else -25))),'momentum_score':max(0,min(100,50+(25 if dif[-1]>sig[-1] else -25)+(15 if vr>1.2 else 0))),'risk_level':('高' if r5>90 or r10>=90 or abs((c[-1]/ma20-1)*100)>20 else '中' if r5>80 or vr>3 else '一般'),'support20':round(min(c[-20:]),2),'resistance20':round(max(c[-20:]),2)}
+ with CACHE_LOCK:CACHE[code]={'at':time.time(),'value':result}
+ return result
 class H(SimpleHTTPRequestHandler):
  def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(ROOT),**kwargs)
  def do_GET(self):
   p=urlparse(self.path)
-  if p.path=='/health':self.send_json({'ok':True});return
+  if p.path=='/health':self.send_json({'ok':True,'version':'4.1','server_time':datetime.now(TZ_TAIPEI).isoformat()});return
+  if p.path=='/api/catalog':self.send_json({'codes':NAMES,'version':'4.1','coverage':'部分上市股票'});return
   if p.path=='/api/stocks':
    code=parse_qs(p.query).get('code',[''])[0]
    if code not in NAMES:self.send_json({'error':'不支援此代碼，目前僅部分上市股票'},400);return
