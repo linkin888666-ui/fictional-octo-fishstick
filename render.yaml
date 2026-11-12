@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: bruce-stock-radar
+    runtime: python
+    plan: free
+    buildCommand: "echo Ready"
+    startCommand: "python server.py"
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
