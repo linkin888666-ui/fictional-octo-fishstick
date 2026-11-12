@@ -11,7 +11,7 @@ CACHE={}
 CACHE_LOCK=threading.Lock()
 CACHE_SECONDS=900
 TZ_TAIPEI=timezone(timedelta(hours=8))
-NAMES={'1802':'台玻','1815':'富喬','1303':'南亞','2330':'台積電','2317':'鴻海','2409':'友達','3481':'群創'}
+NAMES={'6456':'GIS-KY','5340':'建榮','5475':'德宏','8358':'金居','1802':'台玻','1815':'富喬','1303':'南亞','2330':'台積電','2317':'鴻海','2409':'友達','3481':'群創'}
 def ema(a,n):
  out=[];v=a[0];k=2/(n+1)
  for x in a:v=v+(x-v)*k;out.append(v)
@@ -36,13 +36,38 @@ def signal_metrics(close, volume, ma5, ma20, r5, r10, vr, dif, sig):
  if close[-1]<ma20:alerts.append('跌破20MA')
  return {'alerts':alerts,'breakout20':breakout,'distribution_warning':distribution,'overheating':overheating,'reference_high20':round(recent_high,2),'reference_low20':round(recent_low,2),'signal_note':'訊號僅依日線規則判定，不是盤中點火或主力出貨證據'}
 
-def get(code):
+def parse_otc_month(code,y,mm):
+ # TPEx official monthly trading records, ROC year/month
+ roc=f'{y-1911}/{mm:02d}'
+ urls=[f'https://www.tpex.org.tw/www/zh-tw/afterTrading/tradingStock?date={roc}/01&code={code}&response=json',f'https://www.tpex.org.tw/web/stock/aftertrading/daily_trading_info/st43_result.php?d={roc}&stkno={code}']
+ for url in urls:
+  try:
+   with urlopen(Request(url,headers={'User-Agent':'Mozilla/5.0','Accept':'application/json'}),timeout=12) as res:payload=json.load(res)
+   if isinstance(payload,dict):
+    for block in ([payload]+[x for x in payload.get('tables',[]) if isinstance(x,dict)]):
+     records=block.get('data',[])
+     if not isinstance(records,list):continue
+     out={}
+     for row in records:
+      try:
+       parts=str(row[0]).split('/');yy,mo,dd=map(int,parts)
+       if yy<1911:yy+=1911
+       dt=f'{yy:04d}-{mo:02d}-{dd:02d}'
+       close=float(str(row[6]).replace(',',''))
+       volume=float(str(row[1]).replace(',',''))
+       out[dt]={'date':dt,'close':close,'volume':volume}
+      except (IndexError,ValueError,TypeError):continue
+     if out:return out
+  except (URLError,HTTPError,TimeoutError,ValueError,KeyError):continue
+ return {}
+def get(code,market='auto'):
  now=datetime.now(TZ_TAIPEI)
  with CACHE_LOCK:
-  cached=CACHE.get(code)
+  cache_key=code+':'+market
+  cached=CACHE.get(cache_key)
   if cached and time.time()-cached['at']<CACHE_SECONDS:
    return dict(cached['value'],cache='hit')
- today=now.date();rows={};failed_months=[]
+ today=now.date();rows={};failed_months=[];source='TWSE';detected_market='TWSE'
  for k in range(5):
   m=today.year*12+today.month-1-k;y,mm=divmod(m,12);mm+=1
   url=f'https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date={y}{mm:02d}01&stockNo={code}&response=json'
@@ -62,8 +87,15 @@ def get(code):
     yy,mo,dd=map(int,r[0].split('/'));dt=f'{yy+1911:04d}-{mo:02d}-{dd:02d}'
     rows[dt]={'date':dt,'close':float(r[6].replace(',','')),'volume':float(r[1].replace(',',''))}
    except (ValueError,IndexError,TypeError):continue
+ if len(rows)<35 and market!='twse':
+  otc_rows={}
+  for k in range(5):
+   m=today.year*12+today.month-1-k;y,mm=divmod(m,12);mm+=1
+   otc_rows.update(parse_otc_month(code,y,mm))
+  if len(otc_rows)>=35:
+   rows=otc_rows;source='TPEx';detected_market='TPEx'
  a=[rows[x] for x in sorted(rows)]
- if len(a)<35:raise ValueError(f'無法取得足夠的 TWSE 上市日線；可能為上櫃股票、代碼無效或官方資料暫時無法取得。歷史資料不足（{len(a)}筆），下載失敗月份：{", ".join(failed_months) or "無"}')
+ if len(a)<35:raise ValueError(f'TWSE 與 TPEx 官方日線均無足夠資料；可能代碼無效、資料格式異動或官方服務暫時無法取得。歷史資料不足（{len(a)}筆），下載失敗月份：{", ".join(failed_months) or "無"}')
  c=[r['close'] for r in a];v=[r['volume'] for r in a]
  ma5=sum(c[-5:])/5;ma20=sum(c[-20:])/20;old20=sum(c[-21:-1])/20
  dif=[x-y for x,y in zip(ema(c,12),ema(c,26))];sig=ema(dif,9)
@@ -75,16 +107,16 @@ def get(code):
  if r5>90:tags.append('RSI5過熱')
  if r10>=90:tags.append('RSI10嚴重過熱')
  if vr>1.2:tags.append('量能放大')
- result={'code':code,'name':NAMES.get(code,code),'date':a[-1]['date'],'close':c[-1],'change':round((c[-1]/c[-2]-1)*100,2),'ma5':round(ma5,2),'ma20':round(ma20,2),'rsi5':r5,'rsi10':r10,'dif':round(dif[-1],3),'macd_hist':round(dif[-1]-sig[-1],3),'volume_ratio':round(vr,2),'score':max(0,min(100,score)),'tags':tags,'series':c[-30:],'data_source':'TWSE STOCK_DAY','market':'TWSE','fetched_at':now.isoformat(),'cache':'miss','history_days':len(a),'partial_month_errors':failed_months,'trend_score':max(0,min(100,50+(25 if c[-1]>ma20 else -25)+(25 if ma5>ma20 else -25))),'momentum_score':max(0,min(100,50+(25 if dif[-1]>sig[-1] else -25)+(15 if vr>1.2 else 0))),'risk_level':('高' if r5>90 or r10>=90 or abs((c[-1]/ma20-1)*100)>20 else '中' if r5>80 or vr>3 else '一般'),'support20':round(min(c[-20:]),2),'resistance20':round(max(c[-20:]),2)}
+ result={'code':code,'name':NAMES.get(code,code),'date':a[-1]['date'],'close':c[-1],'change':round((c[-1]/c[-2]-1)*100,2),'ma5':round(ma5,2),'ma20':round(ma20,2),'rsi5':r5,'rsi10':r10,'dif':round(dif[-1],3),'macd_hist':round(dif[-1]-sig[-1],3),'volume_ratio':round(vr,2),'score':max(0,min(100,score)),'tags':tags,'series':c[-30:],'data_source':source+' official daily','market':detected_market,'fetched_at':now.isoformat(),'cache':'miss','history_days':len(a),'partial_month_errors':failed_months,'trend_score':max(0,min(100,50+(25 if c[-1]>ma20 else -25)+(25 if ma5>ma20 else -25))),'momentum_score':max(0,min(100,50+(25 if dif[-1]>sig[-1] else -25)+(15 if vr>1.2 else 0))),'risk_level':('高' if r5>90 or r10>=90 or abs((c[-1]/ma20-1)*100)>20 else '中' if r5>80 or vr>3 else '一般'),'support20':round(min(c[-20:]),2),'resistance20':round(max(c[-20:]),2)}
  result.update(signal_metrics(c,v,ma5,ma20,r5,r10,vr,dif[-1],sig[-1]))
- with CACHE_LOCK:CACHE[code]={'at':time.time(),'value':result}
+ with CACHE_LOCK:CACHE[cache_key]={'at':time.time(),'value':result}
  return result
 class H(SimpleHTTPRequestHandler):
  def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(ROOT),**kwargs)
  def do_GET(self):
   p=urlparse(self.path)
-  if p.path=='/health':self.send_json({'ok':True,'version':'4.4','server_time':datetime.now(TZ_TAIPEI).isoformat()});return
-  if p.path=='/api/catalog':self.send_json({'codes':NAMES,'version':'4.4','coverage':'部分上市股票'});return
+  if p.path=='/health':self.send_json({'ok':True,'version':'4.6','server_time':datetime.now(TZ_TAIPEI).isoformat()});return
+  if p.path=='/api/catalog':self.send_json({'codes':NAMES,'version':'4.4','coverage':'TWSE + TPEx official daily (best effort)'});return
   if p.path=='/api/stocks':
    code=parse_qs(p.query).get('code',[''])[0]
    if not (len(code)==4 and code.isascii() and code.isdigit()):self.send_json({'error':'請輸入4位數上市股票代碼','code':code},400);return
