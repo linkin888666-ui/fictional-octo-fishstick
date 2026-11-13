@@ -1,0 +1,7969 @@
+{
+  "fetched_at": "2026-11-13T05:00:19.570158+00:00",
+  "sources": {
+    "TWSE": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+    "TPEx": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O"
+  },
+  "stocks": {
+    "1101": {
+      "name": "台泥",
+      "market": "TWSE"
+    },
+    "1102": {
+      "name": "亞泥",
+      "market": "TWSE"
+    },
+    "1103": {
+      "name": "嘉泥",
+      "market": "TWSE"
+    },
+    "1104": {
+      "name": "環泥",
+      "market": "TWSE"
+    },
+    "1108": {
+      "name": "幸福",
+      "market": "TWSE"
+    },
+    "1109": {
+      "name": "信大",
+      "market": "TWSE"
+    },
+    "1110": {
+      "name": "東泥",
+      "market": "TWSE"
+    },
+    "1201": {
+      "name": "味全",
+      "market": "TWSE"
+    },
+    "1203": {
+      "name": "味王",
+      "market": "TWSE"
+    },
+    "1210": {
+      "name": "大成",
+      "market": "TWSE"
+    },
+    "1213": {
+      "name": "大飲",
+      "market": "TWSE"
+    },
+    "1215": {
+      "name": "卜蜂",
+      "market": "TWSE"
+    },
+    "1216": {
+      "name": "統一",
+      "market": "TWSE"
+    },
+    "1217": {
+      "name": "愛之味",
+      "market": "TWSE"
+    },
+    "1218": {
+      "name": "泰山",
+      "market": "TWSE"
+    },
+    "1219": {
+      "name": "福壽",
+      "market": "TWSE"
+    },
+    "1220": {
+      "name": "台榮",
+      "market": "TWSE"
+    },
+    "1225": {
+      "name": "福懋油",
+      "market": "TWSE"
+    },
+    "1227": {
+      "name": "佳格",
+      "market": "TWSE"
+    },
+    "1229": {
+      "name": "聯華",
+      "market": "TWSE"
+    },
+    "1231": {
+      "name": "聯華食",
+      "market": "TWSE"
+    },
+    "1232": {
+      "name": "大統益",
+      "market": "TWSE"
+    },
+    "1233": {
+      "name": "天仁",
+      "market": "TWSE"
+    },
+    "1234": {
+      "name": "黑松",
+      "market": "TWSE"
+    },
+    "1235": {
+      "name": "興泰",
+      "market": "TWSE"
+    },
+    "1236": {
+      "name": "宏亞",
+      "market": "TWSE"
+    },
+    "1256": {
+      "name": "鮮活果汁-KY",
+      "market": "TWSE"
+    },
+    "1301": {
+      "name": "台塑",
+      "market": "TWSE"
+    },
+    "1303": {
+      "name": "南亞",
+      "market": "TWSE"
+    },
+    "1304": {
+      "name": "台聚",
+      "market": "TWSE"
+    },
+    "1305": {
+      "name": "華夏",
+      "market": "TWSE"
+    },
+    "1307": {
+      "name": "三芳",
+      "market": "TWSE"
+    },
+    "1308": {
+      "name": "亞聚",
+      "market": "TWSE"
+    },
+    "1309": {
+      "name": "台達化",
+      "market": "TWSE"
+    },
+    "1310": {
+      "name": "台苯",
+      "market": "TWSE"
+    },
+    "1312": {
+      "name": "國喬",
+      "market": "TWSE"
+    },
+    "1313": {
+      "name": "聯成",
+      "market": "TWSE"
+    },
+    "1314": {
+      "name": "中石化",
+      "market": "TWSE"
+    },
+    "1315": {
+      "name": "達新",
+      "market": "TWSE"
+    },
+    "1316": {
+      "name": "上曜",
+      "market": "TWSE"
+    },
+    "1319": {
+      "name": "東陽",
+      "market": "TWSE"
+    },
+    "1321": {
+      "name": "大洋",
+      "market": "TWSE"
+    },
+    "1323": {
+      "name": "永裕",
+      "market": "TWSE"
+    },
+    "1324": {
+      "name": "地球",
+      "market": "TWSE"
+    },
+    "1325": {
+      "name": "恆大",
+      "market": "TWSE"
+    },
+    "1326": {
+      "name": "台化",
+      "market": "TWSE"
+    },
+    "1337": {
+      "name": "再生-KY",
+      "market": "TWSE"
+    },
+    "1338": {
+      "name": "廣華-KY",
+      "market": "TWSE"
+    },
+    "1339": {
+      "name": "昭輝",
+      "market": "TWSE"
+    },
+    "1340": {
+      "name": "勝悅-KY",
+      "market": "TWSE"
+    },
+    "1341": {
+      "name": "富林-KY",
+      "market": "TWSE"
+    },
+    "1342": {
+      "name": "八貫",
+      "market": "TWSE"
+    },
+    "1402": {
+      "name": "遠東新",
+      "market": "TWSE"
+    },
+    "1409": {
+      "name": "新纖",
+      "market": "TWSE"
+    },
+    "1410": {
+      "name": "南染",
+      "market": "TWSE"
+    },
+    "1413": {
+      "name": "宏洲",
+      "market": "TWSE"
+    },
+    "1414": {
+      "name": "東和",
+      "market": "TWSE"
+    },
+    "1416": {
+      "name": "廣豐",
+      "market": "TWSE"
+    },
+    "1417": {
+      "name": "嘉裕",
+      "market": "TWSE"
+    },
+    "1418": {
+      "name": "東華",
+      "market": "TWSE"
+    },
+    "1419": {
+      "name": "新紡",
+      "market": "TWSE"
+    },
+    "1423": {
+      "name": "利華",
+      "market": "TWSE"
+    },
+    "1432": {
+      "name": "大魯閣",
+      "market": "TWSE"
+    },
+    "1434": {
+      "name": "福懋",
+      "market": "TWSE"
+    },
+    "1435": {
+      "name": "中福",
+      "market": "TWSE"
+    },
+    "1436": {
+      "name": "華友聯",
+      "market": "TWSE"
+    },
+    "1437": {
+      "name": "勤益控",
+      "market": "TWSE"
+    },
+    "1438": {
+      "name": "三地開發",
+      "market": "TWSE"
+    },
+    "1439": {
+      "name": "雋揚",
+      "market": "TWSE"
+    },
+    "1440": {
+      "name": "南紡",
+      "market": "TWSE"
+    },
+    "1441": {
+      "name": "大東",
+      "market": "TWSE"
+    },
+    "1442": {
+      "name": "名軒",
+      "market": "TWSE"
+    },
+    "1443": {
+      "name": "立益物流",
+      "market": "TWSE"
+    },
+    "1444": {
+      "name": "力麗",
+      "market": "TWSE"
+    },
+    "1445": {
+      "name": "大宇",
+      "market": "TWSE"
+    },
+    "1446": {
+      "name": "宏和",
+      "market": "TWSE"
+    },
+    "1447": {
+      "name": "力鵬",
+      "market": "TWSE"
+    },
+    "1449": {
+      "name": "佳和",
+      "market": "TWSE"
+    },
+    "1451": {
+      "name": "年興",
+      "market": "TWSE"
+    },
+    "1452": {
+      "name": "宏益",
+      "market": "TWSE"
+    },
+    "1453": {
+      "name": "大將",
+      "market": "TWSE"
+    },
+    "1454": {
+      "name": "台富",
+      "market": "TWSE"
+    },
+    "1455": {
+      "name": "集盛",
+      "market": "TWSE"
+    },
+    "1456": {
+      "name": "怡華",
+      "market": "TWSE"
+    },
+    "1457": {
+      "name": "宜進",
+      "market": "TWSE"
+    },
+    "1459": {
+      "name": "聯發",
+      "market": "TWSE"
+    },
+    "1460": {
+      "name": "宏遠",
+      "market": "TWSE"
+    },
+    "1463": {
+      "name": "強盛新",
+      "market": "TWSE"
+    },
+    "1464": {
+      "name": "得力",
+      "market": "TWSE"
+    },
+    "1465": {
+      "name": "偉全",
+      "market": "TWSE"
+    },
+    "1466": {
+      "name": "聚隆",
+      "market": "TWSE"
+    },
+    "1467": {
+      "name": "南緯",
+      "market": "TWSE"
+    },
+    "1468": {
+      "name": "昶和",
+      "market": "TWSE"
+    },
+    "1470": {
+      "name": "大統新創",
+      "market": "TWSE"
+    },
+    "1471": {
+      "name": "首利",
+      "market": "TWSE"
+    },
+    "1472": {
+      "name": "三洋實業",
+      "market": "TWSE"
+    },
+    "1473": {
+      "name": "台南",
+      "market": "TWSE"
+    },
+    "1474": {
+      "name": "弘裕",
+      "market": "TWSE"
+    },
+    "1475": {
+      "name": "業旺",
+      "market": "TWSE"
+    },
+    "1476": {
+      "name": "儒鴻",
+      "market": "TWSE"
+    },
+    "1477": {
+      "name": "聚陽",
+      "market": "TWSE"
+    },
+    "1503": {
+      "name": "士電",
+      "market": "TWSE"
+    },
+    "1504": {
+      "name": "東元",
+      "market": "TWSE"
+    },
+    "1506": {
+      "name": "正道",
+      "market": "TWSE"
+    },
+    "1512": {
+      "name": "瑞利",
+      "market": "TWSE"
+    },
+    "1513": {
+      "name": "中興電",
+      "market": "TWSE"
+    },
+    "1514": {
+      "name": "亞力",
+      "market": "TWSE"
+    },
+    "1515": {
+      "name": "力山",
+      "market": "TWSE"
+    },
+    "1516": {
+      "name": "川飛",
+      "market": "TWSE"
+    },
+    "1517": {
+      "name": "利奇",
+      "market": "TWSE"
+    },
+    "1519": {
+      "name": "華城",
+      "market": "TWSE"
+    },
+    "1521": {
+      "name": "大億",
+      "market": "TWSE"
+    },
+    "1522": {
+      "name": "堤維西",
+      "market": "TWSE"
+    },
+    "1524": {
+      "name": "耿鼎",
+      "market": "TWSE"
+    },
+    "1525": {
+      "name": "江申",
+      "market": "TWSE"
+    },
+    "1526": {
+      "name": "日馳",
+      "market": "TWSE"
+    },
+    "1527": {
+      "name": "鑽全",
+      "market": "TWSE"
+    },
+    "1528": {
+      "name": "恩德",
+      "market": "TWSE"
+    },
+    "1529": {
+      "name": "樂事綠能",
+      "market": "TWSE"
+    },
+    "1530": {
+      "name": "亞崴",
+      "market": "TWSE"
+    },
+    "1531": {
+      "name": "高林股",
+      "market": "TWSE"
+    },
+    "1532": {
+      "name": "勤美",
+      "market": "TWSE"
+    },
+    "1533": {
+      "name": "車王電",
+      "market": "TWSE"
+    },
+    "1535": {
+      "name": "中宇",
+      "market": "TWSE"
+    },
+    "1536": {
+      "name": "和大",
+      "market": "TWSE"
+    },
+    "1537": {
+      "name": "廣隆",
+      "market": "TWSE"
+    },
+    "1538": {
+      "name": "正峰",
+      "market": "TWSE"
+    },
+    "1539": {
+      "name": "巨庭",
+      "market": "TWSE"
+    },
+    "1540": {
+      "name": "喬福",
+      "market": "TWSE"
+    },
+    "1541": {
+      "name": "錩泰",
+      "market": "TWSE"
+    },
+    "1558": {
+      "name": "伸興",
+      "market": "TWSE"
+    },
+    "1560": {
+      "name": "中砂",
+      "market": "TWSE"
+    },
+    "1563": {
+      "name": "巧新",
+      "market": "TWSE"
+    },
+    "1568": {
+      "name": "倉佑",
+      "market": "TWSE"
+    },
+    "1582": {
+      "name": "信錦",
+      "market": "TWSE"
+    },
+    "1583": {
+      "name": "程泰",
+      "market": "TWSE"
+    },
+    "1587": {
+      "name": "吉茂",
+      "market": "TWSE"
+    },
+    "1589": {
+      "name": "永冠-KY",
+      "market": "TWSE"
+    },
+    "1590": {
+      "name": "亞德客-KY",
+      "market": "TWSE"
+    },
+    "1597": {
+      "name": "直得",
+      "market": "TWSE"
+    },
+    "1598": {
+      "name": "岱宇",
+      "market": "TWSE"
+    },
+    "1603": {
+      "name": "華電",
+      "market": "TWSE"
+    },
+    "1604": {
+      "name": "聲寶",
+      "market": "TWSE"
+    },
+    "1605": {
+      "name": "華新",
+      "market": "TWSE"
+    },
+    "1608": {
+      "name": "華榮",
+      "market": "TWSE"
+    },
+    "1609": {
+      "name": "大亞",
+      "market": "TWSE"
+    },
+    "1611": {
+      "name": "中電",
+      "market": "TWSE"
+    },
+    "1612": {
+      "name": "宏泰",
+      "market": "TWSE"
+    },
+    "1614": {
+      "name": "三洋電",
+      "market": "TWSE"
+    },
+    "1615": {
+      "name": "大山",
+      "market": "TWSE"
+    },
+    "1616": {
+      "name": "億泰",
+      "market": "TWSE"
+    },
+    "1617": {
+      "name": "榮星",
+      "market": "TWSE"
+    },
+    "1618": {
+      "name": "合機",
+      "market": "TWSE"
+    },
+    "1623": {
+      "name": "大東電",
+      "market": "TWSE"
+    },
+    "1626": {
+      "name": "艾美特-KY",
+      "market": "TWSE"
+    },
+    "1702": {
+      "name": "南僑",
+      "market": "TWSE"
+    },
+    "1707": {
+      "name": "葡萄王",
+      "market": "TWSE"
+    },
+    "1708": {
+      "name": "東鹼",
+      "market": "TWSE"
+    },
+    "1709": {
+      "name": "和益",
+      "market": "TWSE"
+    },
+    "1710": {
+      "name": "東聯",
+      "market": "TWSE"
+    },
+    "1711": {
+      "name": "永光",
+      "market": "TWSE"
+    },
+    "1712": {
+      "name": "興農",
+      "market": "TWSE"
+    },
+    "1713": {
+      "name": "國化",
+      "market": "TWSE"
+    },
+    "1714": {
+      "name": "和桐",
+      "market": "TWSE"
+    },
+    "1717": {
+      "name": "長興",
+      "market": "TWSE"
+    },
+    "1718": {
+      "name": "中纖",
+      "market": "TWSE"
+    },
+    "1720": {
+      "name": "生達",
+      "market": "TWSE"
+    },
+    "1721": {
+      "name": "國慶科技",
+      "market": "TWSE"
+    },
+    "1722": {
+      "name": "台肥",
+      "market": "TWSE"
+    },
+    "1723": {
+      "name": "中碳",
+      "market": "TWSE"
+    },
+    "1725": {
+      "name": "元禎",
+      "market": "TWSE"
+    },
+    "1726": {
+      "name": "永記",
+      "market": "TWSE"
+    },
+    "1727": {
+      "name": "中華化",
+      "market": "TWSE"
+    },
+    "1730": {
+      "name": "花仙子",
+      "market": "TWSE"
+    },
+    "1731": {
+      "name": "美吾華",
+      "market": "TWSE"
+    },
+    "1732": {
+      "name": "毛寶",
+      "market": "TWSE"
+    },
+    "1733": {
+      "name": "五鼎",
+      "market": "TWSE"
+    },
+    "1734": {
+      "name": "杏輝",
+      "market": "TWSE"
+    },
+    "1735": {
+      "name": "日勝化",
+      "market": "TWSE"
+    },
+    "1736": {
+      "name": "喬山",
+      "market": "TWSE"
+    },
+    "1737": {
+      "name": "臺鹽",
+      "market": "TWSE"
+    },
+    "1752": {
+      "name": "南光",
+      "market": "TWSE"
+    },
+    "1760": {
+      "name": "寶齡富錦",
+      "market": "TWSE"
+    },
+    "1762": {
+      "name": "中化生",
+      "market": "TWSE"
+    },
+    "1773": {
+      "name": "勝一",
+      "market": "TWSE"
+    },
+    "1776": {
+      "name": "展宇",
+      "market": "TWSE"
+    },
+    "1783": {
+      "name": "和康生",
+      "market": "TWSE"
+    },
+    "1786": {
+      "name": "科妍",
+      "market": "TWSE"
+    },
+    "1789": {
+      "name": "神隆",
+      "market": "TWSE"
+    },
+    "1795": {
+      "name": "美時",
+      "market": "TWSE"
+    },
+    "1802": {
+      "name": "台玻",
+      "market": "TWSE"
+    },
+    "1805": {
+      "name": "寶徠",
+      "market": "TWSE"
+    },
+    "1806": {
+      "name": "冠軍",
+      "market": "TWSE"
+    },
+    "1808": {
+      "name": "潤隆",
+      "market": "TWSE"
+    },
+    "1809": {
+      "name": "中釉",
+      "market": "TWSE"
+    },
+    "1810": {
+      "name": "和成",
+      "market": "TWSE"
+    },
+    "1817": {
+      "name": "凱撒衛",
+      "market": "TWSE"
+    },
+    "1903": {
+      "name": "士紙",
+      "market": "TWSE"
+    },
+    "1904": {
+      "name": "正隆",
+      "market": "TWSE"
+    },
+    "1905": {
+      "name": "華紙",
+      "market": "TWSE"
+    },
+    "1906": {
+      "name": "寶隆",
+      "market": "TWSE"
+    },
+    "1907": {
+      "name": "永豐餘",
+      "market": "TWSE"
+    },
+    "1909": {
+      "name": "榮成",
+      "market": "TWSE"
+    },
+    "2002": {
+      "name": "中鋼",
+      "market": "TWSE"
+    },
+    "2006": {
+      "name": "東和鋼鐵",
+      "market": "TWSE"
+    },
+    "2007": {
+      "name": "燁興",
+      "market": "TWSE"
+    },
+    "2008": {
+      "name": "高興昌",
+      "market": "TWSE"
+    },
+    "2009": {
+      "name": "第一銅",
+      "market": "TWSE"
+    },
+    "2010": {
+      "name": "春源",
+      "market": "TWSE"
+    },
+    "2012": {
+      "name": "春雨",
+      "market": "TWSE"
+    },
+    "2013": {
+      "name": "中鋼構",
+      "market": "TWSE"
+    },
+    "2014": {
+      "name": "中鴻",
+      "market": "TWSE"
+    },
+    "2015": {
+      "name": "豐興",
+      "market": "TWSE"
+    },
+    "2017": {
+      "name": "官田鋼",
+      "market": "TWSE"
+    },
+    "2020": {
+      "name": "美亞",
+      "market": "TWSE"
+    },
+    "2022": {
+      "name": "聚亨",
+      "market": "TWSE"
+    },
+    "2023": {
+      "name": "燁輝",
+      "market": "TWSE"
+    },
+    "2024": {
+      "name": "志聯",
+      "market": "TWSE"
+    },
+    "2025": {
+      "name": "千興",
+      "market": "TWSE"
+    },
+    "2027": {
+      "name": "大成鋼",
+      "market": "TWSE"
+    },
+    "2028": {
+      "name": "威致",
+      "market": "TWSE"
+    },
+    "2029": {
+      "name": "盛餘",
+      "market": "TWSE"
+    },
+    "2030": {
+      "name": "彰源",
+      "market": "TWSE"
+    },
+    "2031": {
+      "name": "新光鋼",
+      "market": "TWSE"
+    },
+    "2032": {
+      "name": "新鋼",
+      "market": "TWSE"
+    },
+    "2033": {
+      "name": "佳大",
+      "market": "TWSE"
+    },
+    "2034": {
+      "name": "允強",
+      "market": "TWSE"
+    },
+    "2038": {
+      "name": "海光",
+      "market": "TWSE"
+    },
+    "2049": {
+      "name": "上銀",
+      "market": "TWSE"
+    },
+    "2059": {
+      "name": "川湖",
+      "market": "TWSE"
+    },
+    "2062": {
+      "name": "橋椿",
+      "market": "TWSE"
+    },
+    "2069": {
+      "name": "運錩",
+      "market": "TWSE"
+    },
+    "2072": {
+      "name": "世紀能源",
+      "market": "TWSE"
+    },
+    "2101": {
+      "name": "南港",
+      "market": "TWSE"
+    },
+    "2102": {
+      "name": "泰豐",
+      "market": "TWSE"
+    },
+    "2103": {
+      "name": "台橡",
+      "market": "TWSE"
+    },
+    "2104": {
+      "name": "國際中橡",
+      "market": "TWSE"
+    },
+    "2105": {
+      "name": "正新",
+      "market": "TWSE"
+    },
+    "2106": {
+      "name": "建大",
+      "market": "TWSE"
+    },
+    "2107": {
+      "name": "厚生",
+      "market": "TWSE"
+    },
+    "2108": {
+      "name": "南帝",
+      "market": "TWSE"
+    },
+    "2109": {
+      "name": "華豐",
+      "market": "TWSE"
+    },
+    "2114": {
+      "name": "鑫永銓",
+      "market": "TWSE"
+    },
+    "2115": {
+      "name": "六暉-KY",
+      "market": "TWSE"
+    },
+    "2201": {
+      "name": "裕隆",
+      "market": "TWSE"
+    },
+    "2204": {
+      "name": "中華",
+      "market": "TWSE"
+    },
+    "2206": {
+      "name": "三陽工業",
+      "market": "TWSE"
+    },
+    "2207": {
+      "name": "和泰車",
+      "market": "TWSE"
+    },
+    "2208": {
+      "name": "台船",
+      "market": "TWSE"
+    },
+    "2211": {
+      "name": "長榮鋼",
+      "market": "TWSE"
+    },
+    "2227": {
+      "name": "裕日車",
+      "market": "TWSE"
+    },
+    "2228": {
+      "name": "劍麟",
+      "market": "TWSE"
+    },
+    "2231": {
+      "name": "為升",
+      "market": "TWSE"
+    },
+    "2233": {
+      "name": "宇隆",
+      "market": "TWSE"
+    },
+    "2236": {
+      "name": "百達-KY",
+      "market": "TWSE"
+    },
+    "2237": {
+      "name": "華德動能-創",
+      "market": "TWSE"
+    },
+    "2239": {
+      "name": "英利-KY",
+      "market": "TWSE"
+    },
+    "2241": {
+      "name": "艾姆勒",
+      "market": "TWSE"
+    },
+    "2243": {
+      "name": "宏旭-KY",
+      "market": "TWSE"
+    },
+    "2247": {
+      "name": "汎德永業",
+      "market": "TWSE"
+    },
+    "2248": {
+      "name": "華勝-KY",
+      "market": "TWSE"
+    },
+    "2250": {
+      "name": "IKKA-KY",
+      "market": "TWSE"
+    },
+    "2254": {
+      "name": "巨鎧精密-創",
+      "market": "TWSE"
+    },
+    "2258": {
+      "name": "鴻華先進-創",
+      "market": "TWSE"
+    },
+    "2301": {
+      "name": "光寶科",
+      "market": "TWSE"
+    },
+    "2302": {
+      "name": "麗正",
+      "market": "TWSE"
+    },
+    "2303": {
+      "name": "聯電",
+      "market": "TWSE"
+    },
+    "2305": {
+      "name": "全友",
+      "market": "TWSE"
+    },
+    "2308": {
+      "name": "台達電",
+      "market": "TWSE"
+    },
+    "2312": {
+      "name": "金寶",
+      "market": "TWSE"
+    },
+    "2313": {
+      "name": "華通",
+      "market": "TWSE"
+    },
+    "2314": {
+      "name": "台揚",
+      "market": "TWSE"
+    },
+    "2316": {
+      "name": "楠梓電",
+      "market": "TWSE"
+    },
+    "2317": {
+      "name": "鴻海",
+      "market": "TWSE"
+    },
+    "2321": {
+      "name": "東訊",
+      "market": "TWSE"
+    },
+    "2323": {
+      "name": "中環",
+      "market": "TWSE"
+    },
+    "2324": {
+      "name": "仁寶",
+      "market": "TWSE"
+    },
+    "2327": {
+      "name": "國巨*",
+      "market": "TWSE"
+    },
+    "2328": {
+      "name": "廣宇",
+      "market": "TWSE"
+    },
+    "2329": {
+      "name": "華泰",
+      "market": "TWSE"
+    },
+    "2330": {
+      "name": "台積電",
+      "market": "TWSE"
+    },
+    "2331": {
+      "name": "精英",
+      "market": "TWSE"
+    },
+    "2332": {
+      "name": "友訊",
+      "market": "TWSE"
+    },
+    "2337": {
+      "name": "旺宏",
+      "market": "TWSE"
+    },
+    "2338": {
+      "name": "光罩",
+      "market": "TWSE"
+    },
+    "2340": {
+      "name": "台亞",
+      "market": "TWSE"
+    },
+    "2342": {
+      "name": "茂矽",
+      "market": "TWSE"
+    },
+    "2344": {
+      "name": "華邦電",
+      "market": "TWSE"
+    },
+    "2345": {
+      "name": "智邦",
+      "market": "TWSE"
+    },
+    "2347": {
+      "name": "聯強",
+      "market": "TWSE"
+    },
+    "2348": {
+      "name": "海悅",
+      "market": "TWSE"
+    },
+    "2349": {
+      "name": "錸德",
+      "market": "TWSE"
+    },
+    "2351": {
+      "name": "順德",
+      "market": "TWSE"
+    },
+    "2352": {
+      "name": "佳世達",
+      "market": "TWSE"
+    },
+    "2353": {
+      "name": "宏碁",
+      "market": "TWSE"
+    },
+    "2354": {
+      "name": "鴻準",
+      "market": "TWSE"
+    },
+    "2355": {
+      "name": "敬鵬",
+      "market": "TWSE"
+    },
+    "2356": {
+      "name": "英業達",
+      "market": "TWSE"
+    },
+    "2357": {
+      "name": "華碩",
+      "market": "TWSE"
+    },
+    "2359": {
+      "name": "所羅門",
+      "market": "TWSE"
+    },
+    "2360": {
+      "name": "致茂",
+      "market": "TWSE"
+    },
+    "2362": {
+      "name": "藍天",
+      "market": "TWSE"
+    },
+    "2363": {
+      "name": "矽統",
+      "market": "TWSE"
+    },
+    "2364": {
+      "name": "倫飛",
+      "market": "TWSE"
+    },
+    "2365": {
+      "name": "昆盈",
+      "market": "TWSE"
+    },
+    "2367": {
+      "name": "燿華",
+      "market": "TWSE"
+    },
+    "2368": {
+      "name": "金像電",
+      "market": "TWSE"
+    },
+    "2369": {
+      "name": "菱生",
+      "market": "TWSE"
+    },
+    "2371": {
+      "name": "大同",
+      "market": "TWSE"
+    },
+    "2373": {
+      "name": "震旦行",
+      "market": "TWSE"
+    },
+    "2374": {
+      "name": "佳能",
+      "market": "TWSE"
+    },
+    "2375": {
+      "name": "凱美",
+      "market": "TWSE"
+    },
+    "2376": {
+      "name": "技嘉",
+      "market": "TWSE"
+    },
+    "2377": {
+      "name": "微星",
+      "market": "TWSE"
+    },
+    "2379": {
+      "name": "瑞昱",
+      "market": "TWSE"
+    },
+    "2380": {
+      "name": "虹光",
+      "market": "TWSE"
+    },
+    "2382": {
+      "name": "廣達",
+      "market": "TWSE"
+    },
+    "2383": {
+      "name": "台光電",
+      "market": "TWSE"
+    },
+    "2385": {
+      "name": "群光",
+      "market": "TWSE"
+    },
+    "2387": {
+      "name": "精元",
+      "market": "TWSE"
+    },
+    "2388": {
+      "name": "威盛",
+      "market": "TWSE"
+    },
+    "2390": {
+      "name": "云辰",
+      "market": "TWSE"
+    },
+    "2392": {
+      "name": "正崴",
+      "market": "TWSE"
+    },
+    "2393": {
+      "name": "億光",
+      "market": "TWSE"
+    },
+    "2395": {
+      "name": "研華",
+      "market": "TWSE"
+    },
+    "2397": {
+      "name": "友通",
+      "market": "TWSE"
+    },
+    "2399": {
+      "name": "映泰",
+      "market": "TWSE"
+    },
+    "2401": {
+      "name": "凌陽",
+      "market": "TWSE"
+    },
+    "2402": {
+      "name": "毅嘉",
+      "market": "TWSE"
+    },
+    "2404": {
+      "name": "漢唐",
+      "market": "TWSE"
+    },
+    "2405": {
+      "name": "輔信",
+      "market": "TWSE"
+    },
+    "2406": {
+      "name": "國碩",
+      "market": "TWSE"
+    },
+    "2408": {
+      "name": "南亞科",
+      "market": "TWSE"
+    },
+    "2409": {
+      "name": "友達",
+      "market": "TWSE"
+    },
+    "2412": {
+      "name": "中華電",
+      "market": "TWSE"
+    },
+    "2413": {
+      "name": "環科",
+      "market": "TWSE"
+    },
+    "2414": {
+      "name": "精技",
+      "market": "TWSE"
+    },
+    "2415": {
+      "name": "錩新",
+      "market": "TWSE"
+    },
+    "2417": {
+      "name": "圓剛",
+      "market": "TWSE"
+    },
+    "2419": {
+      "name": "仲琦",
+      "market": "TWSE"
+    },
+    "2420": {
+      "name": "新巨",
+      "market": "TWSE"
+    },
+    "2421": {
+      "name": "建準",
+      "market": "TWSE"
+    },
+    "2423": {
+      "name": "固緯",
+      "market": "TWSE"
+    },
+    "2424": {
+      "name": "隴華",
+      "market": "TWSE"
+    },
+    "2425": {
+      "name": "承啟",
+      "market": "TWSE"
+    },
+    "2426": {
+      "name": "鼎元",
+      "market": "TWSE"
+    },
+    "2427": {
+      "name": "三商電",
+      "market": "TWSE"
+    },
+    "2428": {
+      "name": "興勤",
+      "market": "TWSE"
+    },
+    "2429": {
+      "name": "銘旺科",
+      "market": "TWSE"
+    },
+    "2430": {
+      "name": "燦坤",
+      "market": "TWSE"
+    },
+    "2431": {
+      "name": "聯昌",
+      "market": "TWSE"
+    },
+    "2432": {
+      "name": "倚天酷碁-創",
+      "market": "TWSE"
+    },
+    "2433": {
+      "name": "互盛電",
+      "market": "TWSE"
+    },
+    "2434": {
+      "name": "統懋",
+      "market": "TWSE"
+    },
+    "2436": {
+      "name": "偉詮電",
+      "market": "TWSE"
+    },
+    "2438": {
+      "name": "翔耀",
+      "market": "TWSE"
+    },
+    "2439": {
+      "name": "美律",
+      "market": "TWSE"
+    },
+    "2440": {
+      "name": "太空梭",
+      "market": "TWSE"
+    },
+    "2441": {
+      "name": "超豐",
+      "market": "TWSE"
+    },
+    "2442": {
+      "name": "新美齊",
+      "market": "TWSE"
+    },
+    "2444": {
+      "name": "兆勁",
+      "market": "TWSE"
+    },
+    "2449": {
+      "name": "京元電子",
+      "market": "TWSE"
+    },
+    "2450": {
+      "name": "神腦",
+      "market": "TWSE"
+    },
+    "2451": {
+      "name": "創見",
+      "market": "TWSE"
+    },
+    "2453": {
+      "name": "凌群",
+      "market": "TWSE"
+    },
+    "2454": {
+      "name": "聯發科",
+      "market": "TWSE"
+    },
+    "2455": {
+      "name": "全新",
+      "market": "TWSE"
+    },
+    "2457": {
+      "name": "飛宏",
+      "market": "TWSE"
+    },
+    "2458": {
+      "name": "義隆",
+      "market": "TWSE"
+    },
+    "2459": {
+      "name": "敦吉",
+      "market": "TWSE"
+    },
+    "2460": {
+      "name": "建通",
+      "market": "TWSE"
+    },
+    "2461": {
+      "name": "光群雷",
+      "market": "TWSE"
+    },
+    "2462": {
+      "name": "良得電",
+      "market": "TWSE"
+    },
+    "2464": {
+      "name": "盟立",
+      "market": "TWSE"
+    },
+    "2465": {
+      "name": "麗臺",
+      "market": "TWSE"
+    },
+    "2466": {
+      "name": "冠西電",
+      "market": "TWSE"
+    },
+    "2467": {
+      "name": "志聖",
+      "market": "TWSE"
+    },
+    "2468": {
+      "name": "華經",
+      "market": "TWSE"
+    },
+    "2471": {
+      "name": "資通",
+      "market": "TWSE"
+    },
+    "2472": {
+      "name": "立隆電",
+      "market": "TWSE"
+    },
+    "2474": {
+      "name": "可成",
+      "market": "TWSE"
+    },
+    "2476": {
+      "name": "鉅祥",
+      "market": "TWSE"
+    },
+    "2477": {
+      "name": "美隆電",
+      "market": "TWSE"
+    },
+    "2478": {
+      "name": "大毅",
+      "market": "TWSE"
+    },
+    "2480": {
+      "name": "敦陽科",
+      "market": "TWSE"
+    },
+    "2481": {
+      "name": "強茂",
+      "market": "TWSE"
+    },
+    "2482": {
+      "name": "連宇",
+      "market": "TWSE"
+    },
+    "2483": {
+      "name": "百容",
+      "market": "TWSE"
+    },
+    "2484": {
+      "name": "希華",
+      "market": "TWSE"
+    },
+    "2485": {
+      "name": "兆赫",
+      "market": "TWSE"
+    },
+    "2486": {
+      "name": "一詮",
+      "market": "TWSE"
+    },
+    "2488": {
+      "name": "漢平",
+      "market": "TWSE"
+    },
+    "2489": {
+      "name": "瑞軒",
+      "market": "TWSE"
+    },
+    "2491": {
+      "name": "吉祥全",
+      "market": "TWSE"
+    },
+    "2492": {
+      "name": "華新科",
+      "market": "TWSE"
+    },
+    "2493": {
+      "name": "揚博",
+      "market": "TWSE"
+    },
+    "2495": {
+      "name": "普安",
+      "market": "TWSE"
+    },
+    "2496": {
+      "name": "卓越",
+      "market": "TWSE"
+    },
+    "2497": {
+      "name": "怡利電",
+      "market": "TWSE"
+    },
+    "2498": {
+      "name": "宏達電",
+      "market": "TWSE"
+    },
+    "2501": {
+      "name": "國建",
+      "market": "TWSE"
+    },
+    "2504": {
+      "name": "國產",
+      "market": "TWSE"
+    },
+    "2505": {
+      "name": "國揚",
+      "market": "TWSE"
+    },
+    "2506": {
+      "name": "太設",
+      "market": "TWSE"
+    },
+    "2509": {
+      "name": "全坤建",
+      "market": "TWSE"
+    },
+    "2511": {
+      "name": "太子",
+      "market": "TWSE"
+    },
+    "2514": {
+      "name": "龍邦",
+      "market": "TWSE"
+    },
+    "2515": {
+      "name": "中工",
+      "market": "TWSE"
+    },
+    "2516": {
+      "name": "新建",
+      "market": "TWSE"
+    },
+    "2520": {
+      "name": "冠德",
+      "market": "TWSE"
+    },
+    "2524": {
+      "name": "京城",
+      "market": "TWSE"
+    },
+    "2527": {
+      "name": "宏璟",
+      "market": "TWSE"
+    },
+    "2528": {
+      "name": "皇普",
+      "market": "TWSE"
+    },
+    "2530": {
+      "name": "華建",
+      "market": "TWSE"
+    },
+    "2534": {
+      "name": "宏盛",
+      "market": "TWSE"
+    },
+    "2535": {
+      "name": "達欣工",
+      "market": "TWSE"
+    },
+    "2536": {
+      "name": "宏普",
+      "market": "TWSE"
+    },
+    "2537": {
+      "name": "聯上發",
+      "market": "TWSE"
+    },
+    "2538": {
+      "name": "基泰",
+      "market": "TWSE"
+    },
+    "2539": {
+      "name": "櫻花建",
+      "market": "TWSE"
+    },
+    "2540": {
+      "name": "愛山林",
+      "market": "TWSE"
+    },
+    "2542": {
+      "name": "興富發",
+      "market": "TWSE"
+    },
+    "2543": {
+      "name": "皇昌",
+      "market": "TWSE"
+    },
+    "2545": {
+      "name": "皇翔",
+      "market": "TWSE"
+    },
+    "2546": {
+      "name": "根基",
+      "market": "TWSE"
+    },
+    "2547": {
+      "name": "日勝生",
+      "market": "TWSE"
+    },
+    "2548": {
+      "name": "華固",
+      "market": "TWSE"
+    },
+    "2597": {
+      "name": "潤弘",
+      "market": "TWSE"
+    },
+    "2601": {
+      "name": "益航",
+      "market": "TWSE"
+    },
+    "2603": {
+      "name": "長榮",
+      "market": "TWSE"
+    },
+    "2605": {
+      "name": "新興",
+      "market": "TWSE"
+    },
+    "2606": {
+      "name": "裕民",
+      "market": "TWSE"
+    },
+    "2607": {
+      "name": "榮運",
+      "market": "TWSE"
+    },
+    "2608": {
+      "name": "嘉里大榮",
+      "market": "TWSE"
+    },
+    "2609": {
+      "name": "陽明",
+      "market": "TWSE"
+    },
+    "2610": {
+      "name": "華航",
+      "market": "TWSE"
+    },
+    "2611": {
+      "name": "志信",
+      "market": "TWSE"
+    },
+    "2612": {
+      "name": "中航",
+      "market": "TWSE"
+    },
+    "2613": {
+      "name": "中櫃",
+      "market": "TWSE"
+    },
+    "2614": {
+      "name": "東森",
+      "market": "TWSE"
+    },
+    "2615": {
+      "name": "萬海",
+      "market": "TWSE"
+    },
+    "2616": {
+      "name": "山隆",
+      "market": "TWSE"
+    },
+    "2617": {
+      "name": "台航",
+      "market": "TWSE"
+    },
+    "2618": {
+      "name": "長榮航",
+      "market": "TWSE"
+    },
+    "2630": {
+      "name": "亞航",
+      "market": "TWSE"
+    },
+    "2633": {
+      "name": "台灣高鐵",
+      "market": "TWSE"
+    },
+    "2634": {
+      "name": "漢翔",
+      "market": "TWSE"
+    },
+    "2636": {
+      "name": "台驊控股",
+      "market": "TWSE"
+    },
+    "2637": {
+      "name": "慧洋-KY",
+      "market": "TWSE"
+    },
+    "2642": {
+      "name": "宅配通",
+      "market": "TWSE"
+    },
+    "2645": {
+      "name": "長榮航太",
+      "market": "TWSE"
+    },
+    "2646": {
+      "name": "星宇航空",
+      "market": "TWSE"
+    },
+    "2701": {
+      "name": "萬企",
+      "market": "TWSE"
+    },
+    "2702": {
+      "name": "華園",
+      "market": "TWSE"
+    },
+    "2704": {
+      "name": "國賓",
+      "market": "TWSE"
+    },
+    "2705": {
+      "name": "六福",
+      "market": "TWSE"
+    },
+    "2706": {
+      "name": "第一店",
+      "market": "TWSE"
+    },
+    "2707": {
+      "name": "晶華",
+      "market": "TWSE"
+    },
+    "2712": {
+      "name": "遠雄來",
+      "market": "TWSE"
+    },
+    "2722": {
+      "name": "夏都",
+      "market": "TWSE"
+    },
+    "2723": {
+      "name": "美食-KY",
+      "market": "TWSE"
+    },
+    "2727": {
+      "name": "王品",
+      "market": "TWSE"
+    },
+    "2731": {
+      "name": "雄獅",
+      "market": "TWSE"
+    },
+    "2739": {
+      "name": "寒舍",
+      "market": "TWSE"
+    },
+    "2748": {
+      "name": "雲品",
+      "market": "TWSE"
+    },
+    "2753": {
+      "name": "八方雲集",
+      "market": "TWSE"
+    },
+    "2762": {
+      "name": "世界健身-KY",
+      "market": "TWSE"
+    },
+    "2801": {
+      "name": "彰銀",
+      "market": "TWSE"
+    },
+    "2812": {
+      "name": "台中銀",
+      "market": "TWSE"
+    },
+    "2816": {
+      "name": "旺旺保",
+      "market": "TWSE"
+    },
+    "2820": {
+      "name": "華票",
+      "market": "TWSE"
+    },
+    "2832": {
+      "name": "台產",
+      "market": "TWSE"
+    },
+    "2834": {
+      "name": "臺企銀",
+      "market": "TWSE"
+    },
+    "2836": {
+      "name": "高雄銀",
+      "market": "TWSE"
+    },
+    "2838": {
+      "name": "聯邦銀",
+      "market": "TWSE"
+    },
+    "2845": {
+      "name": "遠東銀",
+      "market": "TWSE"
+    },
+    "2849": {
+      "name": "安泰銀",
+      "market": "TWSE"
+    },
+    "2850": {
+      "name": "新產",
+      "market": "TWSE"
+    },
+    "2851": {
+      "name": "中再保",
+      "market": "TWSE"
+    },
+    "2852": {
+      "name": "第一保",
+      "market": "TWSE"
+    },
+    "2855": {
+      "name": "統一證",
+      "market": "TWSE"
+    },
+    "2880": {
+      "name": "華南金",
+      "market": "TWSE"
+    },
+    "2881": {
+      "name": "富邦金",
+      "market": "TWSE"
+    },
+    "2882": {
+      "name": "國泰金",
+      "market": "TWSE"
+    },
+    "2883": {
+      "name": "凱基金",
+      "market": "TWSE"
+    },
+    "2884": {
+      "name": "玉山金",
+      "market": "TWSE"
+    },
+    "2885": {
+      "name": "元大金",
+      "market": "TWSE"
+    },
+    "2886": {
+      "name": "兆豐金",
+      "market": "TWSE"
+    },
+    "2887": {
+      "name": "台新新光金",
+      "market": "TWSE"
+    },
+    "2889": {
+      "name": "國票金",
+      "market": "TWSE"
+    },
+    "2890": {
+      "name": "永豐金",
+      "market": "TWSE"
+    },
+    "2891": {
+      "name": "中信金",
+      "market": "TWSE"
+    },
+    "2892": {
+      "name": "第一金",
+      "market": "TWSE"
+    },
+    "2897": {
+      "name": "王道銀行",
+      "market": "TWSE"
+    },
+    "2901": {
+      "name": "欣欣",
+      "market": "TWSE"
+    },
+    "2903": {
+      "name": "遠百",
+      "market": "TWSE"
+    },
+    "2904": {
+      "name": "匯僑",
+      "market": "TWSE"
+    },
+    "2905": {
+      "name": "三商",
+      "market": "TWSE"
+    },
+    "2906": {
+      "name": "高林",
+      "market": "TWSE"
+    },
+    "2908": {
+      "name": "特力",
+      "market": "TWSE"
+    },
+    "2910": {
+      "name": "統領",
+      "market": "TWSE"
+    },
+    "2911": {
+      "name": "麗嬰房",
+      "market": "TWSE"
+    },
+    "2912": {
+      "name": "統一超",
+      "market": "TWSE"
+    },
+    "2913": {
+      "name": "農林",
+      "market": "TWSE"
+    },
+    "2915": {
+      "name": "潤泰全",
+      "market": "TWSE"
+    },
+    "2923": {
+      "name": "鼎固-KY",
+      "market": "TWSE"
+    },
+    "2929": {
+      "name": "淘帝-KY",
+      "market": "TWSE"
+    },
+    "2939": {
+      "name": "永邑-KY",
+      "market": "TWSE"
+    },
+    "2945": {
+      "name": "三商家購",
+      "market": "TWSE"
+    },
+    "3002": {
+      "name": "歐格",
+      "market": "TWSE"
+    },
+    "3003": {
+      "name": "健和興",
+      "market": "TWSE"
+    },
+    "3004": {
+      "name": "豐達科",
+      "market": "TWSE"
+    },
+    "3005": {
+      "name": "神基",
+      "market": "TWSE"
+    },
+    "3006": {
+      "name": "晶豪科",
+      "market": "TWSE"
+    },
+    "3008": {
+      "name": "大立光",
+      "market": "TWSE"
+    },
+    "3010": {
+      "name": "華立",
+      "market": "TWSE"
+    },
+    "3011": {
+      "name": "今皓",
+      "market": "TWSE"
+    },
+    "3013": {
+      "name": "晟銘電",
+      "market": "TWSE"
+    },
+    "3014": {
+      "name": "聯陽",
+      "market": "TWSE"
+    },
+    "3015": {
+      "name": "全漢",
+      "market": "TWSE"
+    },
+    "3016": {
+      "name": "嘉晶",
+      "market": "TWSE"
+    },
+    "3017": {
+      "name": "奇鋐",
+      "market": "TWSE"
+    },
+    "3018": {
+      "name": "隆銘綠能",
+      "market": "TWSE"
+    },
+    "3019": {
+      "name": "亞光",
+      "market": "TWSE"
+    },
+    "3021": {
+      "name": "鴻名",
+      "market": "TWSE"
+    },
+    "3022": {
+      "name": "威強電",
+      "market": "TWSE"
+    },
+    "3023": {
+      "name": "信邦",
+      "market": "TWSE"
+    },
+    "3024": {
+      "name": "憶聲",
+      "market": "TWSE"
+    },
+    "3025": {
+      "name": "星通",
+      "market": "TWSE"
+    },
+    "3026": {
+      "name": "禾伸堂",
+      "market": "TWSE"
+    },
+    "3027": {
+      "name": "盛達",
+      "market": "TWSE"
+    },
+    "3028": {
+      "name": "增你強",
+      "market": "TWSE"
+    },
+    "3029": {
+      "name": "零壹",
+      "market": "TWSE"
+    },
+    "3030": {
+      "name": "德律",
+      "market": "TWSE"
+    },
+    "3031": {
+      "name": "佰鴻",
+      "market": "TWSE"
+    },
+    "3032": {
+      "name": "偉訓",
+      "market": "TWSE"
+    },
+    "3033": {
+      "name": "威健",
+      "market": "TWSE"
+    },
+    "3034": {
+      "name": "聯詠",
+      "market": "TWSE"
+    },
+    "3035": {
+      "name": "智原",
+      "market": "TWSE"
+    },
+    "3036": {
+      "name": "文曄",
+      "market": "TWSE"
+    },
+    "3037": {
+      "name": "欣興",
+      "market": "TWSE"
+    },
+    "3038": {
+      "name": "全台",
+      "market": "TWSE"
+    },
+    "3040": {
+      "name": "遠見",
+      "market": "TWSE"
+    },
+    "3041": {
+      "name": "揚智",
+      "market": "TWSE"
+    },
+    "3042": {
+      "name": "晶技",
+      "market": "TWSE"
+    },
+    "3043": {
+      "name": "科風",
+      "market": "TWSE"
+    },
+    "3044": {
+      "name": "健鼎",
+      "market": "TWSE"
+    },
+    "3045": {
+      "name": "台灣大",
+      "market": "TWSE"
+    },
+    "3046": {
+      "name": "建碁",
+      "market": "TWSE"
+    },
+    "3047": {
+      "name": "訊舟",
+      "market": "TWSE"
+    },
+    "3048": {
+      "name": "益登",
+      "market": "TWSE"
+    },
+    "3049": {
+      "name": "精金",
+      "market": "TWSE"
+    },
+    "3050": {
+      "name": "鈺德",
+      "market": "TWSE"
+    },
+    "3051": {
+      "name": "力特",
+      "market": "TWSE"
+    },
+    "3052": {
+      "name": "夆典",
+      "market": "TWSE"
+    },
+    "3054": {
+      "name": "立萬利",
+      "market": "TWSE"
+    },
+    "3055": {
+      "name": "蔚華科",
+      "market": "TWSE"
+    },
+    "3056": {
+      "name": "富華新",
+      "market": "TWSE"
+    },
+    "3057": {
+      "name": "喬鼎",
+      "market": "TWSE"
+    },
+    "3058": {
+      "name": "立德",
+      "market": "TWSE"
+    },
+    "3059": {
+      "name": "華晶科",
+      "market": "TWSE"
+    },
+    "3060": {
+      "name": "銘異",
+      "market": "TWSE"
+    },
+    "3062": {
+      "name": "建漢",
+      "market": "TWSE"
+    },
+    "3090": {
+      "name": "日電貿",
+      "market": "TWSE"
+    },
+    "3092": {
+      "name": "鴻碩",
+      "market": "TWSE"
+    },
+    "3094": {
+      "name": "聯傑",
+      "market": "TWSE"
+    },
+    "3130": {
+      "name": "一零四",
+      "market": "TWSE"
+    },
+    "3135": {
+      "name": "凌航",
+      "market": "TWSE"
+    },
+    "3138": {
+      "name": "耀登",
+      "market": "TWSE"
+    },
+    "3149": {
+      "name": "正達",
+      "market": "TWSE"
+    },
+    "3150": {
+      "name": "鈺寶-創",
+      "market": "TWSE"
+    },
+    "3164": {
+      "name": "景岳",
+      "market": "TWSE"
+    },
+    "3167": {
+      "name": "大量",
+      "market": "TWSE"
+    },
+    "3168": {
+      "name": "眾福科",
+      "market": "TWSE"
+    },
+    "3189": {
+      "name": "景碩",
+      "market": "TWSE"
+    },
+    "3209": {
+      "name": "全科",
+      "market": "TWSE"
+    },
+    "3229": {
+      "name": "晟鈦",
+      "market": "TWSE"
+    },
+    "3231": {
+      "name": "緯創",
+      "market": "TWSE"
+    },
+    "3257": {
+      "name": "虹冠電",
+      "market": "TWSE"
+    },
+    "3266": {
+      "name": "昇陽",
+      "market": "TWSE"
+    },
+    "3296": {
+      "name": "勝德",
+      "market": "TWSE"
+    },
+    "3305": {
+      "name": "昇貿",
+      "market": "TWSE"
+    },
+    "3308": {
+      "name": "聯德",
+      "market": "TWSE"
+    },
+    "3311": {
+      "name": "閎暉",
+      "market": "TWSE"
+    },
+    "3312": {
+      "name": "弘憶股",
+      "market": "TWSE"
+    },
+    "3321": {
+      "name": "同泰",
+      "market": "TWSE"
+    },
+    "3338": {
+      "name": "泰碩",
+      "market": "TWSE"
+    },
+    "3346": {
+      "name": "麗清",
+      "market": "TWSE"
+    },
+    "3356": {
+      "name": "奇偶",
+      "market": "TWSE"
+    },
+    "3376": {
+      "name": "新日興",
+      "market": "TWSE"
+    },
+    "3380": {
+      "name": "明泰",
+      "market": "TWSE"
+    },
+    "3406": {
+      "name": "玉晶光",
+      "market": "TWSE"
+    },
+    "3413": {
+      "name": "京鼎",
+      "market": "TWSE"
+    },
+    "3416": {
+      "name": "融程電",
+      "market": "TWSE"
+    },
+    "3419": {
+      "name": "譁裕",
+      "market": "TWSE"
+    },
+    "3432": {
+      "name": "台端",
+      "market": "TWSE"
+    },
+    "3437": {
+      "name": "榮創",
+      "market": "TWSE"
+    },
+    "3443": {
+      "name": "創意",
+      "market": "TWSE"
+    },
+    "3447": {
+      "name": "展達",
+      "market": "TWSE"
+    },
+    "3450": {
+      "name": "聯鈞",
+      "market": "TWSE"
+    },
+    "3481": {
+      "name": "群創",
+      "market": "TWSE"
+    },
+    "3494": {
+      "name": "誠研",
+      "market": "TWSE"
+    },
+    "3501": {
+      "name": "維熹",
+      "market": "TWSE"
+    },
+    "3504": {
+      "name": "揚明光",
+      "market": "TWSE"
+    },
+    "3515": {
+      "name": "華擎",
+      "market": "TWSE"
+    },
+    "3518": {
+      "name": "柏騰",
+      "market": "TWSE"
+    },
+    "3528": {
+      "name": "安馳",
+      "market": "TWSE"
+    },
+    "3530": {
+      "name": "晶相光",
+      "market": "TWSE"
+    },
+    "3532": {
+      "name": "台勝科",
+      "market": "TWSE"
+    },
+    "3533": {
+      "name": "嘉澤",
+      "market": "TWSE"
+    },
+    "3535": {
+      "name": "晶彩科",
+      "market": "TWSE"
+    },
+    "3543": {
+      "name": "州巧",
+      "market": "TWSE"
+    },
+    "3545": {
+      "name": "敦泰",
+      "market": "TWSE"
+    },
+    "3550": {
+      "name": "聯穎",
+      "market": "TWSE"
+    },
+    "3557": {
+      "name": "嘉威",
+      "market": "TWSE"
+    },
+    "3563": {
+      "name": "牧德",
+      "market": "TWSE"
+    },
+    "3576": {
+      "name": "聯合再生",
+      "market": "TWSE"
+    },
+    "3583": {
+      "name": "辛耘",
+      "market": "TWSE"
+    },
+    "3588": {
+      "name": "通嘉",
+      "market": "TWSE"
+    },
+    "3591": {
+      "name": "艾笛森",
+      "market": "TWSE"
+    },
+    "3592": {
+      "name": "瑞鼎",
+      "market": "TWSE"
+    },
+    "3593": {
+      "name": "力銘",
+      "market": "TWSE"
+    },
+    "3596": {
+      "name": "智易",
+      "market": "TWSE"
+    },
+    "3605": {
+      "name": "宏致",
+      "market": "TWSE"
+    },
+    "3607": {
+      "name": "谷崧",
+      "market": "TWSE"
+    },
+    "3617": {
+      "name": "碩天",
+      "market": "TWSE"
+    },
+    "3622": {
+      "name": "洋華",
+      "market": "TWSE"
+    },
+    "3645": {
+      "name": "達邁",
+      "market": "TWSE"
+    },
+    "3652": {
+      "name": "精聯",
+      "market": "TWSE"
+    },
+    "3653": {
+      "name": "健策",
+      "market": "TWSE"
+    },
+    "3661": {
+      "name": "世芯-KY",
+      "market": "TWSE"
+    },
+    "3665": {
+      "name": "貿聯-KY",
+      "market": "TWSE"
+    },
+    "3669": {
+      "name": "圓展",
+      "market": "TWSE"
+    },
+    "3673": {
+      "name": "TPK-KY",
+      "market": "TWSE"
+    },
+    "3679": {
+      "name": "新至陞",
+      "market": "TWSE"
+    },
+    "3686": {
+      "name": "達能",
+      "market": "TWSE"
+    },
+    "3694": {
+      "name": "海華",
+      "market": "TWSE"
+    },
+    "3701": {
+      "name": "大眾控",
+      "market": "TWSE"
+    },
+    "3702": {
+      "name": "大聯大",
+      "market": "TWSE"
+    },
+    "3703": {
+      "name": "欣陸",
+      "market": "TWSE"
+    },
+    "3704": {
+      "name": "合勤控",
+      "market": "TWSE"
+    },
+    "3705": {
+      "name": "永信",
+      "market": "TWSE"
+    },
+    "3706": {
+      "name": "神達",
+      "market": "TWSE"
+    },
+    "3708": {
+      "name": "上緯投控",
+      "market": "TWSE"
+    },
+    "3711": {
+      "name": "日月光投控",
+      "market": "TWSE"
+    },
+    "3712": {
+      "name": "永崴投控",
+      "market": "TWSE"
+    },
+    "3714": {
+      "name": "富采",
+      "market": "TWSE"
+    },
+    "3715": {
+      "name": "定穎投控",
+      "market": "TWSE"
+    },
+    "3716": {
+      "name": "中化控股",
+      "market": "TWSE"
+    },
+    "3717": {
+      "name": "聯嘉投控",
+      "market": "TWSE"
+    },
+    "4104": {
+      "name": "佳醫",
+      "market": "TWSE"
+    },
+    "4106": {
+      "name": "雃博",
+      "market": "TWSE"
+    },
+    "4108": {
+      "name": "懷特",
+      "market": "TWSE"
+    },
+    "4119": {
+      "name": "旭富",
+      "market": "TWSE"
+    },
+    "4133": {
+      "name": "亞諾法",
+      "market": "TWSE"
+    },
+    "4137": {
+      "name": "麗豐-KY",
+      "market": "TWSE"
+    },
+    "4142": {
+      "name": "國光生",
+      "market": "TWSE"
+    },
+    "4148": {
+      "name": "全宇生技-KY",
+      "market": "TWSE"
+    },
+    "4155": {
+      "name": "訊映",
+      "market": "TWSE"
+    },
+    "4164": {
+      "name": "承業醫",
+      "market": "TWSE"
+    },
+    "4169": {
+      "name": "泰宗",
+      "market": "TWSE"
+    },
+    "4178": {
+      "name": "永笙-KY",
+      "market": "TWSE"
+    },
+    "4190": {
+      "name": "佐登-KY",
+      "market": "TWSE"
+    },
+    "4195": {
+      "name": "基米-創",
+      "market": "TWSE"
+    },
+    "4306": {
+      "name": "炎洲",
+      "market": "TWSE"
+    },
+    "4414": {
+      "name": "如興",
+      "market": "TWSE"
+    },
+    "4426": {
+      "name": "利勤",
+      "market": "TWSE"
+    },
+    "4438": {
+      "name": "廣越",
+      "market": "TWSE"
+    },
+    "4439": {
+      "name": "冠星-KY",
+      "market": "TWSE"
+    },
+    "4440": {
+      "name": "宜新實業",
+      "market": "TWSE"
+    },
+    "4441": {
+      "name": "振大環球",
+      "market": "TWSE"
+    },
+    "4526": {
+      "name": "東台",
+      "market": "TWSE"
+    },
+    "4532": {
+      "name": "瑞智",
+      "market": "TWSE"
+    },
+    "4536": {
+      "name": "拓凱",
+      "market": "TWSE"
+    },
+    "4540": {
+      "name": "全球傳動",
+      "market": "TWSE"
+    },
+    "4545": {
+      "name": "銘鈺",
+      "market": "TWSE"
+    },
+    "4551": {
+      "name": "智伸科",
+      "market": "TWSE"
+    },
+    "4552": {
+      "name": "力達-KY",
+      "market": "TWSE"
+    },
+    "4555": {
+      "name": "氣立",
+      "market": "TWSE"
+    },
+    "4557": {
+      "name": "永新-KY",
+      "market": "TWSE"
+    },
+    "4560": {
+      "name": "強信-KY",
+      "market": "TWSE"
+    },
+    "4562": {
+      "name": "穎漢",
+      "market": "TWSE"
+    },
+    "4564": {
+      "name": "元翎",
+      "market": "TWSE"
+    },
+    "4566": {
+      "name": "時碩工業",
+      "market": "TWSE"
+    },
+    "4569": {
+      "name": "六方科-KY",
+      "market": "TWSE"
+    },
+    "4571": {
+      "name": "鈞興-KY",
+      "market": "TWSE"
+    },
+    "4572": {
+      "name": "駐龍",
+      "market": "TWSE"
+    },
+    "4576": {
+      "name": "大銀微系統",
+      "market": "TWSE"
+    },
+    "4581": {
+      "name": "光隆精密-KY",
+      "market": "TWSE"
+    },
+    "4582": {
+      "name": "聚恆-創",
+      "market": "TWSE"
+    },
+    "4583": {
+      "name": "台灣精銳",
+      "market": "TWSE"
+    },
+    "4585": {
+      "name": "達明",
+      "market": "TWSE"
+    },
+    "4588": {
+      "name": "玖鼎電力",
+      "market": "TWSE"
+    },
+    "4590": {
+      "name": "富田-創",
+      "market": "TWSE"
+    },
+    "4720": {
+      "name": "德淵",
+      "market": "TWSE"
+    },
+    "4722": {
+      "name": "國精化",
+      "market": "TWSE"
+    },
+    "4736": {
+      "name": "泰博",
+      "market": "TWSE"
+    },
+    "4737": {
+      "name": "華廣",
+      "market": "TWSE"
+    },
+    "4739": {
+      "name": "康普",
+      "market": "TWSE"
+    },
+    "4746": {
+      "name": "台耀",
+      "market": "TWSE"
+    },
+    "4755": {
+      "name": "三福化",
+      "market": "TWSE"
+    },
+    "4763": {
+      "name": "材料*-KY",
+      "market": "TWSE"
+    },
+    "4764": {
+      "name": "雙鍵",
+      "market": "TWSE"
+    },
+    "4766": {
+      "name": "南寶",
+      "market": "TWSE"
+    },
+    "4770": {
+      "name": "上品",
+      "market": "TWSE"
+    },
+    "4771": {
+      "name": "望隼",
+      "market": "TWSE"
+    },
+    "4807": {
+      "name": "日成-KY",
+      "market": "TWSE"
+    },
+    "4904": {
+      "name": "遠傳",
+      "market": "TWSE"
+    },
+    "4906": {
+      "name": "正文",
+      "market": "TWSE"
+    },
+    "4912": {
+      "name": "聯德控股-KY",
+      "market": "TWSE"
+    },
+    "4915": {
+      "name": "致伸",
+      "market": "TWSE"
+    },
+    "4916": {
+      "name": "事欣科",
+      "market": "TWSE"
+    },
+    "4919": {
+      "name": "新唐",
+      "market": "TWSE"
+    },
+    "4927": {
+      "name": "泰鼎-KY",
+      "market": "TWSE"
+    },
+    "4930": {
+      "name": "燦星網",
+      "market": "TWSE"
+    },
+    "4934": {
+      "name": "太極",
+      "market": "TWSE"
+    },
+    "4935": {
+      "name": "茂林-KY",
+      "market": "TWSE"
+    },
+    "4938": {
+      "name": "和碩",
+      "market": "TWSE"
+    },
+    "4942": {
+      "name": "嘉彰",
+      "market": "TWSE"
+    },
+    "4943": {
+      "name": "康控-KY",
+      "market": "TWSE"
+    },
+    "4949": {
+      "name": "有成精密",
+      "market": "TWSE"
+    },
+    "4952": {
+      "name": "凌通",
+      "market": "TWSE"
+    },
+    "4956": {
+      "name": "光鋐",
+      "market": "TWSE"
+    },
+    "4958": {
+      "name": "臻鼎-KY",
+      "market": "TWSE"
+    },
+    "4960": {
+      "name": "誠美材",
+      "market": "TWSE"
+    },
+    "4961": {
+      "name": "天鈺",
+      "market": "TWSE"
+    },
+    "4967": {
+      "name": "十銓",
+      "market": "TWSE"
+    },
+    "4968": {
+      "name": "立積",
+      "market": "TWSE"
+    },
+    "4976": {
+      "name": "佳凌",
+      "market": "TWSE"
+    },
+    "4977": {
+      "name": "眾達-KY",
+      "market": "TWSE"
+    },
+    "4989": {
+      "name": "榮科",
+      "market": "TWSE"
+    },
+    "4994": {
+      "name": "傳奇",
+      "market": "TWSE"
+    },
+    "4999": {
+      "name": "鑫禾",
+      "market": "TWSE"
+    },
+    "5007": {
+      "name": "三星",
+      "market": "TWSE"
+    },
+    "5203": {
+      "name": "訊連",
+      "market": "TWSE"
+    },
+    "5215": {
+      "name": "科嘉-KY",
+      "market": "TWSE"
+    },
+    "5222": {
+      "name": "全訊",
+      "market": "TWSE"
+    },
+    "5225": {
+      "name": "東科-KY",
+      "market": "TWSE"
+    },
+    "5234": {
+      "name": "達興材料",
+      "market": "TWSE"
+    },
+    "5236": {
+      "name": "凌陽創新",
+      "market": "TWSE"
+    },
+    "5243": {
+      "name": "乙盛-KY",
+      "market": "TWSE"
+    },
+    "5244": {
+      "name": "弘凱",
+      "market": "TWSE"
+    },
+    "5258": {
+      "name": "虹堡",
+      "market": "TWSE"
+    },
+    "5269": {
+      "name": "祥碩",
+      "market": "TWSE"
+    },
+    "5283": {
+      "name": "禾聯碩",
+      "market": "TWSE"
+    },
+    "5284": {
+      "name": "jpp-KY",
+      "market": "TWSE"
+    },
+    "5285": {
+      "name": "界霖",
+      "market": "TWSE"
+    },
+    "5288": {
+      "name": "豐祥-KY",
+      "market": "TWSE"
+    },
+    "5292": {
+      "name": "華懋",
+      "market": "TWSE"
+    },
+    "5306": {
+      "name": "桂盟",
+      "market": "TWSE"
+    },
+    "5388": {
+      "name": "中磊",
+      "market": "TWSE"
+    },
+    "5434": {
+      "name": "崇越",
+      "market": "TWSE"
+    },
+    "5469": {
+      "name": "瀚宇博",
+      "market": "TWSE"
+    },
+    "5471": {
+      "name": "松翰",
+      "market": "TWSE"
+    },
+    "5484": {
+      "name": "慧友",
+      "market": "TWSE"
+    },
+    "5515": {
+      "name": "建國",
+      "market": "TWSE"
+    },
+    "5519": {
+      "name": "隆大",
+      "market": "TWSE"
+    },
+    "5521": {
+      "name": "工信",
+      "market": "TWSE"
+    },
+    "5522": {
+      "name": "遠雄",
+      "market": "TWSE"
+    },
+    "5525": {
+      "name": "順天",
+      "market": "TWSE"
+    },
+    "5531": {
+      "name": "鄉林",
+      "market": "TWSE"
+    },
+    "5533": {
+      "name": "皇鼎",
+      "market": "TWSE"
+    },
+    "5534": {
+      "name": "長虹",
+      "market": "TWSE"
+    },
+    "5538": {
+      "name": "東明-KY",
+      "market": "TWSE"
+    },
+    "5546": {
+      "name": "永固-KY",
+      "market": "TWSE"
+    },
+    "5607": {
+      "name": "遠雄港",
+      "market": "TWSE"
+    },
+    "5608": {
+      "name": "四維航",
+      "market": "TWSE"
+    },
+    "5706": {
+      "name": "鳳凰",
+      "market": "TWSE"
+    },
+    "5871": {
+      "name": "中租-KY",
+      "market": "TWSE"
+    },
+    "5876": {
+      "name": "上海商銀",
+      "market": "TWSE"
+    },
+    "5880": {
+      "name": "合庫金",
+      "market": "TWSE"
+    },
+    "5906": {
+      "name": "台南-KY",
+      "market": "TWSE"
+    },
+    "5907": {
+      "name": "大洋-KY",
+      "market": "TWSE"
+    },
+    "6005": {
+      "name": "群益證",
+      "market": "TWSE"
+    },
+    "6024": {
+      "name": "群益期",
+      "market": "TWSE"
+    },
+    "6108": {
+      "name": "競國",
+      "market": "TWSE"
+    },
+    "6112": {
+      "name": "邁達特",
+      "market": "TWSE"
+    },
+    "6115": {
+      "name": "鎰勝",
+      "market": "TWSE"
+    },
+    "6116": {
+      "name": "彩晶",
+      "market": "TWSE"
+    },
+    "6117": {
+      "name": "迎廣",
+      "market": "TWSE"
+    },
+    "6120": {
+      "name": "達運",
+      "market": "TWSE"
+    },
+    "6128": {
+      "name": "上福",
+      "market": "TWSE"
+    },
+    "6133": {
+      "name": "金橋",
+      "market": "TWSE"
+    },
+    "6136": {
+      "name": "富爾特",
+      "market": "TWSE"
+    },
+    "6139": {
+      "name": "亞翔",
+      "market": "TWSE"
+    },
+    "6141": {
+      "name": "柏承",
+      "market": "TWSE"
+    },
+    "6142": {
+      "name": "友勁",
+      "market": "TWSE"
+    },
+    "6152": {
+      "name": "百一",
+      "market": "TWSE"
+    },
+    "6153": {
+      "name": "嘉聯益",
+      "market": "TWSE"
+    },
+    "6155": {
+      "name": "鈞寶",
+      "market": "TWSE"
+    },
+    "6164": {
+      "name": "華興",
+      "market": "TWSE"
+    },
+    "6165": {
+      "name": "浪凡",
+      "market": "TWSE"
+    },
+    "6166": {
+      "name": "凌華",
+      "market": "TWSE"
+    },
+    "6168": {
+      "name": "宏齊",
+      "market": "TWSE"
+    },
+    "6176": {
+      "name": "瑞儀",
+      "market": "TWSE"
+    },
+    "6177": {
+      "name": "達麗",
+      "market": "TWSE"
+    },
+    "6183": {
+      "name": "關貿",
+      "market": "TWSE"
+    },
+    "6184": {
+      "name": "大豐電",
+      "market": "TWSE"
+    },
+    "6189": {
+      "name": "豐藝",
+      "market": "TWSE"
+    },
+    "6191": {
+      "name": "精成科",
+      "market": "TWSE"
+    },
+    "6192": {
+      "name": "巨路",
+      "market": "TWSE"
+    },
+    "6196": {
+      "name": "帆宣",
+      "market": "TWSE"
+    },
+    "6197": {
+      "name": "佳必琪",
+      "market": "TWSE"
+    },
+    "6201": {
+      "name": "亞弘電",
+      "market": "TWSE"
+    },
+    "6202": {
+      "name": "盛群",
+      "market": "TWSE"
+    },
+    "6205": {
+      "name": "詮欣",
+      "market": "TWSE"
+    },
+    "6206": {
+      "name": "飛捷",
+      "market": "TWSE"
+    },
+    "6209": {
+      "name": "今國光",
+      "market": "TWSE"
+    },
+    "6213": {
+      "name": "聯茂",
+      "market": "TWSE"
+    },
+    "6214": {
+      "name": "精誠",
+      "market": "TWSE"
+    },
+    "6215": {
+      "name": "和椿",
+      "market": "TWSE"
+    },
+    "6216": {
+      "name": "居易",
+      "market": "TWSE"
+    },
+    "6224": {
+      "name": "聚鼎",
+      "market": "TWSE"
+    },
+    "6225": {
+      "name": "天瀚",
+      "market": "TWSE"
+    },
+    "6226": {
+      "name": "光鼎",
+      "market": "TWSE"
+    },
+    "6230": {
+      "name": "尼得科超眾",
+      "market": "TWSE"
+    },
+    "6235": {
+      "name": "華孚",
+      "market": "TWSE"
+    },
+    "6239": {
+      "name": "力成",
+      "market": "TWSE"
+    },
+    "6243": {
+      "name": "迅杰",
+      "market": "TWSE"
+    },
+    "6257": {
+      "name": "矽格",
+      "market": "TWSE"
+    },
+    "6269": {
+      "name": "台郡",
+      "market": "TWSE"
+    },
+    "6271": {
+      "name": "同欣電",
+      "market": "TWSE"
+    },
+    "6272": {
+      "name": "驊陞",
+      "market": "TWSE"
+    },
+    "6277": {
+      "name": "宏正",
+      "market": "TWSE"
+    },
+    "6278": {
+      "name": "台表科",
+      "market": "TWSE"
+    },
+    "6281": {
+      "name": "全國電",
+      "market": "TWSE"
+    },
+    "6282": {
+      "name": "康舒",
+      "market": "TWSE"
+    },
+    "6283": {
+      "name": "淳安",
+      "market": "TWSE"
+    },
+    "6285": {
+      "name": "啟碁",
+      "market": "TWSE"
+    },
+    "6405": {
+      "name": "悅城",
+      "market": "TWSE"
+    },
+    "6409": {
+      "name": "旭隼",
+      "market": "TWSE"
+    },
+    "6412": {
+      "name": "群電",
+      "market": "TWSE"
+    },
+    "6414": {
+      "name": "樺漢",
+      "market": "TWSE"
+    },
+    "6415": {
+      "name": "矽力*-KY",
+      "market": "TWSE"
+    },
+    "6416": {
+      "name": "瑞祺電通",
+      "market": "TWSE"
+    },
+    "6426": {
+      "name": "統新",
+      "market": "TWSE"
+    },
+    "6431": {
+      "name": "光麗-KY",
+      "market": "TWSE"
+    },
+    "6438": {
+      "name": "迅得",
+      "market": "TWSE"
+    },
+    "6442": {
+      "name": "光聖",
+      "market": "TWSE"
+    },
+    "6443": {
+      "name": "元晶",
+      "market": "TWSE"
+    },
+    "6446": {
+      "name": "藥華藥",
+      "market": "TWSE"
+    },
+    "6449": {
+      "name": "鈺邦",
+      "market": "TWSE"
+    },
+    "6451": {
+      "name": "訊芯-KY",
+      "market": "TWSE"
+    },
+    "6456": {
+      "name": "GIS-KY",
+      "market": "TWSE"
+    },
+    "6464": {
+      "name": "台數科",
+      "market": "TWSE"
+    },
+    "6467": {
+      "name": "泰合",
+      "market": "TWSE"
+    },
+    "6472": {
+      "name": "保瑞",
+      "market": "TWSE"
+    },
+    "6477": {
+      "name": "安集",
+      "market": "TWSE"
+    },
+    "6491": {
+      "name": "晶碩",
+      "market": "TWSE"
+    },
+    "6504": {
+      "name": "南六",
+      "market": "TWSE"
+    },
+    "6505": {
+      "name": "台塑化",
+      "market": "TWSE"
+    },
+    "6515": {
+      "name": "穎崴",
+      "market": "TWSE"
+    },
+    "6525": {
+      "name": "捷敏-KY",
+      "market": "TWSE"
+    },
+    "6526": {
+      "name": "達發",
+      "market": "TWSE"
+    },
+    "6531": {
+      "name": "愛普*",
+      "market": "TWSE"
+    },
+    "6533": {
+      "name": "晶心科",
+      "market": "TWSE"
+    },
+    "6534": {
+      "name": "正瀚-創",
+      "market": "TWSE"
+    },
+    "6541": {
+      "name": "泰福-KY",
+      "market": "TWSE"
+    },
+    "6550": {
+      "name": "北極星藥業-KY",
+      "market": "TWSE"
+    },
+    "6552": {
+      "name": "易華電",
+      "market": "TWSE"
+    },
+    "6558": {
+      "name": "興能高",
+      "market": "TWSE"
+    },
+    "6573": {
+      "name": "虹揚-KY",
+      "market": "TWSE"
+    },
+    "6579": {
+      "name": "研揚",
+      "market": "TWSE"
+    },
+    "6581": {
+      "name": "鋼聯",
+      "market": "TWSE"
+    },
+    "6582": {
+      "name": "申豐",
+      "market": "TWSE"
+    },
+    "6585": {
+      "name": "鼎基",
+      "market": "TWSE"
+    },
+    "6589": {
+      "name": "台康生技",
+      "market": "TWSE"
+    },
+    "6591": {
+      "name": "動力-KY",
+      "market": "TWSE"
+    },
+    "6592": {
+      "name": "和潤企業",
+      "market": "TWSE"
+    },
+    "6598": {
+      "name": "ABC-KY",
+      "market": "TWSE"
+    },
+    "6605": {
+      "name": "帝寶",
+      "market": "TWSE"
+    },
+    "6606": {
+      "name": "建德工業",
+      "market": "TWSE"
+    },
+    "6614": {
+      "name": "資拓宏宇",
+      "market": "TWSE"
+    },
+    "6625": {
+      "name": "必應",
+      "market": "TWSE"
+    },
+    "6641": {
+      "name": "基士德-KY",
+      "market": "TWSE"
+    },
+    "6645": {
+      "name": "金萬林-創",
+      "market": "TWSE"
+    },
+    "6655": {
+      "name": "科定",
+      "market": "TWSE"
+    },
+    "6657": {
+      "name": "華安",
+      "market": "TWSE"
+    },
+    "6658": {
+      "name": "聯策",
+      "market": "TWSE"
+    },
+    "6666": {
+      "name": "羅麗芬-KY",
+      "market": "TWSE"
+    },
+    "6668": {
+      "name": "中揚光",
+      "market": "TWSE"
+    },
+    "6669": {
+      "name": "緯穎",
+      "market": "TWSE"
+    },
+    "6670": {
+      "name": "復盛應用",
+      "market": "TWSE"
+    },
+    "6671": {
+      "name": "三能-KY",
+      "market": "TWSE"
+    },
+    "6672": {
+      "name": "騰輝電子-KY",
+      "market": "TWSE"
+    },
+    "6674": {
+      "name": "鋐寶科技",
+      "market": "TWSE"
+    },
+    "6689": {
+      "name": "伊雲谷",
+      "market": "TWSE"
+    },
+    "6691": {
+      "name": "洋基工程",
+      "market": "TWSE"
+    },
+    "6695": {
+      "name": "芯鼎",
+      "market": "TWSE"
+    },
+    "6698": {
+      "name": "旭暉應材",
+      "market": "TWSE"
+    },
+    "6706": {
+      "name": "惠特",
+      "market": "TWSE"
+    },
+    "6715": {
+      "name": "嘉基",
+      "market": "TWSE"
+    },
+    "6719": {
+      "name": "力智",
+      "market": "TWSE"
+    },
+    "6722": {
+      "name": "輝創",
+      "market": "TWSE"
+    },
+    "6742": {
+      "name": "澤米",
+      "market": "TWSE"
+    },
+    "6743": {
+      "name": "安普新",
+      "market": "TWSE"
+    },
+    "6753": {
+      "name": "龍德造船",
+      "market": "TWSE"
+    },
+    "6754": {
+      "name": "匯僑設計",
+      "market": "TWSE"
+    },
+    "6756": {
+      "name": "威鋒電子",
+      "market": "TWSE"
+    },
+    "6757": {
+      "name": "台灣虎航",
+      "market": "TWSE"
+    },
+    "6768": {
+      "name": "志強-KY",
+      "market": "TWSE"
+    },
+    "6770": {
+      "name": "力積電",
+      "market": "TWSE"
+    },
+    "6771": {
+      "name": "平和環保-創",
+      "market": "TWSE"
+    },
+    "6776": {
+      "name": "展碁國際",
+      "market": "TWSE"
+    },
+    "6781": {
+      "name": "AES-KY",
+      "market": "TWSE"
+    },
+    "6782": {
+      "name": "視陽",
+      "market": "TWSE"
+    },
+    "6789": {
+      "name": "采鈺",
+      "market": "TWSE"
+    },
+    "6790": {
+      "name": "永豐實",
+      "market": "TWSE"
+    },
+    "6792": {
+      "name": "詠業",
+      "market": "TWSE"
+    },
+    "6794": {
+      "name": "向榮生技",
+      "market": "TWSE"
+    },
+    "6796": {
+      "name": "晉弘",
+      "market": "TWSE"
+    },
+    "6799": {
+      "name": "來頡",
+      "market": "TWSE"
+    },
+    "6805": {
+      "name": "富世達",
+      "market": "TWSE"
+    },
+    "6807": {
+      "name": "峰源-KY",
+      "market": "TWSE"
+    },
+    "6830": {
+      "name": "汎銓",
+      "market": "TWSE"
+    },
+    "6831": {
+      "name": "邁科",
+      "market": "TWSE"
+    },
+    "6834": {
+      "name": "天二科技",
+      "market": "TWSE"
+    },
+    "6835": {
+      "name": "圓裕",
+      "market": "TWSE"
+    },
+    "6838": {
+      "name": "台新藥",
+      "market": "TWSE"
+    },
+    "6854": {
+      "name": "錼創科技-KY創",
+      "market": "TWSE"
+    },
+    "6861": {
+      "name": "睿生光電",
+      "market": "TWSE"
+    },
+    "6862": {
+      "name": "三集瑞-KY",
+      "market": "TWSE"
+    },
+    "6863": {
+      "name": "永道-KY",
+      "market": "TWSE"
+    },
+    "6869": {
+      "name": "雲豹能源",
+      "market": "TWSE"
+    },
+    "6873": {
+      "name": "泓德能源",
+      "market": "TWSE"
+    },
+    "6885": {
+      "name": "全福生技",
+      "market": "TWSE"
+    },
+    "6887": {
+      "name": "寶綠特-KY",
+      "market": "TWSE"
+    },
+    "6890": {
+      "name": "來億-KY",
+      "market": "TWSE"
+    },
+    "6901": {
+      "name": "鑽石投資",
+      "market": "TWSE"
+    },
+    "6902": {
+      "name": "GOGOLOOK",
+      "market": "TWSE"
+    },
+    "6906": {
+      "name": "現觀科",
+      "market": "TWSE"
+    },
+    "6908": {
+      "name": "宏碁遊戲-創",
+      "market": "TWSE"
+    },
+    "6909": {
+      "name": "創控",
+      "market": "TWSE"
+    },
+    "6914": {
+      "name": "阜爾運通",
+      "market": "TWSE"
+    },
+    "6916": {
+      "name": "華凌",
+      "market": "TWSE"
+    },
+    "6918": {
+      "name": "愛派司",
+      "market": "TWSE"
+    },
+    "6919": {
+      "name": "康霈*",
+      "market": "TWSE"
+    },
+    "6921": {
+      "name": "嘉雨思-創",
+      "market": "TWSE"
+    },
+    "6923": {
+      "name": "中台",
+      "market": "TWSE"
+    },
+    "6924": {
+      "name": "榮惠-KY創",
+      "market": "TWSE"
+    },
+    "6928": {
+      "name": "攸泰科技",
+      "market": "TWSE"
+    },
+    "6931": {
+      "name": "青松健康",
+      "market": "TWSE"
+    },
+    "6933": {
+      "name": "AMAX-KY",
+      "market": "TWSE"
+    },
+    "6934": {
+      "name": "心誠鎂",
+      "market": "TWSE"
+    },
+    "6936": {
+      "name": "永鴻生技",
+      "market": "TWSE"
+    },
+    "6937": {
+      "name": "天虹",
+      "market": "TWSE"
+    },
+    "6944": {
+      "name": "兆聯實業",
+      "market": "TWSE"
+    },
+    "6947": {
+      "name": "台鎔科技",
+      "market": "TWSE"
+    },
+    "6949": {
+      "name": "沛爾生醫*-創",
+      "market": "TWSE"
+    },
+    "6951": {
+      "name": "青新-創",
+      "market": "TWSE"
+    },
+    "6952": {
+      "name": "大武山",
+      "market": "TWSE"
+    },
+    "6955": {
+      "name": "邦睿生技-創",
+      "market": "TWSE"
+    },
+    "6957": {
+      "name": "裕慶-KY",
+      "market": "TWSE"
+    },
+    "6958": {
+      "name": "日盛台駿",
+      "market": "TWSE"
+    },
+    "6962": {
+      "name": "奕力-KY",
+      "market": "TWSE"
+    },
+    "6965": {
+      "name": "中傑-KY",
+      "market": "TWSE"
+    },
+    "6969": {
+      "name": "成信實業*-創",
+      "market": "TWSE"
+    },
+    "6988": {
+      "name": "威力暘-創",
+      "market": "TWSE"
+    },
+    "6994": {
+      "name": "富威電力",
+      "market": "TWSE"
+    },
+    "7610": {
+      "name": "聯友金屬-創",
+      "market": "TWSE"
+    },
+    "7631": {
+      "name": "聚賢研發-創",
+      "market": "TWSE"
+    },
+    "7689": {
+      "name": "大鵬科CLMX",
+      "market": "TWSE"
+    },
+    "7705": {
+      "name": "三商餐飲",
+      "market": "TWSE"
+    },
+    "7710": {
+      "name": "東擎科技",
+      "market": "TWSE"
+    },
+    "7711": {
+      "name": "永擎",
+      "market": "TWSE"
+    },
+    "7721": {
+      "name": "微程式",
+      "market": "TWSE"
+    },
+    "7722": {
+      "name": "LINEPAY",
+      "market": "TWSE"
+    },
+    "7730": {
+      "name": "暉盛-創",
+      "market": "TWSE"
+    },
+    "7732": {
+      "name": "金興精密",
+      "market": "TWSE"
+    },
+    "7736": {
+      "name": "虎山",
+      "market": "TWSE"
+    },
+    "7740": {
+      "name": "熙特爾-創",
+      "market": "TWSE"
+    },
+    "7749": {
+      "name": "意騰-KY",
+      "market": "TWSE"
+    },
+    "7750": {
+      "name": "新代",
+      "market": "TWSE"
+    },
+    "7760": {
+      "name": "享溫馨",
+      "market": "TWSE"
+    },
+    "7765": {
+      "name": "中華資安",
+      "market": "TWSE"
+    },
+    "7768": {
+      "name": "頌勝科技",
+      "market": "TWSE"
+    },
+    "7769": {
+      "name": "鴻勁",
+      "market": "TWSE"
+    },
+    "7780": {
+      "name": "大研生醫*",
+      "market": "TWSE"
+    },
+    "7786": {
+      "name": "東方風能",
+      "market": "TWSE"
+    },
+    "7788": {
+      "name": "松川精密",
+      "market": "TWSE"
+    },
+    "7791": {
+      "name": "皇家可口",
+      "market": "TWSE"
+    },
+    "7795": {
+      "name": "長廣",
+      "market": "TWSE"
+    },
+    "7799": {
+      "name": "禾榮科",
+      "market": "TWSE"
+    },
+    "7803": {
+      "name": "雲象科技-創",
+      "market": "TWSE"
+    },
+    "7812": {
+      "name": "稜研科技*-創",
+      "market": "TWSE"
+    },
+    "7818": {
+      "name": "溢泰實業",
+      "market": "TWSE"
+    },
+    "7821": {
+      "name": "神數",
+      "market": "TWSE"
+    },
+    "7822": {
+      "name": "倍利科",
+      "market": "TWSE"
+    },
+    "7823": {
+      "name": "奧義賽博-KY創",
+      "market": "TWSE"
+    },
+    "7827": {
+      "name": "漢康-KY創",
+      "market": "TWSE"
+    },
+    "7835": {
+      "name": "永悅健康-創",
+      "market": "TWSE"
+    },
+    "7855": {
+      "name": "和運租車",
+      "market": "TWSE"
+    },
+    "7867": {
+      "name": "特力屋",
+      "market": "TWSE"
+    },
+    "8011": {
+      "name": "台通",
+      "market": "TWSE"
+    },
+    "8016": {
+      "name": "矽創",
+      "market": "TWSE"
+    },
+    "8021": {
+      "name": "尖點",
+      "market": "TWSE"
+    },
+    "8028": {
+      "name": "昇陽半導體",
+      "market": "TWSE"
+    },
+    "8033": {
+      "name": "雷虎",
+      "market": "TWSE"
+    },
+    "8039": {
+      "name": "台虹",
+      "market": "TWSE"
+    },
+    "8045": {
+      "name": "達運光電",
+      "market": "TWSE"
+    },
+    "8046": {
+      "name": "南電",
+      "market": "TWSE"
+    },
+    "8070": {
+      "name": "長華*",
+      "market": "TWSE"
+    },
+    "8072": {
+      "name": "陞泰",
+      "market": "TWSE"
+    },
+    "8081": {
+      "name": "致新",
+      "market": "TWSE"
+    },
+    "8101": {
+      "name": "華冠",
+      "market": "TWSE"
+    },
+    "8103": {
+      "name": "瀚荃",
+      "market": "TWSE"
+    },
+    "8104": {
+      "name": "錸寶",
+      "market": "TWSE"
+    },
+    "8105": {
+      "name": "凌巨",
+      "market": "TWSE"
+    },
+    "8110": {
+      "name": "華東",
+      "market": "TWSE"
+    },
+    "8112": {
+      "name": "至上",
+      "market": "TWSE"
+    },
+    "8114": {
+      "name": "振樺電",
+      "market": "TWSE"
+    },
+    "8131": {
+      "name": "福懋科",
+      "market": "TWSE"
+    },
+    "8150": {
+      "name": "南茂",
+      "market": "TWSE"
+    },
+    "8162": {
+      "name": "微矽電子-創",
+      "market": "TWSE"
+    },
+    "8163": {
+      "name": "達方",
+      "market": "TWSE"
+    },
+    "8201": {
+      "name": "無敵",
+      "market": "TWSE"
+    },
+    "8210": {
+      "name": "勤誠",
+      "market": "TWSE"
+    },
+    "8213": {
+      "name": "志超",
+      "market": "TWSE"
+    },
+    "8215": {
+      "name": "明基材",
+      "market": "TWSE"
+    },
+    "8222": {
+      "name": "寶一",
+      "market": "TWSE"
+    },
+    "8249": {
+      "name": "菱光",
+      "market": "TWSE"
+    },
+    "8261": {
+      "name": "富鼎",
+      "market": "TWSE"
+    },
+    "8271": {
+      "name": "宇瞻",
+      "market": "TWSE"
+    },
+    "8341": {
+      "name": "日友",
+      "market": "TWSE"
+    },
+    "8367": {
+      "name": "建新國際",
+      "market": "TWSE"
+    },
+    "8374": {
+      "name": "羅昇",
+      "market": "TWSE"
+    },
+    "8404": {
+      "name": "百和興業-KY",
+      "market": "TWSE"
+    },
+    "8411": {
+      "name": "福貞-KY",
+      "market": "TWSE"
+    },
+    "8422": {
+      "name": "可寧衛*",
+      "market": "TWSE"
+    },
+    "8429": {
+      "name": "金麗-KY",
+      "market": "TWSE"
+    },
+    "8438": {
+      "name": "昶昕",
+      "market": "TWSE"
+    },
+    "8442": {
+      "name": "威宏-KY",
+      "market": "TWSE"
+    },
+    "8443": {
+      "name": "阿瘦",
+      "market": "TWSE"
+    },
+    "8454": {
+      "name": "富邦媒",
+      "market": "TWSE"
+    },
+    "8462": {
+      "name": "柏文",
+      "market": "TWSE"
+    },
+    "8463": {
+      "name": "潤泰材",
+      "market": "TWSE"
+    },
+    "8464": {
+      "name": "億豐",
+      "market": "TWSE"
+    },
+    "8466": {
+      "name": "美吉吉-KY",
+      "market": "TWSE"
+    },
+    "8467": {
+      "name": "波力-KY",
+      "market": "TWSE"
+    },
+    "8473": {
+      "name": "山林水",
+      "market": "TWSE"
+    },
+    "8476": {
+      "name": "台境*",
+      "market": "TWSE"
+    },
+    "8478": {
+      "name": "東哥遊艇",
+      "market": "TWSE"
+    },
+    "8481": {
+      "name": "政伸",
+      "market": "TWSE"
+    },
+    "8482": {
+      "name": "商億-KY",
+      "market": "TWSE"
+    },
+    "8487": {
+      "name": "愛爾達-創",
+      "market": "TWSE"
+    },
+    "8488": {
+      "name": "吉源-KY",
+      "market": "TWSE"
+    },
+    "8499": {
+      "name": "鼎炫-KY",
+      "market": "TWSE"
+    },
+    "8908": {
+      "name": "欣雄",
+      "market": "TWSE"
+    },
+    "8926": {
+      "name": "台汽電",
+      "market": "TWSE"
+    },
+    "8940": {
+      "name": "新天地",
+      "market": "TWSE"
+    },
+    "8996": {
+      "name": "高力",
+      "market": "TWSE"
+    },
+    "9103": {
+      "name": "美德醫療-DR",
+      "market": "TWSE"
+    },
+    "9105": {
+      "name": "泰金寶-DR",
+      "market": "TWSE"
+    },
+    "9110": {
+      "name": "越南控-DR",
+      "market": "TWSE"
+    },
+    "9136": {
+      "name": "巨騰-DR",
+      "market": "TWSE"
+    },
+    "9802": {
+      "name": "鈺齊-KY",
+      "market": "TWSE"
+    },
+    "9902": {
+      "name": "台火",
+      "market": "TWSE"
+    },
+    "9904": {
+      "name": "寶成",
+      "market": "TWSE"
+    },
+    "9905": {
+      "name": "大華",
+      "market": "TWSE"
+    },
+    "9906": {
+      "name": "欣巴巴",
+      "market": "TWSE"
+    },
+    "9907": {
+      "name": "統一實",
+      "market": "TWSE"
+    },
+    "9908": {
+      "name": "大台北",
+      "market": "TWSE"
+    },
+    "9910": {
+      "name": "豐泰",
+      "market": "TWSE"
+    },
+    "9911": {
+      "name": "櫻花",
+      "market": "TWSE"
+    },
+    "9912": {
+      "name": "偉聯",
+      "market": "TWSE"
+    },
+    "9914": {
+      "name": "美利達",
+      "market": "TWSE"
+    },
+    "9917": {
+      "name": "中保科",
+      "market": "TWSE"
+    },
+    "9918": {
+      "name": "欣天然",
+      "market": "TWSE"
+    },
+    "9919": {
+      "name": "康那香",
+      "market": "TWSE"
+    },
+    "9921": {
+      "name": "巨大",
+      "market": "TWSE"
+    },
+    "9924": {
+      "name": "福興",
+      "market": "TWSE"
+    },
+    "9925": {
+      "name": "新保",
+      "market": "TWSE"
+    },
+    "9926": {
+      "name": "新海",
+      "market": "TWSE"
+    },
+    "9927": {
+      "name": "泰銘",
+      "market": "TWSE"
+    },
+    "9928": {
+      "name": "中視",
+      "market": "TWSE"
+    },
+    "9929": {
+      "name": "秋雨",
+      "market": "TWSE"
+    },
+    "9930": {
+      "name": "中聯資源",
+      "market": "TWSE"
+    },
+    "9931": {
+      "name": "欣高",
+      "market": "TWSE"
+    },
+    "9933": {
+      "name": "中鼎",
+      "market": "TWSE"
+    },
+    "9934": {
+      "name": "成霖",
+      "market": "TWSE"
+    },
+    "9935": {
+      "name": "慶豐富",
+      "market": "TWSE"
+    },
+    "9937": {
+      "name": "全國",
+      "market": "TWSE"
+    },
+    "9938": {
+      "name": "百和",
+      "market": "TWSE"
+    },
+    "9939": {
+      "name": "宏全",
+      "market": "TWSE"
+    },
+    "9940": {
+      "name": "信義",
+      "market": "TWSE"
+    },
+    "9941": {
+      "name": "裕融",
+      "market": "TWSE"
+    },
+    "9942": {
+      "name": "茂順",
+      "market": "TWSE"
+    },
+    "9943": {
+      "name": "好樂迪",
+      "market": "TWSE"
+    },
+    "9944": {
+      "name": "新麗",
+      "market": "TWSE"
+    },
+    "9945": {
+      "name": "潤泰新",
+      "market": "TWSE"
+    },
+    "9946": {
+      "name": "三發地產",
+      "market": "TWSE"
+    },
+    "9955": {
+      "name": "佳龍",
+      "market": "TWSE"
+    },
+    "9958": {
+      "name": "世紀鋼",
+      "market": "TWSE"
+    },
+    "1240": {
+      "name": "茂生農經",
+      "market": "TPEx"
+    },
+    "1259": {
+      "name": "安心",
+      "market": "TPEx"
+    },
+    "1264": {
+      "name": "德麥",
+      "market": "TPEx"
+    },
+    "1268": {
+      "name": "漢來美食",
+      "market": "TPEx"
+    },
+    "1294": {
+      "name": "漢田生技",
+      "market": "TPEx"
+    },
+    "1295": {
+      "name": "生合",
+      "market": "TPEx"
+    },
+    "1336": {
+      "name": "台翰",
+      "market": "TPEx"
+    },
+    "1565": {
+      "name": "精華",
+      "market": "TPEx"
+    },
+    "1569": {
+      "name": "濱川",
+      "market": "TPEx"
+    },
+    "1570": {
+      "name": "力肯",
+      "market": "TPEx"
+    },
+    "1580": {
+      "name": "新麥",
+      "market": "TPEx"
+    },
+    "1584": {
+      "name": "精剛",
+      "market": "TPEx"
+    },
+    "1586": {
+      "name": "和勤",
+      "market": "TPEx"
+    },
+    "1591": {
+      "name": "駿吉-KY",
+      "market": "TPEx"
+    },
+    "1593": {
+      "name": "祺驊",
+      "market": "TPEx"
+    },
+    "1595": {
+      "name": "川寶",
+      "market": "TPEx"
+    },
+    "1599": {
+      "name": "宏佳騰",
+      "market": "TPEx"
+    },
+    "1742": {
+      "name": "台蠟",
+      "market": "TPEx"
+    },
+    "1777": {
+      "name": "生泰",
+      "market": "TPEx"
+    },
+    "1780": {
+      "name": "立弘",
+      "market": "TPEx"
+    },
+    "1781": {
+      "name": "合世",
+      "market": "TPEx"
+    },
+    "1784": {
+      "name": "訊聯",
+      "market": "TPEx"
+    },
+    "1785": {
+      "name": "光洋科",
+      "market": "TPEx"
+    },
+    "1788": {
+      "name": "杏昌",
+      "market": "TPEx"
+    },
+    "1796": {
+      "name": "金穎生技",
+      "market": "TPEx"
+    },
+    "1799": {
+      "name": "易威",
+      "market": "TPEx"
+    },
+    "1813": {
+      "name": "寶利徠",
+      "market": "TPEx"
+    },
+    "1815": {
+      "name": "富喬",
+      "market": "TPEx"
+    },
+    "2035": {
+      "name": "唐榮公司",
+      "market": "TPEx"
+    },
+    "2061": {
+      "name": "風青",
+      "market": "TPEx"
+    },
+    "2063": {
+      "name": "世鎧精密",
+      "market": "TPEx"
+    },
+    "2064": {
+      "name": "晉椿",
+      "market": "TPEx"
+    },
+    "2065": {
+      "name": "世豐",
+      "market": "TPEx"
+    },
+    "2066": {
+      "name": "世德",
+      "market": "TPEx"
+    },
+    "2067": {
+      "name": "嘉鋼",
+      "market": "TPEx"
+    },
+    "2070": {
+      "name": "精湛",
+      "market": "TPEx"
+    },
+    "2073": {
+      "name": "雄順",
+      "market": "TPEx"
+    },
+    "2221": {
+      "name": "大甲",
+      "market": "TPEx"
+    },
+    "2230": {
+      "name": "泰茂",
+      "market": "TPEx"
+    },
+    "2235": {
+      "name": "謚源",
+      "market": "TPEx"
+    },
+    "2249": {
+      "name": "湧盛",
+      "market": "TPEx"
+    },
+    "2596": {
+      "name": "綠意",
+      "market": "TPEx"
+    },
+    "2640": {
+      "name": "大車隊",
+      "market": "TPEx"
+    },
+    "2641": {
+      "name": "正德",
+      "market": "TPEx"
+    },
+    "2643": {
+      "name": "捷迅",
+      "market": "TPEx"
+    },
+    "2718": {
+      "name": "全心投控",
+      "market": "TPEx"
+    },
+    "2719": {
+      "name": "燦星旅",
+      "market": "TPEx"
+    },
+    "2724": {
+      "name": "藝舍-KY",
+      "market": "TPEx"
+    },
+    "2726": {
+      "name": "雅茗-KY",
+      "market": "TPEx"
+    },
+    "2729": {
+      "name": "瓦城",
+      "market": "TPEx"
+    },
+    "2732": {
+      "name": "六角",
+      "market": "TPEx"
+    },
+    "2734": {
+      "name": "易飛網",
+      "market": "TPEx"
+    },
+    "2736": {
+      "name": "富野",
+      "market": "TPEx"
+    },
+    "2740": {
+      "name": "華軒",
+      "market": "TPEx"
+    },
+    "2743": {
+      "name": "山富",
+      "market": "TPEx"
+    },
+    "2745": {
+      "name": "五福",
+      "market": "TPEx"
+    },
+    "2751": {
+      "name": "王座",
+      "market": "TPEx"
+    },
+    "2752": {
+      "name": "豆府",
+      "market": "TPEx"
+    },
+    "2754": {
+      "name": "亞洲藏壽司",
+      "market": "TPEx"
+    },
+    "2755": {
+      "name": "揚秦",
+      "market": "TPEx"
+    },
+    "2756": {
+      "name": "聯發國際",
+      "market": "TPEx"
+    },
+    "2916": {
+      "name": "滿心",
+      "market": "TPEx"
+    },
+    "2924": {
+      "name": "宏太-KY",
+      "market": "TPEx"
+    },
+    "2926": {
+      "name": "誠品生活",
+      "market": "TPEx"
+    },
+    "2937": {
+      "name": "集雅社",
+      "market": "TPEx"
+    },
+    "2938": {
+      "name": "床的世界",
+      "market": "TPEx"
+    },
+    "2941": {
+      "name": "米斯特",
+      "market": "TPEx"
+    },
+    "2947": {
+      "name": "振宇五金",
+      "market": "TPEx"
+    },
+    "2948": {
+      "name": "寶陞",
+      "market": "TPEx"
+    },
+    "2949": {
+      "name": "欣新網",
+      "market": "TPEx"
+    },
+    "3064": {
+      "name": "泰偉",
+      "market": "TPEx"
+    },
+    "3066": {
+      "name": "李洲",
+      "market": "TPEx"
+    },
+    "3067": {
+      "name": "全域",
+      "market": "TPEx"
+    },
+    "3071": {
+      "name": "協禧",
+      "market": "TPEx"
+    },
+    "3073": {
+      "name": "天方能源",
+      "market": "TPEx"
+    },
+    "3078": {
+      "name": "僑威",
+      "market": "TPEx"
+    },
+    "3081": {
+      "name": "聯亞",
+      "market": "TPEx"
+    },
+    "3083": {
+      "name": "網龍",
+      "market": "TPEx"
+    },
+    "3085": {
+      "name": "新零售",
+      "market": "TPEx"
+    },
+    "3086": {
+      "name": "華義*",
+      "market": "TPEx"
+    },
+    "3088": {
+      "name": "艾訊",
+      "market": "TPEx"
+    },
+    "3093": {
+      "name": "港建*",
+      "market": "TPEx"
+    },
+    "3095": {
+      "name": "及成",
+      "market": "TPEx"
+    },
+    "3105": {
+      "name": "穩懋",
+      "market": "TPEx"
+    },
+    "3114": {
+      "name": "好德",
+      "market": "TPEx"
+    },
+    "3115": {
+      "name": "富榮綱",
+      "market": "TPEx"
+    },
+    "3118": {
+      "name": "進階",
+      "market": "TPEx"
+    },
+    "3122": {
+      "name": "笙泉",
+      "market": "TPEx"
+    },
+    "3128": {
+      "name": "昇銳",
+      "market": "TPEx"
+    },
+    "3131": {
+      "name": "弘塑",
+      "market": "TPEx"
+    },
+    "3141": {
+      "name": "晶宏",
+      "market": "TPEx"
+    },
+    "3147": {
+      "name": "大綜",
+      "market": "TPEx"
+    },
+    "3152": {
+      "name": "璟德",
+      "market": "TPEx"
+    },
+    "3158": {
+      "name": "嘉實",
+      "market": "TPEx"
+    },
+    "3162": {
+      "name": "精確",
+      "market": "TPEx"
+    },
+    "3163": {
+      "name": "波若威",
+      "market": "TPEx"
+    },
+    "3169": {
+      "name": "亞信",
+      "market": "TPEx"
+    },
+    "3171": {
+      "name": "炎洲流通",
+      "market": "TPEx"
+    },
+    "3176": {
+      "name": "基亞",
+      "market": "TPEx"
+    },
+    "3178": {
+      "name": "公準",
+      "market": "TPEx"
+    },
+    "3188": {
+      "name": "鑫龍騰",
+      "market": "TPEx"
+    },
+    "3191": {
+      "name": "雲嘉南",
+      "market": "TPEx"
+    },
+    "3205": {
+      "name": "佰研",
+      "market": "TPEx"
+    },
+    "3206": {
+      "name": "志豐",
+      "market": "TPEx"
+    },
+    "3207": {
+      "name": "耀勝",
+      "market": "TPEx"
+    },
+    "3211": {
+      "name": "順達",
+      "market": "TPEx"
+    },
+    "3213": {
+      "name": "茂訊",
+      "market": "TPEx"
+    },
+    "3217": {
+      "name": "優群",
+      "market": "TPEx"
+    },
+    "3218": {
+      "name": "大學光",
+      "market": "TPEx"
+    },
+    "3219": {
+      "name": "倚強科",
+      "market": "TPEx"
+    },
+    "3221": {
+      "name": "台嘉碩",
+      "market": "TPEx"
+    },
+    "3224": {
+      "name": "三顧",
+      "market": "TPEx"
+    },
+    "3226": {
+      "name": "龍鋒",
+      "market": "TPEx"
+    },
+    "3227": {
+      "name": "原相",
+      "market": "TPEx"
+    },
+    "3228": {
+      "name": "金麗科",
+      "market": "TPEx"
+    },
+    "3230": {
+      "name": "錦明",
+      "market": "TPEx"
+    },
+    "3232": {
+      "name": "昱捷",
+      "market": "TPEx"
+    },
+    "3234": {
+      "name": "光環",
+      "market": "TPEx"
+    },
+    "3236": {
+      "name": "千如",
+      "market": "TPEx"
+    },
+    "3252": {
+      "name": "海灣",
+      "market": "TPEx"
+    },
+    "3259": {
+      "name": "鑫創",
+      "market": "TPEx"
+    },
+    "3260": {
+      "name": "威剛",
+      "market": "TPEx"
+    },
+    "3264": {
+      "name": "欣銓",
+      "market": "TPEx"
+    },
+    "3265": {
+      "name": "台星科",
+      "market": "TPEx"
+    },
+    "3268": {
+      "name": "海德威",
+      "market": "TPEx"
+    },
+    "3272": {
+      "name": "東碩",
+      "market": "TPEx"
+    },
+    "3276": {
+      "name": "宇環",
+      "market": "TPEx"
+    },
+    "3284": {
+      "name": "太普高",
+      "market": "TPEx"
+    },
+    "3285": {
+      "name": "微端",
+      "market": "TPEx"
+    },
+    "3287": {
+      "name": "廣寰科",
+      "market": "TPEx"
+    },
+    "3288": {
+      "name": "點晶",
+      "market": "TPEx"
+    },
+    "3289": {
+      "name": "宜特",
+      "market": "TPEx"
+    },
+    "3290": {
+      "name": "東浦",
+      "market": "TPEx"
+    },
+    "3293": {
+      "name": "鈊象",
+      "market": "TPEx"
+    },
+    "3294": {
+      "name": "英濟",
+      "market": "TPEx"
+    },
+    "3297": {
+      "name": "杭特",
+      "market": "TPEx"
+    },
+    "3303": {
+      "name": "岱稜",
+      "market": "TPEx"
+    },
+    "3306": {
+      "name": "鼎天",
+      "market": "TPEx"
+    },
+    "3310": {
+      "name": "佳穎",
+      "market": "TPEx"
+    },
+    "3313": {
+      "name": "斐成",
+      "market": "TPEx"
+    },
+    "3317": {
+      "name": "尼克森",
+      "market": "TPEx"
+    },
+    "3322": {
+      "name": "建舜電",
+      "market": "TPEx"
+    },
+    "3323": {
+      "name": "加百裕",
+      "market": "TPEx"
+    },
+    "3324": {
+      "name": "雙鴻",
+      "market": "TPEx"
+    },
+    "3325": {
+      "name": "旭品",
+      "market": "TPEx"
+    },
+    "3332": {
+      "name": "幸康",
+      "market": "TPEx"
+    },
+    "3339": {
+      "name": "泰谷",
+      "market": "TPEx"
+    },
+    "3349": {
+      "name": "寶德",
+      "market": "TPEx"
+    },
+    "3354": {
+      "name": "律勝",
+      "market": "TPEx"
+    },
+    "3357": {
+      "name": "臺慶科",
+      "market": "TPEx"
+    },
+    "3360": {
+      "name": "尚立",
+      "market": "TPEx"
+    },
+    "3362": {
+      "name": "先進光",
+      "market": "TPEx"
+    },
+    "3363": {
+      "name": "上詮",
+      "market": "TPEx"
+    },
+    "3372": {
+      "name": "典範",
+      "market": "TPEx"
+    },
+    "3373": {
+      "name": "熱映",
+      "market": "TPEx"
+    },
+    "3374": {
+      "name": "精材",
+      "market": "TPEx"
+    },
+    "3379": {
+      "name": "彬台",
+      "market": "TPEx"
+    },
+    "3388": {
+      "name": "崇越電",
+      "market": "TPEx"
+    },
+    "3390": {
+      "name": "旭軟",
+      "market": "TPEx"
+    },
+    "3402": {
+      "name": "漢科",
+      "market": "TPEx"
+    },
+    "3430": {
+      "name": "奇鈦科",
+      "market": "TPEx"
+    },
+    "3434": {
+      "name": "哲固",
+      "market": "TPEx"
+    },
+    "3438": {
+      "name": "類比科",
+      "market": "TPEx"
+    },
+    "3441": {
+      "name": "聯一光電",
+      "market": "TPEx"
+    },
+    "3444": {
+      "name": "利機",
+      "market": "TPEx"
+    },
+    "3455": {
+      "name": "由田",
+      "market": "TPEx"
+    },
+    "3465": {
+      "name": "進泰電子",
+      "market": "TPEx"
+    },
+    "3466": {
+      "name": "德晉",
+      "market": "TPEx"
+    },
+    "3467": {
+      "name": "台灣精材",
+      "market": "TPEx"
+    },
+    "3479": {
+      "name": "安勤",
+      "market": "TPEx"
+    },
+    "3483": {
+      "name": "力致",
+      "market": "TPEx"
+    },
+    "3484": {
+      "name": "崧騰",
+      "market": "TPEx"
+    },
+    "3485": {
+      "name": "敘豐",
+      "market": "TPEx"
+    },
+    "3489": {
+      "name": "長耀地產",
+      "market": "TPEx"
+    },
+    "3490": {
+      "name": "單井",
+      "market": "TPEx"
+    },
+    "3491": {
+      "name": "昇達科",
+      "market": "TPEx"
+    },
+    "3492": {
+      "name": "長盛",
+      "market": "TPEx"
+    },
+    "3498": {
+      "name": "陽程",
+      "market": "TPEx"
+    },
+    "3499": {
+      "name": "環天科",
+      "market": "TPEx"
+    },
+    "3508": {
+      "name": "位速",
+      "market": "TPEx"
+    },
+    "3511": {
+      "name": "矽瑪",
+      "market": "TPEx"
+    },
+    "3512": {
+      "name": "皇龍",
+      "market": "TPEx"
+    },
+    "3516": {
+      "name": "亞帝歐",
+      "market": "TPEx"
+    },
+    "3520": {
+      "name": "華盈",
+      "market": "TPEx"
+    },
+    "3521": {
+      "name": "台鋼建設",
+      "market": "TPEx"
+    },
+    "3522": {
+      "name": "御嵿",
+      "market": "TPEx"
+    },
+    "3523": {
+      "name": "迎輝",
+      "market": "TPEx"
+    },
+    "3526": {
+      "name": "凡甲",
+      "market": "TPEx"
+    },
+    "3527": {
+      "name": "聚積",
+      "market": "TPEx"
+    },
+    "3529": {
+      "name": "力旺",
+      "market": "TPEx"
+    },
+    "3531": {
+      "name": "先益",
+      "market": "TPEx"
+    },
+    "3537": {
+      "name": "堡達",
+      "market": "TPEx"
+    },
+    "3540": {
+      "name": "曜越",
+      "market": "TPEx"
+    },
+    "3541": {
+      "name": "西柏",
+      "market": "TPEx"
+    },
+    "3546": {
+      "name": "宇峻",
+      "market": "TPEx"
+    },
+    "3548": {
+      "name": "兆利",
+      "market": "TPEx"
+    },
+    "3551": {
+      "name": "世禾",
+      "market": "TPEx"
+    },
+    "3552": {
+      "name": "同致",
+      "market": "TPEx"
+    },
+    "3555": {
+      "name": "博士旺",
+      "market": "TPEx"
+    },
+    "3556": {
+      "name": "禾瑞亞",
+      "market": "TPEx"
+    },
+    "3558": {
+      "name": "神準",
+      "market": "TPEx"
+    },
+    "3564": {
+      "name": "其陽",
+      "market": "TPEx"
+    },
+    "3567": {
+      "name": "逸昌",
+      "market": "TPEx"
+    },
+    "3570": {
+      "name": "大塚",
+      "market": "TPEx"
+    },
+    "3577": {
+      "name": "泓格",
+      "market": "TPEx"
+    },
+    "3580": {
+      "name": "友威科",
+      "market": "TPEx"
+    },
+    "3581": {
+      "name": "博磊",
+      "market": "TPEx"
+    },
+    "3587": {
+      "name": "閎康",
+      "market": "TPEx"
+    },
+    "3594": {
+      "name": "磐儀",
+      "market": "TPEx"
+    },
+    "3597": {
+      "name": "映興",
+      "market": "TPEx"
+    },
+    "3609": {
+      "name": "三一東林",
+      "market": "TPEx"
+    },
+    "3611": {
+      "name": "鼎翰",
+      "market": "TPEx"
+    },
+    "3615": {
+      "name": "安可",
+      "market": "TPEx"
+    },
+    "3623": {
+      "name": "富晶通",
+      "market": "TPEx"
+    },
+    "3624": {
+      "name": "光頡",
+      "market": "TPEx"
+    },
+    "3625": {
+      "name": "西勝",
+      "market": "TPEx"
+    },
+    "3628": {
+      "name": "盈正",
+      "market": "TPEx"
+    },
+    "3629": {
+      "name": "地心引力",
+      "market": "TPEx"
+    },
+    "3630": {
+      "name": "新鉅科",
+      "market": "TPEx"
+    },
+    "3631": {
+      "name": "晟楠",
+      "market": "TPEx"
+    },
+    "3632": {
+      "name": "研勤",
+      "market": "TPEx"
+    },
+    "3646": {
+      "name": "艾恩特",
+      "market": "TPEx"
+    },
+    "3663": {
+      "name": "鑫科",
+      "market": "TPEx"
+    },
+    "3664": {
+      "name": "安瑞-KY",
+      "market": "TPEx"
+    },
+    "3666": {
+      "name": "光耀",
+      "market": "TPEx"
+    },
+    "3672": {
+      "name": "康聯訊",
+      "market": "TPEx"
+    },
+    "3675": {
+      "name": "德微",
+      "market": "TPEx"
+    },
+    "3680": {
+      "name": "家登",
+      "market": "TPEx"
+    },
+    "3684": {
+      "name": "榮昌",
+      "market": "TPEx"
+    },
+    "3685": {
+      "name": "元創精密",
+      "market": "TPEx"
+    },
+    "3687": {
+      "name": "歐買尬",
+      "market": "TPEx"
+    },
+    "3689": {
+      "name": "湧德",
+      "market": "TPEx"
+    },
+    "3691": {
+      "name": "碩禾",
+      "market": "TPEx"
+    },
+    "3693": {
+      "name": "營邦",
+      "market": "TPEx"
+    },
+    "3707": {
+      "name": "漢磊",
+      "market": "TPEx"
+    },
+    "3709": {
+      "name": "鑫聯大投控",
+      "market": "TPEx"
+    },
+    "3710": {
+      "name": "連展投控",
+      "market": "TPEx"
+    },
+    "3713": {
+      "name": "新晶投控",
+      "market": "TPEx"
+    },
+    "3718": {
+      "name": "中光電投控",
+      "market": "TPEx"
+    },
+    "4102": {
+      "name": "永日",
+      "market": "TPEx"
+    },
+    "4105": {
+      "name": "東洋",
+      "market": "TPEx"
+    },
+    "4107": {
+      "name": "邦特",
+      "market": "TPEx"
+    },
+    "4109": {
+      "name": "加捷生醫",
+      "market": "TPEx"
+    },
+    "4111": {
+      "name": "濟生",
+      "market": "TPEx"
+    },
+    "4113": {
+      "name": "聯上",
+      "market": "TPEx"
+    },
+    "4114": {
+      "name": "健喬",
+      "market": "TPEx"
+    },
+    "4116": {
+      "name": "明基醫",
+      "market": "TPEx"
+    },
+    "4120": {
+      "name": "友華",
+      "market": "TPEx"
+    },
+    "4121": {
+      "name": "優盛",
+      "market": "TPEx"
+    },
+    "4123": {
+      "name": "晟德",
+      "market": "TPEx"
+    },
+    "4126": {
+      "name": "太醫",
+      "market": "TPEx"
+    },
+    "4127": {
+      "name": "天良",
+      "market": "TPEx"
+    },
+    "4128": {
+      "name": "中天",
+      "market": "TPEx"
+    },
+    "4129": {
+      "name": "聯合",
+      "market": "TPEx"
+    },
+    "4131": {
+      "name": "浩泰",
+      "market": "TPEx"
+    },
+    "4138": {
+      "name": "曜亞",
+      "market": "TPEx"
+    },
+    "4139": {
+      "name": "馬光-KY",
+      "market": "TPEx"
+    },
+    "4147": {
+      "name": "中裕",
+      "market": "TPEx"
+    },
+    "4153": {
+      "name": "鈺緯",
+      "market": "TPEx"
+    },
+    "4154": {
+      "name": "樂威科-KY",
+      "market": "TPEx"
+    },
+    "4157": {
+      "name": "太景*-KY",
+      "market": "TPEx"
+    },
+    "4160": {
+      "name": "訊聯基因",
+      "market": "TPEx"
+    },
+    "4161": {
+      "name": "聿新科",
+      "market": "TPEx"
+    },
+    "4162": {
+      "name": "智擎",
+      "market": "TPEx"
+    },
+    "4163": {
+      "name": "鐿鈦",
+      "market": "TPEx"
+    },
+    "4166": {
+      "name": "友霖",
+      "market": "TPEx"
+    },
+    "4167": {
+      "name": "松瑞藥",
+      "market": "TPEx"
+    },
+    "4168": {
+      "name": "醣聯",
+      "market": "TPEx"
+    },
+    "4171": {
+      "name": "瑞基",
+      "market": "TPEx"
+    },
+    "4173": {
+      "name": "久裕",
+      "market": "TPEx"
+    },
+    "4174": {
+      "name": "浩鼎",
+      "market": "TPEx"
+    },
+    "4175": {
+      "name": "杏一",
+      "market": "TPEx"
+    },
+    "4183": {
+      "name": "福永生技",
+      "market": "TPEx"
+    },
+    "4188": {
+      "name": "安克",
+      "market": "TPEx"
+    },
+    "4192": {
+      "name": "杏國",
+      "market": "TPEx"
+    },
+    "4198": {
+      "name": "欣大健康",
+      "market": "TPEx"
+    },
+    "4205": {
+      "name": "中華食",
+      "market": "TPEx"
+    },
+    "4207": {
+      "name": "環泰",
+      "market": "TPEx"
+    },
+    "4303": {
+      "name": "信立",
+      "market": "TPEx"
+    },
+    "4304": {
+      "name": "勝昱",
+      "market": "TPEx"
+    },
+    "4305": {
+      "name": "世坤",
+      "market": "TPEx"
+    },
+    "4401": {
+      "name": "東隆興",
+      "market": "TPEx"
+    },
+    "4402": {
+      "name": "郡都開發",
+      "market": "TPEx"
+    },
+    "4406": {
+      "name": "新昕纖",
+      "market": "TPEx"
+    },
+    "4413": {
+      "name": "飛寶企業",
+      "market": "TPEx"
+    },
+    "4416": {
+      "name": "三圓",
+      "market": "TPEx"
+    },
+    "4417": {
+      "name": "金洲",
+      "market": "TPEx"
+    },
+    "4419": {
+      "name": "皇家美食",
+      "market": "TPEx"
+    },
+    "4420": {
+      "name": "光明",
+      "market": "TPEx"
+    },
+    "4430": {
+      "name": "耀億",
+      "market": "TPEx"
+    },
+    "4432": {
+      "name": "銘旺實",
+      "market": "TPEx"
+    },
+    "4433": {
+      "name": "興采",
+      "market": "TPEx"
+    },
+    "4442": {
+      "name": "竣邦-KY",
+      "market": "TPEx"
+    },
+    "4502": {
+      "name": "健信",
+      "market": "TPEx"
+    },
+    "4503": {
+      "name": "金雨",
+      "market": "TPEx"
+    },
+    "4506": {
+      "name": "崇友",
+      "market": "TPEx"
+    },
+    "4510": {
+      "name": "高鋒",
+      "market": "TPEx"
+    },
+    "4513": {
+      "name": "福裕",
+      "market": "TPEx"
+    },
+    "4523": {
+      "name": "永彰",
+      "market": "TPEx"
+    },
+    "4527": {
+      "name": "方方土霖",
+      "market": "TPEx"
+    },
+    "4528": {
+      "name": "江興鍛",
+      "market": "TPEx"
+    },
+    "4529": {
+      "name": "淳紳",
+      "market": "TPEx"
+    },
+    "4530": {
+      "name": "天意能創",
+      "market": "TPEx"
+    },
+    "4533": {
+      "name": "協易機",
+      "market": "TPEx"
+    },
+    "4534": {
+      "name": "慶騰",
+      "market": "TPEx"
+    },
+    "4535": {
+      "name": "至興",
+      "market": "TPEx"
+    },
+    "4538": {
+      "name": "大詠城",
+      "market": "TPEx"
+    },
+    "4541": {
+      "name": "晟田",
+      "market": "TPEx"
+    },
+    "4542": {
+      "name": "科嶠",
+      "market": "TPEx"
+    },
+    "4543": {
+      "name": "萬在",
+      "market": "TPEx"
+    },
+    "4549": {
+      "name": "桓達",
+      "market": "TPEx"
+    },
+    "4550": {
+      "name": "長佳",
+      "market": "TPEx"
+    },
+    "4554": {
+      "name": "橙的",
+      "market": "TPEx"
+    },
+    "4556": {
+      "name": "旭然",
+      "market": "TPEx"
+    },
+    "4558": {
+      "name": "寶緯",
+      "market": "TPEx"
+    },
+    "4561": {
+      "name": "健椿",
+      "market": "TPEx"
+    },
+    "4563": {
+      "name": "百德",
+      "market": "TPEx"
+    },
+    "4568": {
+      "name": "科際精密",
+      "market": "TPEx"
+    },
+    "4577": {
+      "name": "達航科技",
+      "market": "TPEx"
+    },
+    "4580": {
+      "name": "捷流閥業",
+      "market": "TPEx"
+    },
+    "4584": {
+      "name": "君帆",
+      "market": "TPEx"
+    },
+    "4609": {
+      "name": "唐鋒",
+      "market": "TPEx"
+    },
+    "4702": {
+      "name": "中美實",
+      "market": "TPEx"
+    },
+    "4706": {
+      "name": "大恭",
+      "market": "TPEx"
+    },
+    "4707": {
+      "name": "磐亞",
+      "market": "TPEx"
+    },
+    "4711": {
+      "name": "永純",
+      "market": "TPEx"
+    },
+    "4714": {
+      "name": "永捷",
+      "market": "TPEx"
+    },
+    "4716": {
+      "name": "大立",
+      "market": "TPEx"
+    },
+    "4721": {
+      "name": "美琪瑪",
+      "market": "TPEx"
+    },
+    "4726": {
+      "name": "永昕",
+      "market": "TPEx"
+    },
+    "4728": {
+      "name": "雙美",
+      "market": "TPEx"
+    },
+    "4729": {
+      "name": "熒茂",
+      "market": "TPEx"
+    },
+    "4735": {
+      "name": "豪展",
+      "market": "TPEx"
+    },
+    "4741": {
+      "name": "泓瀚",
+      "market": "TPEx"
+    },
+    "4743": {
+      "name": "合一",
+      "market": "TPEx"
+    },
+    "4744": {
+      "name": "皇將",
+      "market": "TPEx"
+    },
+    "4745": {
+      "name": "合富-KY",
+      "market": "TPEx"
+    },
+    "4747": {
+      "name": "強生*",
+      "market": "TPEx"
+    },
+    "4749": {
+      "name": "新應材",
+      "market": "TPEx"
+    },
+    "4754": {
+      "name": "國碳科",
+      "market": "TPEx"
+    },
+    "4760": {
+      "name": "勤凱科技",
+      "market": "TPEx"
+    },
+    "4767": {
+      "name": "誠泰科技",
+      "market": "TPEx"
+    },
+    "4768": {
+      "name": "晶呈科技",
+      "market": "TPEx"
+    },
+    "4772": {
+      "name": "台特化",
+      "market": "TPEx"
+    },
+    "4804": {
+      "name": "大略-KY",
+      "market": "TPEx"
+    },
+    "4806": {
+      "name": "桂田文創",
+      "market": "TPEx"
+    },
+    "4903": {
+      "name": "聯光通",
+      "market": "TPEx"
+    },
+    "4905": {
+      "name": "台聯電",
+      "market": "TPEx"
+    },
+    "4907": {
+      "name": "富宇",
+      "market": "TPEx"
+    },
+    "4908": {
+      "name": "前鼎",
+      "market": "TPEx"
+    },
+    "4909": {
+      "name": "新復興",
+      "market": "TPEx"
+    },
+    "4911": {
+      "name": "德英",
+      "market": "TPEx"
+    },
+    "4923": {
+      "name": "力士",
+      "market": "TPEx"
+    },
+    "4924": {
+      "name": "欣厚-KY",
+      "market": "TPEx"
+    },
+    "4931": {
+      "name": "新盛力",
+      "market": "TPEx"
+    },
+    "4933": {
+      "name": "友輝",
+      "market": "TPEx"
+    },
+    "4939": {
+      "name": "亞電",
+      "market": "TPEx"
+    },
+    "4946": {
+      "name": "辣椒",
+      "market": "TPEx"
+    },
+    "4950": {
+      "name": "金耘國際",
+      "market": "TPEx"
+    },
+    "4951": {
+      "name": "精拓科",
+      "market": "TPEx"
+    },
+    "4953": {
+      "name": "緯致",
+      "market": "TPEx"
+    },
+    "4966": {
+      "name": "譜瑞-KY",
+      "market": "TPEx"
+    },
+    "4971": {
+      "name": "IET-KY",
+      "market": "TPEx"
+    },
+    "4972": {
+      "name": "湯石照明",
+      "market": "TPEx"
+    },
+    "4973": {
+      "name": "廣穎電通",
+      "market": "TPEx"
+    },
+    "4974": {
+      "name": "亞泰",
+      "market": "TPEx"
+    },
+    "4979": {
+      "name": "華星光",
+      "market": "TPEx"
+    },
+    "4991": {
+      "name": "環宇-KY",
+      "market": "TPEx"
+    },
+    "4995": {
+      "name": "晶達",
+      "market": "TPEx"
+    },
+    "5009": {
+      "name": "榮剛",
+      "market": "TPEx"
+    },
+    "5011": {
+      "name": "久陽",
+      "market": "TPEx"
+    },
+    "5013": {
+      "name": "強新",
+      "market": "TPEx"
+    },
+    "5014": {
+      "name": "建錩",
+      "market": "TPEx"
+    },
+    "5015": {
+      "name": "華祺",
+      "market": "TPEx"
+    },
+    "5016": {
+      "name": "松和",
+      "market": "TPEx"
+    },
+    "5201": {
+      "name": "凱衛",
+      "market": "TPEx"
+    },
+    "5202": {
+      "name": "力新",
+      "market": "TPEx"
+    },
+    "5205": {
+      "name": "中茂",
+      "market": "TPEx"
+    },
+    "5206": {
+      "name": "坤悅",
+      "market": "TPEx"
+    },
+    "5209": {
+      "name": "新鼎",
+      "market": "TPEx"
+    },
+    "5210": {
+      "name": "寶碩",
+      "market": "TPEx"
+    },
+    "5211": {
+      "name": "蒙恬",
+      "market": "TPEx"
+    },
+    "5212": {
+      "name": "凌網",
+      "market": "TPEx"
+    },
+    "5213": {
+      "name": "亞昕",
+      "market": "TPEx"
+    },
+    "5220": {
+      "name": "萬達光電",
+      "market": "TPEx"
+    },
+    "5223": {
+      "name": "安力-KY",
+      "market": "TPEx"
+    },
+    "5227": {
+      "name": "立凱-KY",
+      "market": "TPEx"
+    },
+    "5228": {
+      "name": "鈺鎧",
+      "market": "TPEx"
+    },
+    "5230": {
+      "name": "雷笛克光學",
+      "market": "TPEx"
+    },
+    "5245": {
+      "name": "智晶",
+      "market": "TPEx"
+    },
+    "5251": {
+      "name": "天鉞電",
+      "market": "TPEx"
+    },
+    "5263": {
+      "name": "智崴",
+      "market": "TPEx"
+    },
+    "5272": {
+      "name": "笙科",
+      "market": "TPEx"
+    },
+    "5274": {
+      "name": "信驊",
+      "market": "TPEx"
+    },
+    "5276": {
+      "name": "達輝-KY",
+      "market": "TPEx"
+    },
+    "5278": {
+      "name": "尚凡*",
+      "market": "TPEx"
+    },
+    "5287": {
+      "name": "數字",
+      "market": "TPEx"
+    },
+    "5289": {
+      "name": "宜鼎",
+      "market": "TPEx"
+    },
+    "5291": {
+      "name": "邑昇",
+      "market": "TPEx"
+    },
+    "5299": {
+      "name": "杰力",
+      "market": "TPEx"
+    },
+    "5301": {
+      "name": "寶得利",
+      "market": "TPEx"
+    },
+    "5302": {
+      "name": "太欣",
+      "market": "TPEx"
+    },
+    "5309": {
+      "name": "系統電",
+      "market": "TPEx"
+    },
+    "5310": {
+      "name": "天剛",
+      "market": "TPEx"
+    },
+    "5312": {
+      "name": "寶島科",
+      "market": "TPEx"
+    },
+    "5314": {
+      "name": "世紀*",
+      "market": "TPEx"
+    },
+    "5315": {
+      "name": "光聯",
+      "market": "TPEx"
+    },
+    "5321": {
+      "name": "美而快",
+      "market": "TPEx"
+    },
+    "5324": {
+      "name": "士開",
+      "market": "TPEx"
+    },
+    "5328": {
+      "name": "華容",
+      "market": "TPEx"
+    },
+    "5340": {
+      "name": "建榮",
+      "market": "TPEx"
+    },
+    "5344": {
+      "name": "立衛",
+      "market": "TPEx"
+    },
+    "5345": {
+      "name": "馥鴻",
+      "market": "TPEx"
+    },
+    "5347": {
+      "name": "世界",
+      "market": "TPEx"
+    },
+    "5348": {
+      "name": "正能量智能",
+      "market": "TPEx"
+    },
+    "5351": {
+      "name": "鈺創",
+      "market": "TPEx"
+    },
+    "5353": {
+      "name": "台林",
+      "market": "TPEx"
+    },
+    "5355": {
+      "name": "佳總",
+      "market": "TPEx"
+    },
+    "5356": {
+      "name": "協益",
+      "market": "TPEx"
+    },
+    "5364": {
+      "name": "力麗店",
+      "market": "TPEx"
+    },
+    "5381": {
+      "name": "光譜",
+      "market": "TPEx"
+    },
+    "5386": {
+      "name": "青雲",
+      "market": "TPEx"
+    },
+    "5392": {
+      "name": "能率",
+      "market": "TPEx"
+    },
+    "5398": {
+      "name": "慕康生醫",
+      "market": "TPEx"
+    },
+    "5403": {
+      "name": "中菲",
+      "market": "TPEx"
+    },
+    "5410": {
+      "name": "國眾",
+      "market": "TPEx"
+    },
+    "5425": {
+      "name": "台半",
+      "market": "TPEx"
+    },
+    "5426": {
+      "name": "振發",
+      "market": "TPEx"
+    },
+    "5432": {
+      "name": "新門",
+      "market": "TPEx"
+    },
+    "5438": {
+      "name": "東友",
+      "market": "TPEx"
+    },
+    "5439": {
+      "name": "高技",
+      "market": "TPEx"
+    },
+    "5443": {
+      "name": "均豪",
+      "market": "TPEx"
+    },
+    "5450": {
+      "name": "南良",
+      "market": "TPEx"
+    },
+    "5452": {
+      "name": "佶優",
+      "market": "TPEx"
+    },
+    "5455": {
+      "name": "昇益",
+      "market": "TPEx"
+    },
+    "5457": {
+      "name": "宣德",
+      "market": "TPEx"
+    },
+    "5460": {
+      "name": "同協",
+      "market": "TPEx"
+    },
+    "5464": {
+      "name": "霖宏",
+      "market": "TPEx"
+    },
+    "5465": {
+      "name": "富驊",
+      "market": "TPEx"
+    },
+    "5468": {
+      "name": "凱鈺",
+      "market": "TPEx"
+    },
+    "5474": {
+      "name": "聰泰",
+      "market": "TPEx"
+    },
+    "5475": {
+      "name": "德宏",
+      "market": "TPEx"
+    },
+    "5478": {
+      "name": "智冠",
+      "market": "TPEx"
+    },
+    "5481": {
+      "name": "新華",
+      "market": "TPEx"
+    },
+    "5483": {
+      "name": "中美晶",
+      "market": "TPEx"
+    },
+    "5487": {
+      "name": "通泰",
+      "market": "TPEx"
+    },
+    "5488": {
+      "name": "松普",
+      "market": "TPEx"
+    },
+    "5489": {
+      "name": "彩富",
+      "market": "TPEx"
+    },
+    "5490": {
+      "name": "同亨",
+      "market": "TPEx"
+    },
+    "5493": {
+      "name": "三聯",
+      "market": "TPEx"
+    },
+    "5498": {
+      "name": "凱崴",
+      "market": "TPEx"
+    },
+    "5508": {
+      "name": "永信建",
+      "market": "TPEx"
+    },
+    "5511": {
+      "name": "德昌",
+      "market": "TPEx"
+    },
+    "5512": {
+      "name": "力麒",
+      "market": "TPEx"
+    },
+    "5514": {
+      "name": "三豐",
+      "market": "TPEx"
+    },
+    "5516": {
+      "name": "雙喜",
+      "market": "TPEx"
+    },
+    "5520": {
+      "name": "力泰",
+      "market": "TPEx"
+    },
+    "5523": {
+      "name": "豐謙",
+      "market": "TPEx"
+    },
+    "5529": {
+      "name": "鉅陞",
+      "market": "TPEx"
+    },
+    "5530": {
+      "name": "龍巖",
+      "market": "TPEx"
+    },
+    "5536": {
+      "name": "聖暉*",
+      "market": "TPEx"
+    },
+    "5543": {
+      "name": "桓鼎-KY",
+      "market": "TPEx"
+    },
+    "5547": {
+      "name": "久舜",
+      "market": "TPEx"
+    },
+    "5548": {
+      "name": "安倉",
+      "market": "TPEx"
+    },
+    "5601": {
+      "name": "台聯櫃",
+      "market": "TPEx"
+    },
+    "5603": {
+      "name": "陸海",
+      "market": "TPEx"
+    },
+    "5604": {
+      "name": "中連",
+      "market": "TPEx"
+    },
+    "5609": {
+      "name": "中菲行",
+      "market": "TPEx"
+    },
+    "5701": {
+      "name": "劍湖山",
+      "market": "TPEx"
+    },
+    "5703": {
+      "name": "亞都麗緻",
+      "market": "TPEx"
+    },
+    "5704": {
+      "name": "老爺知",
+      "market": "TPEx"
+    },
+    "5864": {
+      "name": "致和證",
+      "market": "TPEx"
+    },
+    "5878": {
+      "name": "台名",
+      "market": "TPEx"
+    },
+    "5902": {
+      "name": "德記",
+      "market": "TPEx"
+    },
+    "5903": {
+      "name": "全家",
+      "market": "TPEx"
+    },
+    "5904": {
+      "name": "寶雅*",
+      "market": "TPEx"
+    },
+    "5905": {
+      "name": "南仁湖",
+      "market": "TPEx"
+    },
+    "6015": {
+      "name": "宏遠證",
+      "market": "TPEx"
+    },
+    "6016": {
+      "name": "康和證",
+      "market": "TPEx"
+    },
+    "6020": {
+      "name": "大展證",
+      "market": "TPEx"
+    },
+    "6021": {
+      "name": "美好證",
+      "market": "TPEx"
+    },
+    "6023": {
+      "name": "元大期貨",
+      "market": "TPEx"
+    },
+    "6026": {
+      "name": "福邦證",
+      "market": "TPEx"
+    },
+    "6028": {
+      "name": "公勝保經",
+      "market": "TPEx"
+    },
+    "6101": {
+      "name": "寬魚國際",
+      "market": "TPEx"
+    },
+    "6103": {
+      "name": "合邦",
+      "market": "TPEx"
+    },
+    "6104": {
+      "name": "創惟",
+      "market": "TPEx"
+    },
+    "6109": {
+      "name": "亞元",
+      "market": "TPEx"
+    },
+    "6111": {
+      "name": "光聚晶電",
+      "market": "TPEx"
+    },
+    "6113": {
+      "name": "亞矽",
+      "market": "TPEx"
+    },
+    "6114": {
+      "name": "久威",
+      "market": "TPEx"
+    },
+    "6118": {
+      "name": "建達",
+      "market": "TPEx"
+    },
+    "6121": {
+      "name": "新普",
+      "market": "TPEx"
+    },
+    "6122": {
+      "name": "擎邦",
+      "market": "TPEx"
+    },
+    "6123": {
+      "name": "上奇",
+      "market": "TPEx"
+    },
+    "6124": {
+      "name": "業強",
+      "market": "TPEx"
+    },
+    "6125": {
+      "name": "廣運",
+      "market": "TPEx"
+    },
+    "6126": {
+      "name": "信音",
+      "market": "TPEx"
+    },
+    "6127": {
+      "name": "九豪",
+      "market": "TPEx"
+    },
+    "6129": {
+      "name": "普誠",
+      "market": "TPEx"
+    },
+    "6130": {
+      "name": "上亞科技",
+      "market": "TPEx"
+    },
+    "6134": {
+      "name": "萬旭",
+      "market": "TPEx"
+    },
+    "6138": {
+      "name": "茂達",
+      "market": "TPEx"
+    },
+    "6140": {
+      "name": "訊達電腦",
+      "market": "TPEx"
+    },
+    "6143": {
+      "name": "振曜",
+      "market": "TPEx"
+    },
+    "6144": {
+      "name": "得利影",
+      "market": "TPEx"
+    },
+    "6146": {
+      "name": "耕興",
+      "market": "TPEx"
+    },
+    "6147": {
+      "name": "頎邦",
+      "market": "TPEx"
+    },
+    "6148": {
+      "name": "驊宏資",
+      "market": "TPEx"
+    },
+    "6150": {
+      "name": "撼訊",
+      "market": "TPEx"
+    },
+    "6151": {
+      "name": "晉倫",
+      "market": "TPEx"
+    },
+    "6154": {
+      "name": "順發",
+      "market": "TPEx"
+    },
+    "6156": {
+      "name": "松上",
+      "market": "TPEx"
+    },
+    "6158": {
+      "name": "禾昌",
+      "market": "TPEx"
+    },
+    "6160": {
+      "name": "欣技",
+      "market": "TPEx"
+    },
+    "6161": {
+      "name": "捷波",
+      "market": "TPEx"
+    },
+    "6163": {
+      "name": "華電網",
+      "market": "TPEx"
+    },
+    "6167": {
+      "name": "久正",
+      "market": "TPEx"
+    },
+    "6169": {
+      "name": "昱泉",
+      "market": "TPEx"
+    },
+    "6170": {
+      "name": "統振",
+      "market": "TPEx"
+    },
+    "6171": {
+      "name": "大城地產",
+      "market": "TPEx"
+    },
+    "6173": {
+      "name": "信昌電",
+      "market": "TPEx"
+    },
+    "6174": {
+      "name": "安碁",
+      "market": "TPEx"
+    },
+    "6175": {
+      "name": "立敦",
+      "market": "TPEx"
+    },
+    "6179": {
+      "name": "亞通",
+      "market": "TPEx"
+    },
+    "6180": {
+      "name": "橘子",
+      "market": "TPEx"
+    },
+    "6182": {
+      "name": "合晶",
+      "market": "TPEx"
+    },
+    "6185": {
+      "name": "幃翔",
+      "market": "TPEx"
+    },
+    "6186": {
+      "name": "新潤",
+      "market": "TPEx"
+    },
+    "6187": {
+      "name": "萬潤",
+      "market": "TPEx"
+    },
+    "6188": {
+      "name": "廣明",
+      "market": "TPEx"
+    },
+    "6190": {
+      "name": "萬泰科",
+      "market": "TPEx"
+    },
+    "6194": {
+      "name": "育富",
+      "market": "TPEx"
+    },
+    "6195": {
+      "name": "詩肯",
+      "market": "TPEx"
+    },
+    "6198": {
+      "name": "瑞築",
+      "market": "TPEx"
+    },
+    "6199": {
+      "name": "天品",
+      "market": "TPEx"
+    },
+    "6203": {
+      "name": "海韻電",
+      "market": "TPEx"
+    },
+    "6204": {
+      "name": "艾華",
+      "market": "TPEx"
+    },
+    "6207": {
+      "name": "雷科",
+      "market": "TPEx"
+    },
+    "6208": {
+      "name": "日揚",
+      "market": "TPEx"
+    },
+    "6210": {
+      "name": "慶生",
+      "market": "TPEx"
+    },
+    "6212": {
+      "name": "理銘",
+      "market": "TPEx"
+    },
+    "6217": {
+      "name": "中探針",
+      "market": "TPEx"
+    },
+    "6218": {
+      "name": "豪勉",
+      "market": "TPEx"
+    },
+    "6219": {
+      "name": "富旺",
+      "market": "TPEx"
+    },
+    "6220": {
+      "name": "岳豐",
+      "market": "TPEx"
+    },
+    "6221": {
+      "name": "晉泰",
+      "market": "TPEx"
+    },
+    "6222": {
+      "name": "立軒",
+      "market": "TPEx"
+    },
+    "6223": {
+      "name": "旺矽",
+      "market": "TPEx"
+    },
+    "6227": {
+      "name": "茂綸",
+      "market": "TPEx"
+    },
+    "6228": {
+      "name": "全譜",
+      "market": "TPEx"
+    },
+    "6229": {
+      "name": "研通",
+      "market": "TPEx"
+    },
+    "6231": {
+      "name": "系微",
+      "market": "TPEx"
+    },
+    "6233": {
+      "name": "旺玖",
+      "market": "TPEx"
+    },
+    "6234": {
+      "name": "高僑",
+      "market": "TPEx"
+    },
+    "6236": {
+      "name": "中湛",
+      "market": "TPEx"
+    },
+    "6237": {
+      "name": "驊訊",
+      "market": "TPEx"
+    },
+    "6240": {
+      "name": "松崗",
+      "market": "TPEx"
+    },
+    "6241": {
+      "name": "鑫永洋",
+      "market": "TPEx"
+    },
+    "6242": {
+      "name": "立康",
+      "market": "TPEx"
+    },
+    "6244": {
+      "name": "茂迪",
+      "market": "TPEx"
+    },
+    "6245": {
+      "name": "立端",
+      "market": "TPEx"
+    },
+    "6246": {
+      "name": "臺龍",
+      "market": "TPEx"
+    },
+    "6248": {
+      "name": "沛波",
+      "market": "TPEx"
+    },
+    "6259": {
+      "name": "百徽",
+      "market": "TPEx"
+    },
+    "6261": {
+      "name": "久元",
+      "market": "TPEx"
+    },
+    "6263": {
+      "name": "普萊德",
+      "market": "TPEx"
+    },
+    "6264": {
+      "name": "富裔",
+      "market": "TPEx"
+    },
+    "6265": {
+      "name": "方土昶",
+      "market": "TPEx"
+    },
+    "6266": {
+      "name": "泰詠",
+      "market": "TPEx"
+    },
+    "6270": {
+      "name": "倍微",
+      "market": "TPEx"
+    },
+    "6274": {
+      "name": "台燿",
+      "market": "TPEx"
+    },
+    "6275": {
+      "name": "元山",
+      "market": "TPEx"
+    },
+    "6276": {
+      "name": "安鈦克",
+      "market": "TPEx"
+    },
+    "6279": {
+      "name": "胡連",
+      "market": "TPEx"
+    },
+    "6284": {
+      "name": "佳邦",
+      "market": "TPEx"
+    },
+    "6290": {
+      "name": "良維",
+      "market": "TPEx"
+    },
+    "6291": {
+      "name": "沛亨",
+      "market": "TPEx"
+    },
+    "6292": {
+      "name": "迅德",
+      "market": "TPEx"
+    },
+    "6294": {
+      "name": "智基",
+      "market": "TPEx"
+    },
+    "6411": {
+      "name": "晶焱",
+      "market": "TPEx"
+    },
+    "6417": {
+      "name": "韋僑",
+      "market": "TPEx"
+    },
+    "6418": {
+      "name": "詠昇",
+      "market": "TPEx"
+    },
+    "6419": {
+      "name": "京晨科",
+      "market": "TPEx"
+    },
+    "6423": {
+      "name": "億而得",
+      "market": "TPEx"
+    },
+    "6425": {
+      "name": "易發",
+      "market": "TPEx"
+    },
+    "6432": {
+      "name": "今展科",
+      "market": "TPEx"
+    },
+    "6435": {
+      "name": "大中",
+      "market": "TPEx"
+    },
+    "6441": {
+      "name": "廣錠",
+      "market": "TPEx"
+    },
+    "6461": {
+      "name": "益得",
+      "market": "TPEx"
+    },
+    "6462": {
+      "name": "神盾",
+      "market": "TPEx"
+    },
+    "6465": {
+      "name": "威潤",
+      "market": "TPEx"
+    },
+    "6469": {
+      "name": "大樹",
+      "market": "TPEx"
+    },
+    "6470": {
+      "name": "宇智",
+      "market": "TPEx"
+    },
+    "6474": {
+      "name": "華豫寧",
+      "market": "TPEx"
+    },
+    "6482": {
+      "name": "弘煜科",
+      "market": "TPEx"
+    },
+    "6485": {
+      "name": "點序",
+      "market": "TPEx"
+    },
+    "6486": {
+      "name": "互動",
+      "market": "TPEx"
+    },
+    "6488": {
+      "name": "環球晶",
+      "market": "TPEx"
+    },
+    "6492": {
+      "name": "生華科",
+      "market": "TPEx"
+    },
+    "6494": {
+      "name": "九齊",
+      "market": "TPEx"
+    },
+    "6496": {
+      "name": "科懋",
+      "market": "TPEx"
+    },
+    "6498": {
+      "name": "久禾光",
+      "market": "TPEx"
+    },
+    "6499": {
+      "name": "益安",
+      "market": "TPEx"
+    },
+    "6506": {
+      "name": "雙邦",
+      "market": "TPEx"
+    },
+    "6508": {
+      "name": "惠光",
+      "market": "TPEx"
+    },
+    "6509": {
+      "name": "聚和",
+      "market": "TPEx"
+    },
+    "6510": {
+      "name": "精測",
+      "market": "TPEx"
+    },
+    "6512": {
+      "name": "啟發電",
+      "market": "TPEx"
+    },
+    "6516": {
+      "name": "勤崴國際",
+      "market": "TPEx"
+    },
+    "6517": {
+      "name": "保勝光學",
+      "market": "TPEx"
+    },
+    "6523": {
+      "name": "達爾膚",
+      "market": "TPEx"
+    },
+    "6527": {
+      "name": "明達醫",
+      "market": "TPEx"
+    },
+    "6530": {
+      "name": "創威",
+      "market": "TPEx"
+    },
+    "6532": {
+      "name": "瑞耘",
+      "market": "TPEx"
+    },
+    "6535": {
+      "name": "順藥",
+      "market": "TPEx"
+    },
+    "6538": {
+      "name": "倉和",
+      "market": "TPEx"
+    },
+    "6542": {
+      "name": "隆中",
+      "market": "TPEx"
+    },
+    "6546": {
+      "name": "正基",
+      "market": "TPEx"
+    },
+    "6547": {
+      "name": "高端疫苗",
+      "market": "TPEx"
+    },
+    "6548": {
+      "name": "長科*",
+      "market": "TPEx"
+    },
+    "6556": {
+      "name": "勝品",
+      "market": "TPEx"
+    },
+    "6560": {
+      "name": "欣普羅",
+      "market": "TPEx"
+    },
+    "6561": {
+      "name": "是方",
+      "market": "TPEx"
+    },
+    "6568": {
+      "name": "宏觀",
+      "market": "TPEx"
+    },
+    "6569": {
+      "name": "醫揚",
+      "market": "TPEx"
+    },
+    "6570": {
+      "name": "維田",
+      "market": "TPEx"
+    },
+    "6574": {
+      "name": "霈方",
+      "market": "TPEx"
+    },
+    "6576": {
+      "name": "逸達",
+      "market": "TPEx"
+    },
+    "6577": {
+      "name": "勁豐",
+      "market": "TPEx"
+    },
+    "6578": {
+      "name": "達邦蛋白",
+      "market": "TPEx"
+    },
+    "6584": {
+      "name": "南俊國際",
+      "market": "TPEx"
+    },
+    "6588": {
+      "name": "東典光電",
+      "market": "TPEx"
+    },
+    "6590": {
+      "name": "普鴻",
+      "market": "TPEx"
+    },
+    "6593": {
+      "name": "台灣銘板",
+      "market": "TPEx"
+    },
+    "6596": {
+      "name": "寬宏藝術",
+      "market": "TPEx"
+    },
+    "6597": {
+      "name": "立誠",
+      "market": "TPEx"
+    },
+    "6603": {
+      "name": "富強鑫",
+      "market": "TPEx"
+    },
+    "6604": {
+      "name": "儒億",
+      "market": "TPEx"
+    },
+    "6609": {
+      "name": "瀧澤科",
+      "market": "TPEx"
+    },
+    "6612": {
+      "name": "奈米醫材",
+      "market": "TPEx"
+    },
+    "6613": {
+      "name": "朋億*",
+      "market": "TPEx"
+    },
+    "6615": {
+      "name": "慧智",
+      "market": "TPEx"
+    },
+    "6616": {
+      "name": "特昇-KY",
+      "market": "TPEx"
+    },
+    "6617": {
+      "name": "共信-KY",
+      "market": "TPEx"
+    },
+    "6620": {
+      "name": "漢達",
+      "market": "TPEx"
+    },
+    "6624": {
+      "name": "萬年清",
+      "market": "TPEx"
+    },
+    "6629": {
+      "name": "泰金-KY",
+      "market": "TPEx"
+    },
+    "6637": {
+      "name": "醫影",
+      "market": "TPEx"
+    },
+    "6640": {
+      "name": "均華",
+      "market": "TPEx"
+    },
+    "6642": {
+      "name": "富致",
+      "market": "TPEx"
+    },
+    "6643": {
+      "name": "M31",
+      "market": "TPEx"
+    },
+    "6649": {
+      "name": "台生材",
+      "market": "TPEx"
+    },
+    "6651": {
+      "name": "全宇昕",
+      "market": "TPEx"
+    },
+    "6654": {
+      "name": "天正國際",
+      "market": "TPEx"
+    },
+    "6661": {
+      "name": "威健生技",
+      "market": "TPEx"
+    },
+    "6662": {
+      "name": "樂斯科",
+      "market": "TPEx"
+    },
+    "6664": {
+      "name": "群翊",
+      "market": "TPEx"
+    },
+    "6667": {
+      "name": "信紘科",
+      "market": "TPEx"
+    },
+    "6679": {
+      "name": "鈺太",
+      "market": "TPEx"
+    },
+    "6680": {
+      "name": "鑫創電子",
+      "market": "TPEx"
+    },
+    "6683": {
+      "name": "雍智科技",
+      "market": "TPEx"
+    },
+    "6684": {
+      "name": "安格",
+      "market": "TPEx"
+    },
+    "6690": {
+      "name": "安碁資訊",
+      "market": "TPEx"
+    },
+    "6692": {
+      "name": "進能服",
+      "market": "TPEx"
+    },
+    "6693": {
+      "name": "廣閎科",
+      "market": "TPEx"
+    },
+    "6697": {
+      "name": "東捷資訊",
+      "market": "TPEx"
+    },
+    "6703": {
+      "name": "軒郁",
+      "market": "TPEx"
+    },
+    "6708": {
+      "name": "天擎",
+      "market": "TPEx"
+    },
+    "6712": {
+      "name": "長聖",
+      "market": "TPEx"
+    },
+    "6716": {
+      "name": "應廣",
+      "market": "TPEx"
+    },
+    "6720": {
+      "name": "久昌",
+      "market": "TPEx"
+    },
+    "6721": {
+      "name": "信實",
+      "market": "TPEx"
+    },
+    "6725": {
+      "name": "矽科宏晟",
+      "market": "TPEx"
+    },
+    "6727": {
+      "name": "亞泰金屬",
+      "market": "TPEx"
+    },
+    "6728": {
+      "name": "上洋",
+      "market": "TPEx"
+    },
+    "6730": {
+      "name": "常廣",
+      "market": "TPEx"
+    },
+    "6732": {
+      "name": "昇佳電子",
+      "market": "TPEx"
+    },
+    "6733": {
+      "name": "博晟生醫",
+      "market": "TPEx"
+    },
+    "6735": {
+      "name": "美達科技",
+      "market": "TPEx"
+    },
+    "6739": {
+      "name": "竹陞科技",
+      "market": "TPEx"
+    },
+    "6741": {
+      "name": "91APP*-KY",
+      "market": "TPEx"
+    },
+    "6751": {
+      "name": "智聯服務",
+      "market": "TPEx"
+    },
+    "6752": {
+      "name": "叡揚",
+      "market": "TPEx"
+    },
+    "6761": {
+      "name": "穩得",
+      "market": "TPEx"
+    },
+    "6762": {
+      "name": "達亞",
+      "market": "TPEx"
+    },
+    "6763": {
+      "name": "綠界科技*",
+      "market": "TPEx"
+    },
+    "6767": {
+      "name": "台微醫",
+      "market": "TPEx"
+    },
+    "6785": {
+      "name": "昱展新藥",
+      "market": "TPEx"
+    },
+    "6788": {
+      "name": "華景電",
+      "market": "TPEx"
+    },
+    "6791": {
+      "name": "虎門科技",
+      "market": "TPEx"
+    },
+    "6803": {
+      "name": "崑鼎",
+      "market": "TPEx"
+    },
+    "6804": {
+      "name": "明係",
+      "market": "TPEx"
+    },
+    "6811": {
+      "name": "宏碁資訊",
+      "market": "TPEx"
+    },
+    "6821": {
+      "name": "聯寶",
+      "market": "TPEx"
+    },
+    "6823": {
+      "name": "濾能",
+      "market": "TPEx"
+    },
+    "6825": {
+      "name": "和暢科技",
+      "market": "TPEx"
+    },
+    "6829": {
+      "name": "千附精密",
+      "market": "TPEx"
+    },
+    "6840": {
+      "name": "東研信超",
+      "market": "TPEx"
+    },
+    "6841": {
+      "name": "長佳智能",
+      "market": "TPEx"
+    },
+    "6843": {
+      "name": "進典",
+      "market": "TPEx"
+    },
+    "6844": {
+      "name": "諾貝兒",
+      "market": "TPEx"
+    },
+    "6846": {
+      "name": "綠茵",
+      "market": "TPEx"
+    },
+    "6855": {
+      "name": "數泓科",
+      "market": "TPEx"
+    },
+    "6856": {
+      "name": "鑫傳",
+      "market": "TPEx"
+    },
+    "6859": {
+      "name": "伯特光",
+      "market": "TPEx"
+    },
+    "6865": {
+      "name": "偉康科技",
+      "market": "TPEx"
+    },
+    "6870": {
+      "name": "騰雲",
+      "market": "TPEx"
+    },
+    "6872": {
+      "name": "浩宇生醫",
+      "market": "TPEx"
+    },
+    "6874": {
+      "name": "倍力",
+      "market": "TPEx"
+    },
+    "6875": {
+      "name": "國邑*",
+      "market": "TPEx"
+    },
+    "6877": {
+      "name": "鏵友益",
+      "market": "TPEx"
+    },
+    "6881": {
+      "name": "潤德",
+      "market": "TPEx"
+    },
+    "6884": {
+      "name": "海柏特",
+      "market": "TPEx"
+    },
+    "6894": {
+      "name": "衛司特",
+      "market": "TPEx"
+    },
+    "6895": {
+      "name": "宏碩系統",
+      "market": "TPEx"
+    },
+    "6898": {
+      "name": "程曦資訊",
+      "market": "TPEx"
+    },
+    "6899": {
+      "name": "創為精密",
+      "market": "TPEx"
+    },
+    "6903": {
+      "name": "巨漢",
+      "market": "TPEx"
+    },
+    "6904": {
+      "name": "伯鑫",
+      "market": "TPEx"
+    },
+    "6907": {
+      "name": "雅特力-KY",
+      "market": "TPEx"
+    },
+    "6910": {
+      "name": "德鴻",
+      "market": "TPEx"
+    },
+    "6913": {
+      "name": "鴻呈",
+      "market": "TPEx"
+    },
+    "6922": {
+      "name": "宸曜",
+      "market": "TPEx"
+    },
+    "6925": {
+      "name": "意藍",
+      "market": "TPEx"
+    },
+    "6929": {
+      "name": "佑全",
+      "market": "TPEx"
+    },
+    "6938": {
+      "name": "藍新資訊",
+      "market": "TPEx"
+    },
+    "6945": {
+      "name": "圓祥生技",
+      "market": "TPEx"
+    },
+    "6953": {
+      "name": "家碩",
+      "market": "TPEx"
+    },
+    "6961": {
+      "name": "旅天下",
+      "market": "TPEx"
+    },
+    "6967": {
+      "name": "汎瑋材料",
+      "market": "TPEx"
+    },
+    "6968": {
+      "name": "萬達寵物",
+      "market": "TPEx"
+    },
+    "6971": {
+      "name": "惠民實業",
+      "market": "TPEx"
+    },
+    "6982": {
+      "name": "大井泵浦",
+      "market": "TPEx"
+    },
+    "6983": {
+      "name": "華洋精機",
+      "market": "TPEx"
+    },
+    "6986": {
+      "name": "和迅",
+      "market": "TPEx"
+    },
+    "6996": {
+      "name": "力領科技",
+      "market": "TPEx"
+    },
+    "6997": {
+      "name": "博弘",
+      "market": "TPEx"
+    },
+    "7402": {
+      "name": "邑錡",
+      "market": "TPEx"
+    },
+    "7547": {
+      "name": "碩網",
+      "market": "TPEx"
+    },
+    "7556": {
+      "name": "意德士科技",
+      "market": "TPEx"
+    },
+    "7584": {
+      "name": "樂意",
+      "market": "TPEx"
+    },
+    "7642": {
+      "name": "昶瑞機電",
+      "market": "TPEx"
+    },
+    "7703": {
+      "name": "銳澤",
+      "market": "TPEx"
+    },
+    "7704": {
+      "name": "明遠精密",
+      "market": "TPEx"
+    },
+    "7708": {
+      "name": "全家餐飲",
+      "market": "TPEx"
+    },
+    "7709": {
+      "name": "榮田",
+      "market": "TPEx"
+    },
+    "7712": {
+      "name": "博盛半導體",
+      "market": "TPEx"
+    },
+    "7713": {
+      "name": "威力德生醫",
+      "market": "TPEx"
+    },
+    "7714": {
+      "name": "創泓科技",
+      "market": "TPEx"
+    },
+    "7715": {
+      "name": "裕山",
+      "market": "TPEx"
+    },
+    "7716": {
+      "name": "昱臺國際",
+      "market": "TPEx"
+    },
+    "7717": {
+      "name": "萊德光電-KY",
+      "market": "TPEx"
+    },
+    "7718": {
+      "name": "友鋮",
+      "market": "TPEx"
+    },
+    "7723": {
+      "name": "築間",
+      "market": "TPEx"
+    },
+    "7728": {
+      "name": "光焱科技",
+      "market": "TPEx"
+    },
+    "7734": {
+      "name": "印能科技",
+      "market": "TPEx"
+    },
+    "7738": {
+      "name": "東聯互動",
+      "market": "TPEx"
+    },
+    "7743": {
+      "name": "金利食安",
+      "market": "TPEx"
+    },
+    "7744": {
+      "name": "崴寶",
+      "market": "TPEx"
+    },
+    "7747": {
+      "name": "昕奇雲端",
+      "market": "TPEx"
+    },
+    "7751": {
+      "name": "竑騰",
+      "market": "TPEx"
+    },
+    "7753": {
+      "name": "星亞",
+      "market": "TPEx"
+    },
+    "7757": {
+      "name": "金色三麥",
+      "market": "TPEx"
+    },
+    "7767": {
+      "name": "仁大資訊",
+      "market": "TPEx"
+    },
+    "7770": {
+      "name": "君曜",
+      "market": "TPEx"
+    },
+    "7772": {
+      "name": "耀穎",
+      "market": "TPEx"
+    },
+    "7777": {
+      "name": "能率亞洲",
+      "market": "TPEx"
+    },
+    "7782": {
+      "name": "光速火箭",
+      "market": "TPEx"
+    },
+    "7792": {
+      "name": "安葆",
+      "market": "TPEx"
+    },
+    "7794": {
+      "name": "宏碁智新",
+      "market": "TPEx"
+    },
+    "7805": {
+      "name": "威聯通",
+      "market": "TPEx"
+    },
+    "7806": {
+      "name": "精華生醫",
+      "market": "TPEx"
+    },
+    "7810": {
+      "name": "捷創科技",
+      "market": "TPEx"
+    },
+    "7811": {
+      "name": "民盛",
+      "market": "TPEx"
+    },
+    "7814": {
+      "name": "海昌生技",
+      "market": "TPEx"
+    },
+    "7819": {
+      "name": "精誠金融",
+      "market": "TPEx"
+    },
+    "7820": {
+      "name": "立盈",
+      "market": "TPEx"
+    },
+    "7825": {
+      "name": "和亞智慧",
+      "market": "TPEx"
+    },
+    "7828": {
+      "name": "創新服務",
+      "market": "TPEx"
+    },
+    "7839": {
+      "name": "達人網",
+      "market": "TPEx"
+    },
+    "7842": {
+      "name": "天能綠電",
+      "market": "TPEx"
+    },
+    "7856": {
+      "name": "漢測",
+      "market": "TPEx"
+    },
+    "8024": {
+      "name": "佑華",
+      "market": "TPEx"
+    },
+    "8027": {
+      "name": "鈦昇",
+      "market": "TPEx"
+    },
+    "8032": {
+      "name": "光菱",
+      "market": "TPEx"
+    },
+    "8034": {
+      "name": "榮群",
+      "market": "TPEx"
+    },
+    "8038": {
+      "name": "長園科",
+      "market": "TPEx"
+    },
+    "8040": {
+      "name": "九暘",
+      "market": "TPEx"
+    },
+    "8042": {
+      "name": "金山電",
+      "market": "TPEx"
+    },
+    "8043": {
+      "name": "蜜望實",
+      "market": "TPEx"
+    },
+    "8044": {
+      "name": "網家",
+      "market": "TPEx"
+    },
+    "8047": {
+      "name": "星雲",
+      "market": "TPEx"
+    },
+    "8048": {
+      "name": "德勝",
+      "market": "TPEx"
+    },
+    "8049": {
+      "name": "晶采",
+      "market": "TPEx"
+    },
+    "8050": {
+      "name": "廣積",
+      "market": "TPEx"
+    },
+    "8054": {
+      "name": "安國",
+      "market": "TPEx"
+    },
+    "8059": {
+      "name": "凱碩",
+      "market": "TPEx"
+    },
+    "8064": {
+      "name": "東捷",
+      "market": "TPEx"
+    },
+    "8066": {
+      "name": "來思達",
+      "market": "TPEx"
+    },
+    "8067": {
+      "name": "志旭",
+      "market": "TPEx"
+    },
+    "8068": {
+      "name": "全達",
+      "market": "TPEx"
+    },
+    "8069": {
+      "name": "元太",
+      "market": "TPEx"
+    },
+    "8071": {
+      "name": "能率網通",
+      "market": "TPEx"
+    },
+    "8074": {
+      "name": "鉅橡",
+      "market": "TPEx"
+    },
+    "8076": {
+      "name": "伍豐",
+      "market": "TPEx"
+    },
+    "8077": {
+      "name": "洛碁",
+      "market": "TPEx"
+    },
+    "8080": {
+      "name": "泰霖",
+      "market": "TPEx"
+    },
+    "8083": {
+      "name": "瑞穎",
+      "market": "TPEx"
+    },
+    "8084": {
+      "name": "巨虹",
+      "market": "TPEx"
+    },
+    "8085": {
+      "name": "福華",
+      "market": "TPEx"
+    },
+    "8086": {
+      "name": "宏捷科",
+      "market": "TPEx"
+    },
+    "8087": {
+      "name": "麗升能源",
+      "market": "TPEx"
+    },
+    "8088": {
+      "name": "品安",
+      "market": "TPEx"
+    },
+    "8089": {
+      "name": "康全電訊",
+      "market": "TPEx"
+    },
+    "8091": {
+      "name": "翔名",
+      "market": "TPEx"
+    },
+    "8092": {
+      "name": "建暐",
+      "market": "TPEx"
+    },
+    "8093": {
+      "name": "保銳",
+      "market": "TPEx"
+    },
+    "8096": {
+      "name": "擎亞",
+      "market": "TPEx"
+    },
+    "8097": {
+      "name": "常珵",
+      "market": "TPEx"
+    },
+    "8099": {
+      "name": "大世科",
+      "market": "TPEx"
+    },
+    "8102": {
+      "name": "傑霖科技",
+      "market": "TPEx"
+    },
+    "8107": {
+      "name": "大億金茂",
+      "market": "TPEx"
+    },
+    "8109": {
+      "name": "博大",
+      "market": "TPEx"
+    },
+    "8111": {
+      "name": "立碁",
+      "market": "TPEx"
+    },
+    "8121": {
+      "name": "越峰",
+      "market": "TPEx"
+    },
+    "8147": {
+      "name": "正淩",
+      "market": "TPEx"
+    },
+    "8155": {
+      "name": "博智",
+      "market": "TPEx"
+    },
+    "8171": {
+      "name": "天宇",
+      "market": "TPEx"
+    },
+    "8176": {
+      "name": "智捷",
+      "market": "TPEx"
+    },
+    "8182": {
+      "name": "加高",
+      "market": "TPEx"
+    },
+    "8227": {
+      "name": "巨有科技",
+      "market": "TPEx"
+    },
+    "8234": {
+      "name": "新漢",
+      "market": "TPEx"
+    },
+    "8240": {
+      "name": "華宏",
+      "market": "TPEx"
+    },
+    "8255": {
+      "name": "朋程",
+      "market": "TPEx"
+    },
+    "8272": {
+      "name": "全景軟體",
+      "market": "TPEx"
+    },
+    "8277": {
+      "name": "商丞",
+      "market": "TPEx"
+    },
+    "8279": {
+      "name": "生展",
+      "market": "TPEx"
+    },
+    "8284": {
+      "name": "三竹",
+      "market": "TPEx"
+    },
+    "8289": {
+      "name": "泰藝",
+      "market": "TPEx"
+    },
+    "8291": {
+      "name": "尚茂",
+      "market": "TPEx"
+    },
+    "8299": {
+      "name": "群聯",
+      "market": "TPEx"
+    },
+    "8342": {
+      "name": "益張",
+      "market": "TPEx"
+    },
+    "8349": {
+      "name": "恒耀國際",
+      "market": "TPEx"
+    },
+    "8354": {
+      "name": "冠好",
+      "market": "TPEx"
+    },
+    "8358": {
+      "name": "金居",
+      "market": "TPEx"
+    },
+    "8383": {
+      "name": "千附",
+      "market": "TPEx"
+    },
+    "8390": {
+      "name": "金益鼎",
+      "market": "TPEx"
+    },
+    "8401": {
+      "name": "白紗科",
+      "market": "TPEx"
+    },
+    "8403": {
+      "name": "盛弘",
+      "market": "TPEx"
+    },
+    "8409": {
+      "name": "商之器",
+      "market": "TPEx"
+    },
+    "8410": {
+      "name": "森田",
+      "market": "TPEx"
+    },
+    "8415": {
+      "name": "大國鋼",
+      "market": "TPEx"
+    },
+    "8416": {
+      "name": "實威",
+      "market": "TPEx"
+    },
+    "8421": {
+      "name": "旭源",
+      "market": "TPEx"
+    },
+    "8423": {
+      "name": "保綠-KY",
+      "market": "TPEx"
+    },
+    "8424": {
+      "name": "惠普",
+      "market": "TPEx"
+    },
+    "8426": {
+      "name": "紅木-KY",
+      "market": "TPEx"
+    },
+    "8431": {
+      "name": "匯鑽科",
+      "market": "TPEx"
+    },
+    "8432": {
+      "name": "東生華",
+      "market": "TPEx"
+    },
+    "8433": {
+      "name": "弘帆",
+      "market": "TPEx"
+    },
+    "8435": {
+      "name": "鉅邁",
+      "market": "TPEx"
+    },
+    "8436": {
+      "name": "大江",
+      "market": "TPEx"
+    },
+    "8437": {
+      "name": "大地-KY",
+      "market": "TPEx"
+    },
+    "8440": {
+      "name": "綠電",
+      "market": "TPEx"
+    },
+    "8444": {
+      "name": "綠河-KY",
+      "market": "TPEx"
+    },
+    "8446": {
+      "name": "華研",
+      "market": "TPEx"
+    },
+    "8450": {
+      "name": "霹靂",
+      "market": "TPEx"
+    },
+    "8455": {
+      "name": "大拓-KY",
+      "market": "TPEx"
+    },
+    "8472": {
+      "name": "納維康",
+      "market": "TPEx"
+    },
+    "8477": {
+      "name": "創業家",
+      "market": "TPEx"
+    },
+    "8489": {
+      "name": "三貝德",
+      "market": "TPEx"
+    },
+    "8905": {
+      "name": "裕國",
+      "market": "TPEx"
+    },
+    "8906": {
+      "name": "花王",
+      "market": "TPEx"
+    },
+    "8916": {
+      "name": "光隆",
+      "market": "TPEx"
+    },
+    "8917": {
+      "name": "欣泰",
+      "market": "TPEx"
+    },
+    "8921": {
+      "name": "沈氏",
+      "market": "TPEx"
+    },
+    "8923": {
+      "name": "時報",
+      "market": "TPEx"
+    },
+    "8924": {
+      "name": "大田",
+      "market": "TPEx"
+    },
+    "8927": {
+      "name": "北基",
+      "market": "TPEx"
+    },
+    "8928": {
+      "name": "鉅明",
+      "market": "TPEx"
+    },
+    "8929": {
+      "name": "富堡",
+      "market": "TPEx"
+    },
+    "8930": {
+      "name": "青鋼",
+      "market": "TPEx"
+    },
+    "8931": {
+      "name": "大汽電",
+      "market": "TPEx"
+    },
+    "8932": {
+      "name": "智通*",
+      "market": "TPEx"
+    },
+    "8933": {
+      "name": "愛地雅",
+      "market": "TPEx"
+    },
+    "8935": {
+      "name": "邦泰",
+      "market": "TPEx"
+    },
+    "8936": {
+      "name": "國統",
+      "market": "TPEx"
+    },
+    "8937": {
+      "name": "合騏*",
+      "market": "TPEx"
+    },
+    "8938": {
+      "name": "明安",
+      "market": "TPEx"
+    },
+    "8941": {
+      "name": "關中",
+      "market": "TPEx"
+    },
+    "8942": {
+      "name": "森鉅",
+      "market": "TPEx"
+    },
+    "9949": {
+      "name": "琉園",
+      "market": "TPEx"
+    },
+    "9950": {
+      "name": "萬國通",
+      "market": "TPEx"
+    },
+    "9951": {
+      "name": "皇田",
+      "market": "TPEx"
+    },
+    "9960": {
+      "name": "邁達康",
+      "market": "TPEx"
+    },
+    "9962": {
+      "name": "有益",
+      "market": "TPEx"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "bruce-stock-radar",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {"test": "node --test test_frontend.cjs test_ui.cjs"},
+  "devDependencies": {"jsdom": "26.1.0"}
+}
