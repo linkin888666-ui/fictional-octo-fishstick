@@ -4,7 +4,7 @@ from datetime import date, datetime, timezone, timedelta
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs, urlencode
-from urllib.request import Request, urlopen
+from urllib.request import Request, HTTPRedirectHandler, build_opener
 import json
 import math
 import os
@@ -20,6 +20,16 @@ CACHE_SECONDS = 900
 TZ_TAIPEI = timezone(timedelta(hours=8))
 UPSTREAM_LIMIT = threading.BoundedSemaphore(4)
 STOCK_LOCKS = [threading.Lock() for _ in range(64)]
+
+
+class NoRedirect(HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        # Exchange JSON endpoints are direct. A redirect response must not loop
+        # for dozens of seconds; let fetch_month try the official fallback.
+        return None
+
+
+UPSTREAM = build_opener(NoRedirect)
 try:
     CATALOG = json.loads((ROOT / 'catalog.json').read_text())
 except (OSError, ValueError):
@@ -83,7 +93,7 @@ def signal_metrics(close, volume, ma5, ma20, r5, r10, vr, dif, sig):
 def request_json(url):
     with UPSTREAM_LIMIT:
         req = Request(url, headers={'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'})
-        with urlopen(req, timeout=10) as response:
+        with UPSTREAM.open(req, timeout=10) as response:
             return json.load(response)
 
 
