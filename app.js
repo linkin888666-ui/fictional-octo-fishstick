@@ -207,11 +207,13 @@ async function loadBurst() {
   if (burstBusy) return;
   burstBusy = true;
   clearTimeout(burstTimer);
-  $('#burst-refresh').disabled = true;
+  const refresh = $('#burst-refresh');
+  refresh.disabled = true;
   const status = $('#burst-status');
   if (!burstSnapshot) status.textContent = '正在讀取官方盤後行情…';
   try {
     const result = await getJSON('/api/burst-radar', 15000);
+    if (!status.isConnected) return;
     burstSnapshot = result.snapshot;
     if (burstSnapshot) {
       const coverage = burstSnapshot.markets.map(m => marketLabels[m] + ' ' + burstSnapshot.scanned[m] + ' 檔').join('、');
@@ -230,7 +232,7 @@ async function loadBurst() {
     status.textContent = (burstSnapshot ? '更新失敗，保留 ' + burstSnapshot.date + ' 的排行。' : '排行讀取失敗。') + ' ' + error.message;
   } finally {
     burstBusy = false;
-    $('#burst-refresh').disabled = false;
+    refresh.disabled = false;
   }
 }
 function switchTab(tab) {
