@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const {JSDOM} = require('jsdom');
 const html = fs.readFileSync('index.html','utf8');
 const js = fs.readFileSync('app.js','utf8');
-const seed = code => ({version:'5.0.0',code,name:code==='1815'?'富喬':code==='5475'?'德宏':'台積電',market:code==='1815'||code==='5475'?'TPEx':'TWSE',
+const seed = code => ({version:'5.1.0',code,name:code==='1815'?'富喬':code==='5475'?'德宏':'台積電',market:code==='1815'||code==='5475'?'TPEx':'TWSE',
  date:'2026-11-12',close:137,change:1,score:70,tags:['20MA上升','5MA>20MA'],series:[100,110,120],
  rsi5:70,rsi10:65,rsi10_overheat_days:0,ma5:120,ma20:110,volume_ratio:1.5,macd_hist:2,
  trend_pass:true,risk_level:'一般',data_warnings:[],source_url:'https://www.tpex.org.tw/',history_days:91});

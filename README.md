@@ -1,10 +1,12 @@
-# BRUCE 台股 AI 雷達 5.0
+# BRUCE 台股 AI 雷達 5.1
 
 Existing production: https://bruce-stock-radar.onrender.com
 
 A Python-standard-library service and mobile-friendly HTML/JavaScript interface. Quotes come from official **daily** TWSE and TPEx reports. Technical scores are explicit rules, not an AI forecast or a probability of profit.
 
 ## Supported
+
+- Post-close burst ranking in Radar. The server fetches date-specific official TWSE and TPEx market reports, ranks same-session stocks by turnover value divided by its preceding 20-session average, and exposes close position and the existing moving-average conditions. Each included stock needs all 21 sessions. A snapshot reports its trading date and available markets; the first request starts a background scan. Burst strength uses 2× volume by value and close position in the upper or lower quarter. The minimum ranking ratio is adjustable.
 
 - Four-digit listed/OTC company code or full company abbreviation lookup. The bundled official company snapshot includes 1,990 companies as of 2026-11-13; ETF, warrants and emerging stocks are outside this release's scope.
 - TPEx Gregorian date requests, volume normalized to shares; TWSE official report fallback for redirect errors.

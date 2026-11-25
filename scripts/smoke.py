@@ -14,7 +14,7 @@ def read(path):
         return json.load(response)
 
 health = read('/health')
-assert health['ok'] and health['version'] == '5.0.0', health
+assert health['ok'] and health['version'] == '5.1.0', health
 catalog = read('/api/catalog')
 assert catalog['stocks']['1815']['market'] == 'TPEx'
 assert len(catalog['stocks']) > 1500

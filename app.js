@@ -1,6 +1,6 @@
-/* BRUCE 5.0: shared rendering, bounded requests, resilient local state. */
+/* BRUCE 5.1: stock search, technical filters and post-close market rankings. */
 'use strict';
-const VERSION = '5.0.0';
+const VERSION = '5.1.0';
 function esc(value) {
   return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
@@ -24,8 +24,14 @@ function filterStocks(data, options) {
       (!macd || (Number.isFinite(d.macd_hist) && d.macd_hist > 0));
   });
 }
+function filterBurstRows(rows, {market, signal, trendOnly, minimum}) {
+  return rows.filter(row => row.amount_ratio >= minimum &&
+    (market === 'all' || row.market === market) &&
+    (signal === 'all' || row.signal === signal) &&
+    (!trendOnly || row.trend_pass));
+}
 // Pure functions are also exercised by Node's built-in test runner.
-if (typeof module !== 'undefined') module.exports = {esc, parseCodes, filterStocks};
+if (typeof module !== 'undefined') module.exports = {esc, parseCodes, filterStocks, filterBurstRows};
 if (typeof document !== 'undefined') {
 const $ = s => document.querySelector(s);
 const defaults = ['1802','1815','1303','2330','2317','2409','3481'];
@@ -39,6 +45,10 @@ let codes = [...new Set([...defaults, ...parseCodes(readStore('bruce-watchlist')
 let data = {}, expanded = new Set(), catalog = {}, activeTab = 'home';
 let filtersApplied = false, batchBusy = false, searching = false, toastTimer;
 const pending = new Map();
+let burstSnapshot = null, burstBusy = false, burstPageSize = 40, burstTimer;
+const burstLabels = {strong:'放量強收', weak:'放量弱收', neutral:'其他'};
+const marketLabels = {TWSE:'上市', TPEx:'上櫃'};
+const amountFormat = Intl.NumberFormat('zh-TW', {maximumFractionDigits:2});
 function toast(message) {
   $('#toast').textContent = message;
   $('#toast').style.display = 'block';
@@ -160,11 +170,76 @@ async function load(refresh = false) {
     render();
   }
 }
+function renderBurst() {
+  const rows = $('#burst-results');
+  const more = $('#burst-more');
+  if (!burstSnapshot) return;
+  const minimum = $('#burst-minimum').valueAsNumber;
+  if (!Number.isFinite(minimum) || minimum < 1) {
+    $('#burst-count').textContent = '';
+    rows.textContent = '請輸入至少 1 倍的門檻。';
+    more.hidden = true;
+    return;
+  }
+  const matches = filterBurstRows(burstSnapshot.rows, {
+    minimum, market:$('#burst-market').value, signal:$('#burst-signal').value,
+    trendOnly:$('#burst-trend').checked
+  });
+  $('#burst-count').textContent = '符合 ' + matches.length + ' 檔';
+  more.hidden = matches.length <= burstPageSize;
+  rows.innerHTML = matches.slice(0, burstPageSize).map(row => {
+    const market = marketLabels[row.market];
+    const label = row.signal === 'neutral' && row.amount_ratio >= 2 ? '放量' : burstLabels[row.signal];
+    const position = row.close_position === null ? '無高低價差' : Math.round(row.close_position * 100) + '%';
+    return '<article class="panel burst-row"><div class="stock-head">' +
+      '<strong>' + esc(row.code) + ' ' + esc(row.name) + ' <small class="muted">' + market + '</small></strong>' +
+      '<span class="tag">' + label + '</span></div>' +
+      '<div class="burst-stats"><span>成交金額 <strong>' + amountFormat.format(row.amount / 100000000) + ' 億</strong></span>' +
+      '<span>金額比 <strong>' + amountFormat.format(row.amount_ratio) + ' 倍</strong></span>' +
+      '<span>收盤 ' + row.close + ' · 位置 <strong>' + position + '</strong></span>' +
+      '<span>5MA／20MA <strong>' + row.ma5 + '／' + row.ma20 + '</strong></span></div>' +
+      '<div class="stock-head"><span class="muted">均線偏多條件' + (row.trend_pass ? '通過' : '未通過') +
+      '</span><button class="btn" data-burst-stock="' + esc(row.code) + '">查個股</button></div></article>';
+  }).join('');
+  if (!matches.length) rows.textContent = '沒有符合條件的股票，可調整倍數或篩選條件。';
+}
+async function loadBurst() {
+  if (burstBusy) return;
+  burstBusy = true;
+  clearTimeout(burstTimer);
+  $('#burst-refresh').disabled = true;
+  const status = $('#burst-status');
+  if (!burstSnapshot) status.textContent = '正在讀取官方盤後行情…';
+  try {
+    const result = await getJSON('/api/burst-radar', 15000);
+    burstSnapshot = result.snapshot;
+    if (burstSnapshot) {
+      const coverage = burstSnapshot.markets.map(m => marketLabels[m] + ' ' + burstSnapshot.scanned[m] + ' 檔').join('、');
+      const missing = ['TWSE','TPEx'].filter(m => !burstSnapshot.markets.includes(m)).map(m => marketLabels[m]).join('、');
+      status.textContent = '交易日 ' + burstSnapshot.date + ' · ' + coverage +
+        (burstSnapshot.date < result.target_date ? ' · 顯示最近可用交易日' : '') +
+        (missing ? ' · ' + missing + '同日資料未齊' : '') +
+        (result.loading ? ' · 更新中' : '');
+      renderBurst();
+    } else {
+      status.textContent = result.loading ? '正在彙整 21 個交易日的官方行情，首次可能需要較久。' :
+        '官方行情暫未取得，請稍後再試。';
+    }
+    if (result.loading && activeTab === 'radar-tab') burstTimer = setTimeout(loadBurst, 3500);
+  } catch (error) {
+    status.textContent = (burstSnapshot ? '更新失敗，保留 ' + burstSnapshot.date + ' 的排行。' : '排行讀取失敗。') + ' ' + error.message;
+  } finally {
+    burstBusy = false;
+    $('#burst-refresh').disabled = false;
+  }
+}
 function switchTab(tab) {
   activeTab = tab;
   ['home','radar-tab','indicators','settings'].forEach(id => $('#' + id).classList.toggle('hidden', id !== tab));
   document.querySelectorAll('[data-tab]').forEach(b => { b.classList.toggle('active', b.dataset.tab === tab); b.setAttribute('aria-current', b.dataset.tab === tab ? 'page' : 'false'); });
   if (tab === 'indicators') filtersApplied = true;
+  if (tab === 'radar-tab') loadBurst();
+  else clearTimeout(burstTimer);
   render(); window.scrollTo(0, 0);
 }
 async function lookupStock() {
@@ -195,6 +270,11 @@ document.addEventListener('click', event => {
   const button = event.target.closest('button');
   if (!button || button.disabled) return;
   if (button.dataset.tab) switchTab(button.dataset.tab);
+  if (button.dataset.burstStock) {
+    $('#search').value = button.dataset.burstStock;
+    $('#search').scrollIntoView?.({block:'center'});
+    lookupStock();
+  }
   if (button.dataset.expand) {
     const code = button.dataset.expand;
     expanded.has(code) ? expanded.delete(code) : expanded.add(code);
@@ -211,6 +291,11 @@ document.addEventListener('click', event => {
     codes = codes.filter(c => c !== code); delete data[code]; expanded.delete(code); favorites.delete(code);
     saveStore('bruce-watchlist', codes); saveStore('bruce-favorites', [...favorites]); render();
   }
+});
+$('#burst-refresh').onclick = loadBurst;
+$('#burst-more').onclick = () => { burstPageSize += 40; renderBurst(); };
+['#burst-market','#burst-signal','#burst-trend','#burst-minimum'].forEach(id => {
+  $(id).addEventListener('change', () => { burstPageSize = 40; renderBurst(); });
 });
 $('#search-submit').onclick = lookupStock;
 $('#search').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); lookupStock(); } });

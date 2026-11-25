@@ -1,6 +1,6 @@
 const {test} = require('node:test');
 const assert = require('node:assert/strict');
-const {esc,parseCodes,filterStocks} = require('./app.js');
+const {esc,parseCodes,filterStocks,filterBurstRows} = require('./app.js');
 test('corrupt or denied storage cannot break navigation startup',()=>{
   assert.deepEqual(parseCodes('{bad'),[]);
   assert.deepEqual(parseCodes('{"2330":true}'),[]);
@@ -28,4 +28,15 @@ test('invalid and empty thresholds fail visibly; disabled fields do not block',(
  for(const rsiLimit of [NaN,49,101])assert.throws(()=>filterStocks(stocks,{...options,rsi:true,rsiLimit}));
  for(const volumeLimit of [NaN,-1,101])assert.throws(()=>filterStocks(stocks,{...options,volume:true,volumeLimit}));
  assert.doesNotThrow(()=>filterStocks(stocks,{...options,rsiLimit:NaN,volumeLimit:NaN}));
+});
+
+test('burst ranking filters market, trend, strength and amount ratio together', () => {
+  const rows = [
+    {code:'2330', market:'TWSE', signal:'strong', amount_ratio:2.8, trend_pass:true},
+    {code:'1815', market:'TPEx', signal:'strong', amount_ratio:2.1, trend_pass:false},
+    {code:'5475', market:'TPEx', signal:'weak', amount_ratio:3, trend_pass:false},
+  ];
+  const matches = filterBurstRows(rows, {market:'TPEx', signal:'weak', trendOnly:false, minimum:2});
+  assert.deepEqual(matches.map(row => row.code), ['5475']);
+  assert.deepEqual(filterBurstRows(rows, {market:'all', signal:'strong', trendOnly:true, minimum:3}), []);
 });

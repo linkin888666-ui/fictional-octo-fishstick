@@ -12,8 +12,10 @@ import re
 import threading
 import time
 
+from burst_radar import BurstRadar
+
 ROOT = Path(__file__).resolve().parent
-VERSION = '5.0.0'
+VERSION = '5.1.0'
 CACHE = {}
 CACHE_LOCK = threading.Lock()
 CACHE_SECONDS = 900
@@ -259,6 +261,9 @@ def get(code, market='auto', refresh=False):
         raise DataUnavailable(f'{code} 查無足夠官方日線，請確認代碼或稍後重試。' + (' 來源下載異常：' + '; '.join(errors[:2]) if errors else ' 新上市股票可能尚未滿35個交易日。'))
 
 
+BURST_RADAR = BurstRadar(request_json, CATALOG['stocks'])
+
+
 class H(SimpleHTTPRequestHandler):
     def do_GET(self):
         p = urlparse(self.path)
@@ -270,6 +275,9 @@ class H(SimpleHTTPRequestHandler):
             return
         if p.path == '/api/catalog':
             self.send_json(dict(CATALOG, version=VERSION, codes=NAMES, coverage='上市／上櫃4位公司代碼；不含ETF、權證與興櫃'))
+            return
+        if p.path == '/api/burst-radar':
+            self.send_json(BURST_RADAR.get(datetime.now(TZ_TAIPEI)))
             return
         if p.path == '/api/stocks':
             code = query.get('code', [''])[0]
