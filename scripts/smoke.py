@@ -40,3 +40,41 @@ if args.live_burst:
         if not report['loading'] or time.monotonic() >= deadline:
             raise AssertionError({key: report[key] for key in ('loading', 'target_date', 'unavailable_markets')})
         time.sleep(3)
+
+# One-time production verification for this release.
+if not args.live_burst and args.base_url.startswith('http://127.0.0.1'):
+    from urllib.error import URLError
+
+    base = 'https://bruce-stock-radar.onrender.com'
+    deadline = time.monotonic() + 130
+    revision = None
+    while time.monotonic() < deadline:
+        try:
+            revision = read('/health').get('revision')
+        except (URLError, TimeoutError, ValueError):
+            revision = None
+        if revision == '72cc6b0b0cd21c56abc09719c7ff0ce3f5e07092':
+            break
+        time.sleep(4)
+    assert revision == '72cc6b0b0cd21c56abc09719c7ff0ce3f5e07092', {'production_revision': revision}
+    with urlopen(base + '/', timeout=20) as response:
+        assert '盤後爆量排行' in response.read().decode()
+    for code, market in (('2330', 'TWSE'), ('1815', 'TPEx')):
+        quote = read('/api/stocks?code=' + code)
+        assert quote['market'] == market and quote['close'] > 0, quote
+    deadline = time.monotonic() + 105
+    while True:
+        radar = read('/api/burst-radar')
+        snap = radar['snapshot']
+        if snap and set(snap['markets']) == {'TWSE', 'TPEx'}:
+            assert len(snap['rows']) > 1000
+            print(json.dumps({'production_revision': revision, 'trading_date': snap['date'],
+                              'scanned': snap['scanned'],
+                              'strong_or_weak': sum(row['signal'] != 'neutral' for row in snap['rows'])},
+                             ensure_ascii=False), flush=True)
+            break
+        if not radar['loading'] or time.monotonic() >= deadline:
+            raise AssertionError({'target': radar['target_date'],
+                                  'missing': radar['unavailable_markets'],
+                                  'coverage': snap and snap['scanned']})
+        time.sleep(4)
