@@ -143,9 +143,9 @@ class HTTPTests(unittest.TestCase):
     def test_health_and_static_versions(self):
         status,body,headers=self.read('/health')
         self.assertEqual(status,200)
-        self.assertEqual(json.loads(body)['version'],'5.0.0')
+        self.assertEqual(json.loads(body)['version'],'5.1.0')
         self.assertIn('no-store',headers['Cache-Control'])
-        self.assertIn(b'5.0.0',self.read('/app.js')[1])
+        self.assertIn(b'5.1.0',self.read('/app.js')[1])
         self.assertIn(b'/app.js',self.read('/')[1])
 
     def test_validation_and_private_files(self):
@@ -153,6 +153,13 @@ class HTTPTests(unittest.TestCase):
             self.assertEqual(self.read(path)[0],400)
         for path in ['/server.py','/.git/config','/render.yaml','/not-found','/../server.py']:
             self.assertEqual(self.read(path)[0],404)
+
+    def test_burst_endpoint_returns_loading_state(self):
+        payload = {'loading': True, 'snapshot': None}
+        with patch.object(server.BURST_RADAR, 'get', return_value=payload):
+            status, body, _ = self.read('/api/burst-radar')
+        self.assertEqual(status, 200)
+        self.assertEqual(json.loads(body), payload)
 
     def test_quote_and_failure_json(self):
         with patch.object(server,'get',return_value={'code':'1815','market':'TPEx'}):

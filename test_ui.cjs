@@ -18,8 +18,14 @@ async function setup({corrupt=false,deny=false,fail=false,stock=null}={}){
  const calls=[];
  w.fetch=async url=>{
   calls.push(url);
-  if(url==='/health')return {ok:true,json:async()=>({version:'5.0.0'})};
+  if(url==='/health')return {ok:true,json:async()=>({version:'5.1.0'})};
   if(url==='/api/catalog')return {ok:true,json:async()=>({stocks:{'1815':{name:'富喬',market:'TPEx'},'5475':{name:'德宏',market:'TPEx'}},fetched_at:'2026-11-13'})};
+  if(url==='/api/burst-radar')return {ok:true,json:async()=>({
+   target_date:'2026-11-25',loading:false,snapshot:{date:'2026-11-24',markets:['TWSE','TPEx'],scanned:{TWSE:1,TPEx:1},rows:[
+    {code:'2330',name:'台積電',market:'TWSE',amount:200000000,close:2000,amount_ratio:3,close_position:.9,signal:'strong',ma5:1990,ma20:1980,trend_pass:true},
+    {code:'5475',name:'德宏',market:'TPEx',amount:150000000,close:140,amount_ratio:2.5,close_position:.1,signal:'weak',ma5:144,ma20:145,trend_pass:false},
+   ]}
+  })};
   const code=new URL(url,'https://test.invalid').searchParams.get('code');
   if(code==='9999')return {ok:false,status:502,json:async()=>({error:'查無官方日線'})};
   if(code==='8888')throw Object.assign(new Error('timeout'),{name:'AbortError'});
@@ -88,5 +94,20 @@ test('deep link loads a new TPEx once; custom stock can be removed',async()=>{
  assert.equal(calls.filter(x=>x==='/api/stocks?code=5475').length,1);
  click('#radar-list [data-remove="5475"]');
  assert.equal($('#radar-list [data-code="5475"]'),null);
+ dom.window.close();
+});
+
+test('post-close burst ranking shows the data date and allows lookup from filtered rows', async () => {
+ const {dom,w,$,click,calls}=await setup();
+ click('[data-tab="radar-tab"]'); await settle();
+ assert.match($('#burst-status').textContent,/2026-11-24.*顯示最近可用交易日/);
+ assert.match($('#burst-results').textContent,/放量強收/);
+ $('#burst-market').value='TPEx';
+ $('#burst-market').dispatchEvent(new w.Event('change'));
+ assert.doesNotMatch($('#burst-results').textContent,/台積電/);
+ assert.match($('#burst-results').textContent,/放量弱收/);
+ click('#burst-results [data-burst-stock]'); await settle();
+ assert.ok(calls.includes('/api/stocks?code=5475'));
+ assert.match($('#search-status').textContent,/已載入 5475/);
  dom.window.close();
 });
